@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1561057183 source:c:\users\arthur\desktop\trabalho 02\09\deque.c
+	<stdio.h>
+	<stdlib.h>
+	"deque.h"
+
+1560884785 c:\users\arthur\desktop\trabalho 02\09\deque.h
+
+1561057292 source:c:\users\arthur\desktop\trabalho 02\09\usuario.c
+	<stdio.h>
+	<stdlib.h>
+	"deque.h"
+

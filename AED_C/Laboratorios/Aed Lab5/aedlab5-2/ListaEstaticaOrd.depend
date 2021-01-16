@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1555634017 source:c:\users\arthur\desktop\programaçao\aedlab5-2\lista.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+
+1555552613 c:\users\arthur\desktop\programaçao\aedlab5-2\lista.h
+
+1555634017 source:c:\users\arthur\desktop\aedlab5-2\lista.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+
+1555552613 c:\users\arthur\desktop\aedlab5-2\lista.h
+
+1555634033 source:c:\users\arthur\desktop\aedlab5-2\usuario.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+

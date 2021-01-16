@@ -1,0 +1,49 @@
+# depslib dependency file v1.0
+1558401343 source:c:\users\arthur\desktop\aedlab8\pilha.c
+	<stdio.h>
+	<stdlib.h>
+	"pilha.h"
+
+1558400567 c:\users\arthur\desktop\aedlab8\pilha.h
+
+1558401250 source:c:\users\arthur\desktop\aedlab8\usuario.c
+	<stdio.h>
+	<stdlib.h>
+	"pilha.h"
+
+1558401343 source:c:\users\arthur\desktop\aedlab8-1\pilha.c
+	<stdio.h>
+	<stdlib.h>
+	"pilha.h"
+
+1558400567 c:\users\arthur\desktop\aedlab8-1\pilha.h
+
+1558401250 source:c:\users\arthur\desktop\aedlab8-1\usuario.c
+	<stdio.h>
+	<stdlib.h>
+	"pilha.h"
+
+1559067900 source:c:\users\arthur\desktop\programaçao\aed lab 8\aedlab8-1\pilha.c
+	<stdio.h>
+	<stdlib.h>
+	"pilha.h"
+
+1558400567 c:\users\arthur\desktop\programaçao\aed lab 8\aedlab8-1\pilha.h
+
+1559067390 source:c:\users\arthur\desktop\programaçao\aed lab 8\aedlab8-1\usuario.c
+	<stdio.h>
+	<stdlib.h>
+	"pilha.h"
+
+1559067900 source:c:\users\arthur\desktop\programaçao\aed lab9\aedlab9-1\pilha.c
+	<stdio.h>
+	<stdlib.h>
+	"pilha.h"
+
+1558400567 c:\users\arthur\desktop\programaçao\aed lab9\aedlab9-1\pilha.h
+
+1559067390 source:c:\users\arthur\desktop\programaçao\aed lab9\aedlab9-1\usuario.c
+	<stdio.h>
+	<stdlib.h>
+	"pilha.h"
+

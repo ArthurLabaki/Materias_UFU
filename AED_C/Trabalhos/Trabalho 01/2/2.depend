@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1556579552 source:c:\users\arthur\desktop\2\usuario.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+
+1556406422 c:\users\arthur\desktop\2\lista.h
+
+1556495228 source:c:\users\arthur\desktop\2\lista.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+
+1556579552 source:c:\users\arthur\desktop\programaçao\trabalho aed\2\usuario.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+
+1556406422 c:\users\arthur\desktop\programaçao\trabalho aed\2\lista.h
+
+1556624770 source:c:\users\arthur\desktop\programaçao\trabalho aed\2\lista.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+

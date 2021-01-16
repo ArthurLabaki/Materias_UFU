@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1561000972 source:c:\users\arthur\desktop\filapd\fila.c
+	<stdio.h>
+	<stdlib.h>
+	"fila.h"
+
+1561000038 c:\users\arthur\desktop\filapd\fila.h
+
+1561001064 source:c:\users\arthur\desktop\filapd\usuario.c
+	<stdio.h>
+	<stdlib.h>
+	"fila.h"
+
+1561001064 source:c:\users\arthur\desktop\programaçao\aed lab12\filapd\usuario.c
+	<stdio.h>
+	<stdlib.h>
+	"fila.h"
+
+1561000038 c:\users\arthur\desktop\programaçao\aed lab12\filapd\fila.h
+
+1562776698 source:c:\users\arthur\desktop\programaçao\aed lab12\filapd\fila.c
+	<stdio.h>
+	<stdlib.h>
+	"fila.h"
+

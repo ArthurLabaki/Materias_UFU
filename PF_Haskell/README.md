@@ -1,4 +1,5 @@
-# PF
-Programação Funcional em Haskell
+# Programação Funcional
 
-Matéria ministrada pela professora Gina Maira Barbosa de Oliveira.
+## Matéria ministrada pela professora Gina Maira Barbosa de Oliveira.
+
+Linguagem utilizada: Haskell

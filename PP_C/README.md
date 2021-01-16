@@ -1,3 +1,5 @@
-# POO-Java
-Prorgamação orientada a objeto usando Java  
-Matéria ministrada pelo professor Silvio Bacala Júnior.
+# Programação Precadimental
+
+## Matéria ministrada pelo professor André Ricardo Backes
+
+Linguadem utilizada: C

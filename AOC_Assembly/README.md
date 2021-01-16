@@ -1,5 +1,4 @@
-# Aoc
-Arquitetura e Organizaçao de Computadores
+# Arquitetura e Organizaçao de Computadores
 
 Matéria ministrada pelo Prof. Pedro Frosi Rosa, PhD.
 

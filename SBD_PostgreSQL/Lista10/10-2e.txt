@@ -1,0 +1,24 @@
+SET search_path TO company;
+
+CREATE OR REPLACE FUNCTION fdelworkson () RETURNS TRIGGER AS $$
+DECLARE
+mycomand TEXT;
+mydsummary materializedpsummary1%ROWTYPE;
+mynroemp materializedpsummary1.nroemp%TYPE;
+mysumhours materializedpsummary1.sumhours%TYPE;
+BEGIN
+SELECT * FROM materializedpsummary1
+INTO mydsummary WHERE pname=OLD.pname;
+mynroemp = mydsummary.nroemp - 1;
+mysumhours = mydsummary.sumhours - OLD.sumhours;
+mycomand := 'UPDATE ' || 'materializeddsummary1 ' || 'SET nroemp = '
+ || quote_literal(mynroemp) || ', sumhours = ' || quote_literal(mysumhours)
+ || ' ' || 'WHERE pname = ' || quote_literal(OLD.pname);
+EXECUTE mycomand;
+RETURN OLD;
+END;
+$$
+LANGUAGE plpgsql;
+
+CREATE TRIGGER tdelworkson BEFORE DELETE ON works_on
+FOR EACH ROW EXECUTE PROCEDURE fdelworkson();

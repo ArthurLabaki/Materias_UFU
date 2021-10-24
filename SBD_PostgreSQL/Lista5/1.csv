@@ -1,0 +1,5 @@
+"idpessoa","cpf","nomepessoa","datapagamentoinscricao","tipopessoa","idempresa","idresponsavel"
+1,"00000011100","Joao Batista","2019-01-01","PR",3,2
+2,"00000011200","Maria Silva","2019-01-01","PR",3,3
+3,"00000011300","Antonio Souza","2019-01-01","ES",NULL,NULL
+4,"00000011400","Delfim Junior","2019-01-01","ES",1,NULL

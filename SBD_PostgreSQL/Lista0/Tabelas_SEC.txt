@@ -1,0 +1,76 @@
+CREATE SCHEMA sec;
+SET search_path TO sec;
+CREATE TABLE empresa  (
+	idempresa char (9) not null,
+	cnpj char (14) not null,
+	nomeempresa varchar (30) not null,
+	primary key (idempresa)
+);
+CREATE TABLE patrocinadora  (
+	idempresa char (9) not null,
+	valorpatrocinio DECIMAL(10, 2) not null,
+	estadoliberacao char CHECK (estadoliberacao IN ('P', 'L')),
+	dataliberacao date,
+	primary key (idempresa),
+	foreign key (idempresa) REFERENCES empresa(idempresa)
+);
+CREATE TABLE organizadora  (
+	idempresa char (9) not null,
+	primary key (idempresa),
+	foreign key (idempresa) REFERENCES empresa(idempresa)
+);
+CREATE TABLE promotora  (
+	idempresa char (9) not null,
+	primary key (idempresa),
+	foreign key (idempresa) REFERENCES empresa(idempresa)
+);
+CREATE TABLE prestadora  (
+	idempresa char (9) not null,
+	idresponsavel char (9) not null,
+	primary key (idempresa),
+	foreign key (idempresa) REFERENCES empresa(idempresa),
+	foreign key (idresponsavel) REFERENCES responsavel(idresponsavel)
+);
+CREATE TABLE pessoa(
+	idpessoa char (9) not null,
+	cpf char (11) not null,
+	nomepessoa varchar (30) not null,
+	datapagamentoinscricao date,
+	tipopessoa char (2) CHECK (tipopessoa IN ('ES', 'PR', 'EP')),
+	idempresa char (9) not null,
+	idresponsavel char (9) not null,
+	primary key (idpessoa),
+	foreign key (idresponsavel) REFERENCES responsavel(idresponsavel)
+);
+CREATE TABLE responsavel  (
+	idresponsavel char (9) not null,
+	primary key (idresponsavel)
+);
+CREATE TABLE servico  (
+	idservico char (9) not null,
+	descricaoservico varchar(50) not null,
+	custoservico DECIMAL(10, 2) not null,
+	estadoservico char CHECK (estadoservico IN ('P', 'C', 'E', 'G')),
+	dataterminoservico date,
+	idresponsavel char (9) not null,
+	primary key (idservico),
+	foreign key (idresponsavel) REFERENCES responsavel(idresponsavel)
+);
+CREATE TABLE tarefa  (
+	idtarefa char (9) not null,
+	descricaotarefa varchar(50) not null,
+	idpessoa char (9) not null,
+	idsupertarefa char (9) not null,
+	primary key (idtarefa),
+	foreign key (idpessoa) REFERENCES pessoa(idpessoa),
+	CONSTRAINT tar_idsupertarefa FOREIGN KEY (idsupertarefa)
+	   REFERENCES tarefa(idtarefa) DEFERRABLE
+);
+CREATE TABLE incricao  (
+	idpessoa char (9) not null,
+	idtarefa char (9) not null,
+	primary key (idpessoa, idtarefa),
+	foreign key (idpessoa) REFERENCES pessoa(idpessoa),
+	foreign key (idtarefa) REFERENCES tarefa(idtarefa)
+);
+

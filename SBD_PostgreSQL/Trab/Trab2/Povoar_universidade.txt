@@ -1,0 +1,52 @@
+BEGIN TRANSACTION;
+SET CONSTRAINTS ALL DEFERRED;
+SET SEARCH_PATH TO universidade; -- DEFINE ESQUEMA DEFAULT
+
+INSERT INTO faculdade VALUES ('FACOM', 'B1', 30, 450, 400000.00);
+INSERT INTO faculdade VALUES ('FADIR', 'C1', 28, 411, 306200.00);
+INSERT INTO faculdade VALUES ('FAMAT', 'D1', 32, 396, 296300.00);
+
+INSERT INTO professor VALUES (1, 'Mankirat Parracho Camelo', '1970-01-09', 7000.00, 'P', 'FACOM');
+INSERT INTO professor VALUES (2, 'Giovanna Marreiro Amoedo', '1971-08-01', 6000.00, 'P', 'FADIR');
+INSERT INTO professor VALUES (3, 'Samir Braga Bernardes', '1990-12-09', 9600.00, 'P', 'FAMAT');
+INSERT INTO professor VALUES (4, 'Dora Vilarinho Barroca', '1983-01-11', 6900.00, 'P', 'FAMAT');
+INSERT INTO professor VALUES (5, 'Antonio Velasco Mariz', '1970-06-04', 9990.00, 'D', 'FACOM');
+
+INSERT INTO aluno VALUES (1, 'Daniel Quintana Tomé', '2000-03-10', 81.5, '991829384', 'FACOM', 1);
+INSERT INTO aluno VALUES (2, 'Dominique Quaresma Boto', '2001-02-01', 88.9, '998237483', 'FACOM', 5);
+INSERT INTO aluno VALUES (3, 'Alexandre Canedo Cordeiro', '2001-03-12', 81.5, '998234003', 'FADIR', 2);
+INSERT INTO aluno VALUES (4, 'Saúl Morais Varela', '1999-09-12', 61.2, '990026374', 'FADIR', 2);
+INSERT INTO aluno VALUES (5, 'Jefferson Aires Aranha', '2000-12-10', 51.0, '991128394', 'FAMAT', 3);
+INSERT INTO aluno VALUES (6, 'Patrick Mateus Freixo', '2001-03-10', 72.4, '993244567', 'FAMAT', 4);
+INSERT INTO aluno VALUES (7, 'Nicolae Homem Grande', '2001-07-10', 66.3, '991234567', 'FAMAT', 3);
+INSERT INTO aluno VALUES (8, 'Tiana Souto Maior Mata', '1998-08-08', 80.0, '999918765', 'FACOM', 1);
+
+INSERT INTO matricula VALUES (1, 78.3, 4);
+INSERT INTO matricula VALUES (2, 81.6, 19);
+INSERT INTO matricula VALUES (3, 74.1, 10);
+INSERT INTO matricula VALUES (4, 81.6, 8);
+INSERT INTO matricula VALUES (5, 80.0, 8);
+INSERT INTO matricula VALUES (6, 66.2, 5);
+INSERT INTO matricula VALUES (7, 47.9, 12);
+INSERT INTO matricula VALUES (8, 73.7, 3);
+
+INSERT INTO disciplina VALUES ('GBC043', 'Banco de Dados', 3, NULL, 1, 'FACOM');
+INSERT INTO disciplina VALUES ('GBC046', 'AOC1', 3, NULL, 5, 'FACOM');
+INSERT INTO disciplina VALUES ('GMA019', 'Calculo numerico', 2, NULL, 3, 'FAMAT');
+INSERT INTO disciplina VALUES ('GMA021', 'Analise 1', 4, 'GMA019', 4, 'FAMAT');
+INSERT INTO disciplina VALUES ('GDR015', 'Direito Civil 2', 4, NULL, 2, 'FADIR');
+INSERT INTO disciplina VALUES ('GDR016', 'Direito Penal 1', 4, 'GDR016', 2, 'FADIR');
+
+INSERT INTO turma VALUES (1, 1, 2021, 1, 1, 'GBC043');
+INSERT INTO turma VALUES (2, 2, 2021, 2, 2, 'GBC046');
+INSERT INTO turma VALUES (3, 1, 2021, 3, 3, 'GMA019');
+INSERT INTO turma VALUES (4, 1, 2021, 4, 4, 'GMA021');
+INSERT INTO turma VALUES (5, 2, 2020, 5, 5, 'GDR016');
+
+INSERT INTO sala VALUES ('Sala de aula', 101, 50, 1);
+INSERT INTO sala VALUES ('Sala de aula', 102, 50, 2);
+INSERT INTO sala VALUES ('Sala de reuniao', 201, 10, 4);
+INSERT INTO sala VALUES ('Sala de aula', 103, 40, 3);
+INSERT INTO sala VALUES ('Sala de ic', 104, 60, 5);
+
+END TRANSACTION;

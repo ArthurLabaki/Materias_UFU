@@ -1,0 +1,73 @@
+BEGIN TRANSACTION;
+--ROLLBACK
+DROP SCHEMA scm CASCADE;
+CREATE SCHEMA scm;
+SET search_path TO scm;
+
+CREATE TABLE equipe  (
+	idequ SERIAL PRIMARY KEY,
+	nomeequ CHAR (50) UNIQUE,
+	paisequ CHAR (25),
+	titulosequ CHAR (100)
+);
+CREATE TABLE pessoa (
+	idpes SERIAL PRIMARY KEY,
+	nomepes CHAR (30),
+	tipopes CHAR CHECK (tipopes IN ('P', 'M')),
+	idequ SERIAL
+);
+CREATE TABLE piloto  (
+	idpes SERIAL PRIMARY KEY,
+	titulospes CHAR (50),
+	pontuacao INT
+);
+CREATE TABLE mecanico  (
+	idpes SERIAL PRIMARY KEY,
+	especialidademec CHAR (100)
+);
+CREATE TABLE circuito (
+	idcir SERIAL PRIMARY KEY,
+	nomecir CHAR (50) UNIQUE,
+	paiscir CHAR (25)
+);
+CREATE TABLE corrida  (
+	idcor SERIAL PRIMARY KEY,
+	datacor DATE UNIQUE,
+	idcir SERIAL UNIQUE,
+	categoria CHAR(20) UNIQUE,
+	nvoltas INT
+);
+CREATE TABLE participacao  (
+	idpes SERIAL,
+	idcor SERIAL,
+	tempo DECIMAL(4,2)
+	PRIMARY KEY (idpes, idcor)
+);
+
+------------- ALTER TABLE -----------
+
+ALTER TABLE pessoa
+	ADD CONSTRAINT pes_eq FOREIGN KEY (idequ)
+	REFERENCES equipe (idequ) DEFERRABLE;
+
+ALTER TABLE piloto
+	ADD CONSTRAINT pil_pess FOREIGN KEY (idpes)
+	REFERENCES pessoa (idpes) DEFERRABLE;
+
+ALTER TABLE mecanico
+	ADD CONSTRAINT mec_pess FOREIGN KEY (idpes)
+	REFERENCES pessoa (idpes) DEFERRABLE;
+
+ALTER TABLE corrida
+	ADD CONSTRAINT corr_circ FOREIGN KEY (idcir)
+	REFERENCES circuito (idcir) DEFERRABLE;
+
+ALTER TABLE participacao
+	ADD CONSTRAINT part_pess FOREIGN KEY (idpes)
+	REFERENCES piloto (idpes) DEFERRABLE;
+
+ALTER TABLE participacao
+	ADD CONSTRAINT part_corr FOREIGN KEY (idcor)
+	REFERENCES corrida (idcor) DEFERRABLE;
+
+END TRANSACTION;

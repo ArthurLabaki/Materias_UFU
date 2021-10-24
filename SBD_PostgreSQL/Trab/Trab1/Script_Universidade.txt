@@ -1,0 +1,111 @@
+BEGIN TRANSACTION;
+--ROLLBACK
+--DROP SCHEMA universidade CASCADE;
+CREATE SCHEMA universidade;
+SET search_path TO universidade;
+
+CREATE TABLE faculdade (
+	sigla_fac CHAR (5) PRIMARY KEY,
+	bloco CHAR (2),
+	n_prof INT,
+	n_alu INT,
+	orcamento DECIMAL(8,2)
+);
+
+CREATE TABLE professor (
+	id_prof SERIAL PRIMARY KEY,
+	nome CHAR (30),
+	data_nasc DATE,
+	salario DECIMAL(6,2),
+	tipo char CHECK (tipo IN ('P', 'D')), -- P=Professor / D=Diretor
+	sigla_fac CHAR (5) --FK
+);
+
+CREATE TABLE aluno (
+	id_alu SERIAL PRIMARY KEY,
+	nome CHAR (30),
+	data_nasc DATE,
+	cra DECIMAL (4,1),
+	telefone CHAR (9),
+	sigla_fac CHAR (5), --FK
+	id_prof SERIAL --FK
+);
+
+CREATE TABLE matricula (
+	id_alu SERIAL PRIMARY KEY, --FK
+	notas DECIMAL (4,1),
+	faltas INT
+);
+
+CREATE TABLE disciplina (
+	sigla_disc CHAR (6) PRIMARY KEY,
+	nome CHAR (20),
+	n_cred INT,
+	pre_req CHAR (6), --FK
+	id_prof SERIAL, --FK
+	sigla_fac CHAR (5) --FK
+);
+
+CREATE TABLE turma (
+	id_tur SERIAL PRIMARY KEY,
+	semestre INT,
+	ano INT,
+	id_prof SERIAL, --FK
+	id_alu SERIAL, --FK
+	sigla_disc CHAR (6) --FK
+);
+
+CREATE TABLE sala (
+	nome_s CHAR (15),
+	n_sala INT,
+	capacidade INT,
+	id_tur SERIAL PRIMARY KEY --FK
+);
+
+------------- ALTER TABLE -----------
+
+ALTER TABLE professor 
+	ADD CONSTRAINT prof_fac FOREIGN KEY (sigla_fac)
+	REFERENCES faculdade (sigla_fac) DEFERRABLE;
+
+ALTER TABLE aluno
+	ADD CONSTRAINT alu_fac FOREIGN KEY (sigla_fac)
+	REFERENCES faculdade (sigla_fac) DEFERRABLE;
+
+ALTER TABLE aluno
+	ADD CONSTRAINT alu_ic FOREIGN KEY (id_prof)
+	REFERENCES professor (id_prof) DEFERRABLE;
+
+ALTER TABLE matricula
+	ADD CONSTRAINT alu_matric FOREIGN KEY (id_alu)
+	REFERENCES aluno (id_alu) DEFERRABLE;
+
+ALTER TABLE disciplina
+	ADD CONSTRAINT disc_requisitos FOREIGN KEY (pre_req)
+	REFERENCES disciplina (sigla_disc) DEFERRABLE;
+
+ALTER TABLE disciplina
+	ADD CONSTRAINT disc_prof FOREIGN KEY (id_prof)
+	REFERENCES professor (id_prof) DEFERRABLE;
+
+ALTER TABLE disciplina
+	ADD CONSTRAINT disc_fac FOREIGN KEY (sigla_fac)
+	REFERENCES faculdade (sigla_fac) DEFERRABLE;
+
+ALTER TABLE turma
+	ADD CONSTRAINT tur_prof FOREIGN KEY (id_prof)
+	REFERENCES professor (id_prof) DEFERRABLE;
+
+ALTER TABLE turma
+	ADD CONSTRAINT tur_alu FOREIGN KEY (id_alu)
+	REFERENCES aluno (id_alu) DEFERRABLE;
+
+ALTER TABLE turma
+	ADD CONSTRAINT tur_disc FOREIGN KEY (sigla_disc)
+	REFERENCES disciplina (sigla_disc) DEFERRABLE;
+
+ALTER TABLE sala
+	ADD CONSTRAINT sala_turma FOREIGN KEY (id_tur)
+	REFERENCES turma (id_tur) DEFERRABLE;
+
+END TRANSACTION;

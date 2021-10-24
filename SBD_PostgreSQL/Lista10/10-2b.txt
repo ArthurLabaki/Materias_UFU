@@ -1,0 +1,28 @@
+SET search_path TO company;
+
+CREATE OR REPLACE FUNCTION fdelemp () RETURNS TRIGGER AS $$
+DECLARE
+mycomand TEXT;
+mydsummary materializeddsummary%ROWTYPE;
+mynroemp materializeddsummary.nroemp%TYPE;
+mytotals materializeddsummary.totals%TYPE;
+myaverages materializeddsummary.averages%TYPE;
+BEGIN
+SELECT * FROM materializeddsummary
+INTO mydsummary WHERE dno=OLD.dno;
+mynroemp = mydsummary.nroemp - 1;
+mytotals = mydsummary.totals - OLD.salary;
+myaverages = ((mydsummary.averages * mydsummary.nroemp) -
+OLD.salary) / mynroemp;
+mycomand := 'UPDATE ' || 'materializeddsummary ' || 'SET nroemp = '
+ || quote_literal(mynroemp) || ', totals = ' || quote_literal(mytotals)
+ || ', averages = ' || quote_literal(myaverages)
+ || ' ' || 'WHERE dno = ' || quote_literal(OLD.dno);
+EXECUTE mycomand;
+RETURN OLD;
+END;
+$$
+LANGUAGE plpgsql;
+
+CREATE TRIGGER tdelemp BEFORE DELETE ON employee
+ FOR EACH ROW EXECUTE PROCEDURE fdelemp();

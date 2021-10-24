@@ -1,0 +1,34 @@
+SET SEARCH_PATH TO sec;
+CREATE OR REPLACE FUNCTION sohpatrocinadora(sec.empresa.cnpj%TYPE) RETURNS TEXT AS $$
+DECLARE
+	saida TEXT DEFAULT '';
+	emp sec.empresa%ROWTYPE;
+	idpat sec.patrocinadora%ROWTYPE;
+	idorg sec.organizadora%ROWTYPE;
+	idpro sec.promotora%ROWTYPE;
+	idpre sec.prestadora%ROWTYPE;
+	teste BOOL;
+BEGIN
+	SELECT * INTO emp FROM sec.empresa WHERE cnpj=$1;
+	IF NOT FOUND THEN RETURN 'Empresa não cadastrada';
+		END IF;
+	SELECT * INTO idpat FROM sec.patrocinadora WHERE emp.idempresa = patrocinadora.idempresa;
+	IF emp.idempresa = idpat.idempresa THEN
+		teste := true;
+		SELECT * INTO idorg FROM sec.organizadora WHERE emp.idempresa = organizadora.idempresa;
+		SELECT * INTO idpro FROM sec.promotora WHERE emp.idempresa = promotora.idempresa;
+		SELECT * INTO idpre FROM sec.prestadora WHERE emp.idempresa = prestadora.idempresa;
+		IF emp.idempresa = idorg.idempresa OR emp.idempresa = idpro.idempresa OR emp.idempresa = idpre.idempresa THEN
+		IF emp.idempresa = idorg.idempresa THEN saida:= saida || 'Organizadora';
+		END IF;
+		IF emp.idempresa = idpro.idempresa THEN saida:= saida || 'Promotora';
+		END IF;
+		IF emp.idempresa = idpre.idempresa THEN saida:= saida || 'Prestadora';
+		END IF;
+		RETURN emp.nomeempresa || ' Patrocinadora ' || saida;
+		ELSE RETURN emp.nomeempresa || ' ' || idpat.valorpatrocinio || ' ' || idpat.dataliberacao;
+		END IF;
+	ELSE RETURN emp.nomeempresa ||' '||'não é patrocinadora do evento';
+	END IF;
+END;
+$$ LANGUAGE plpgsql;

@@ -1,0 +1,81 @@
+BEGIN TRANSACTION;
+--ROLLBACK
+DROP SCHEMA scp CASCADE;
+CREATE SCHEMA scp;
+SET search_path TO scp;
+
+CREATE TABLE pessoa  (
+	nome CHAR(30),
+	idpes SERIAL PRIMARY KEY
+);
+
+CREATE TABLE funcionario  (
+	idpes SERIAL 
+	idfunc SERIAL PRIMARY KEY,
+	salario Decimal (6,2),
+	categoria CHAR CHECK (CATEGORIA IN ('T', 'A'))
+);
+
+CREATE TABLE cliente  (
+	idpes SERIAL PRIMARY KEY,
+	credito_prev Decimal(6,2),
+	credito_utiliz Decimal(6,2)
+);
+
+CREATE TABLE m_medio  (
+	idfunc SERIAL PRIMARY KEY,
+);
+
+CREATE TABLE s_superior  (
+	idfunc SERIAL PRIMARY KEY,
+	idproj SERIAL
+);
+
+CREATE TABLE projeto  (
+	idproj SERIAL PRIMARY KEY,
+	titulo CHAR (50) UNIQUE
+);
+CREATE TABLE atividade  (
+	idativ SERIAL PRIMARY KEY,
+	idfunc SERIAL,
+	idproj SERIAL,
+	sub_ativ SERIAL
+);
+
+
+
+------------- ALTER TABLE -----------
+
+ALTER TABLE funcionario
+	ADD CONSTRAINT pess_func FOREIGN KEY (idpes)
+	REFERENCES pessoa (idpes) DEFERRABLE;
+
+ALTER TABLE cliente
+	ADD CONSTRAINT pess_client FOREIGN KEY (idpes)
+	REFERENCES pessoa (idpes) DEFERRABLE;
+
+ALTER TABLE m_medio
+	ADD CONSTRAINT func_m FOREIGN KEY (idfunc)
+	REFERENCES funcionario (idfunc) DEFERRABLE;
+
+ALTER TABLE s_superior
+	ADD CONSTRAINT func_s FOREIGN KEY (idfunc)
+	REFERENCES funcionario (idfunc) DEFERRABLE;
+
+ALTER TABLE s_superior
+	ADD CONSTRAINT proj_s FOREIGN KEY (idproj)
+	REFERENCES projeto (idproj) DEFERRABLE;
+
+ALTER TABLE atividade
+	ADD CONSTRAINT ativ_func FOREIGN KEY (idfunc)
+	REFERENCES funcionario (idfunc) DEFERRABLE;
+
+ALTER TABLE atividade
+	ADD CONSTRAINT ativ_proj FOREIGN KEY (idproj)
+	REFERENCES projeto (idproj) DEFERRABLE;
+
+ALTER TABLE atividade
+	ADD CONSTRAINT cod_sub_ativ FOREIGN KEY (sub_ativi)
+	REFERENCES atividade (idativ) DEFERRABLE;
+
+END TRANSACTION;

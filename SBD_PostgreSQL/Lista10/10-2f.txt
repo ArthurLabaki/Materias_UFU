@@ -1,0 +1,30 @@
+SET search_path TO company;
+
+CREATE OR REPLACE FUNCTION fupdateworkson () RETURNS TRIGGER AS $$
+DECLARE
+mycomand TEXT;
+mydsummary materializedpsummary1%ROWTYPE;
+mynroemp materializedpsummary1.nroemp%TYPE;
+mysumhours materializedpsummary1.sumhours%TYPE;
+BEGIN
+IF NEW.pname <> OLD.pname THEN
+RAISE EXCEPTION 'pname cannot be change';
+END IF;
+IF NEW.dname <> OLD.dname THEN
+RAISE EXCEPTION 'dname cannot be change';
+END IF;
+SELECT * FROM materializedpsummary1
+INTO mydsummary WHERE pname=NEW.pname;
+mynroemp = mydsummary.nroemp;
+mysumhours = mydsummary.sumhours + NEW.sumhours - OLD.sumhours;
+mycomand := 'UPDATE ' || 'materializeddsummary1 ' || 'SET nroemp = '
+ || quote_literal(mynroemp) || ', sumhours = ' || quote_literal(mysumhours)
+ || ' ' || 'WHERE pname = ' || quote_literal(NEW.pname);
+EXECUTE mycomand;
+RETURN NEW;
+END;
+$$
+LANGUAGE plpgsql;
+
+CREATE TRIGGER Tupdateworkson BEFORE UPDATE ON works_on
+FOR EACH ROW EXECUTE PROCEDURE fupdateworkson();

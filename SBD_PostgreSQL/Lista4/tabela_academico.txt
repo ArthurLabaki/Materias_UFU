@@ -1,0 +1,78 @@
+BEGIN TRANSACTION;
+--ROLLBACK
+DROP SCHEMA academico CASCADE;
+CREATE SCHEMA academico;
+SET search_path TO academico;
+
+CREATE TABLE curso  (
+	idcur SERIAL PRIMARY KEY,
+	nomecur CHAR (50) UNIQUE
+);
+CREATE TABLE aluno  (
+	idalu SERIAL PRIMARY KEY,
+	nomealu CHAR (50),
+	tipoalu CHAR (10),
+	idcur INT --FK curso
+);
+CREATE TABLE disciplina  (
+	iddis SERIAL PRIMARY KEY,
+	nomedis CHAR (50)
+);
+CREATE TABLE pre_requisito  (
+	iddis INT UNIQUE, --FK disciplina
+	idpre SERIAL PRIMARY KEY
+);
+CREATE TABLE professor  (
+	idprof SERIAL PRIMARY KEY,
+	nomepro CHAR (50)
+);
+CREATE TABLE turma  (
+	idtur SERIAL PRIMARY KEY,
+	iddis INT UNIQUE, --FK disciplina
+	ano INT UNIQUE,
+	semestre INT UNIQUE,
+	codtur INT UNIQUE
+);
+CREATE TABLE turpro  (
+	idtur INT, -- FK turma
+	idprof INT, -- FK professor
+	PRIMARY KEY (idtur, idprof)
+);
+CREATE TABLE historico  (
+	idalu INT, -- FK aluno
+	idtur INT, -- FK turma
+	nota DECIMAL (3,1)
+	PRIMARY KEY (idtur, idalu)
+);
+
+------------- ALTER TABLE -----------
+
+ALTER TABLE aluno
+	ADD CONSTRAINT aluno_idcurso FOREIGN KEY (idcur)
+	REFERENCES curso (idcur) DEFERRABLE;
+
+ALTER TABLE pre_requisito
+	ADD CONSTRAINT pre_iddisc FOREIGN KEY (iddis)
+	REFERENCES disciplina (iddis) DEFERRABLE;
+
+ALTER TABLE turma
+	ADD CONSTRAINT tur_iddisc FOREIGN KEY (iddis)
+	REFERENCES disciplina (iddis) DEFERRABLE;
+
+ALTER TABLE turpro
+	ADD CONSTRAINT turpro_codtur FOREIGN KEY (idtur)
+	REFERENCES turma (idtur) DEFERRABLE;
+
+ALTER TABLE turpro
+	ADD CONSTRAINT turpro_codprof FOREIGN KEY (idprof)
+	REFERENCES professor (idprof) DEFERRABLE;
+
+ALTER TABLE historico
+	ADD CONSTRAINT his_idalu FOREIGN KEY (idalu)
+	REFERENCES aluno (idalu) DEFERRABLE;
+
+ALTER TABLE historico
+	ADD CONSTRAINT his_idtur FOREIGN KEY (idtur)
+	REFERENCES eturma (idtur) DEFERRABLE;
+
+END TRANSACTION;

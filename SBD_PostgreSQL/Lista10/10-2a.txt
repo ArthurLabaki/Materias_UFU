@@ -1,0 +1,38 @@
+SET search_path TO company;
+
+CREATE OR REPLACE FUNCTION fnewemp () RETURNS TRIGGER AS $$
+DECLARE
+mycomand TEXT;
+mydsummary materializeddsummary%ROWTYPE;
+mynroemp materializeddsummary.nroemp%TYPE;
+mytotals materializeddsummary.totals%TYPE;
+myaverages materializeddsummary.averages%TYPE;
+BEGIN
+IF NEW.dno ISNULL THEN
+RAISE EXCEPTION 'dno cannot be NULL value';
+END IF;
+IF NEW.salary ISNULL THEN
+RAISE EXCEPTION '% cannot have NULL salary', NEW.fname;
+END IF;
+IF NEW.salary <= 0 THEN
+RAISE EXCEPTION '% cannot have a negative salary',
+NEW.fname;
+END IF;
+SELECT * FROM materializeddsummary
+INTO mydsummary WHERE dno=NEW.dno;
+mynroemp = mydsummary.nroemp + 1;
+mytotals = mydsummary.totals + NEW.salary;
+myaverages = ((mydsummary.averages * mydsummary.nroemp) +
+NEW.salary) / mynroemp;
+mycomand := 'UPDATE ' || 'materializeddsummary ' || 'SET nroemp = '
+ || quote_literal(mynroemp) || ', totals = ' || quote_literal(mytotals)
+ || ', averages = ' || quote_literal(myaverages)
+ || ' ' || 'WHERE dno = ' || quote_literal(NEW.dno);
+EXECUTE mycomand;
+RETURN NEW;
+END;
+$$
+LANGUAGE plpgsql;
+
+CREATE TRIGGER tnewemp BEFORE INSERT ON employee
+FOR EACH ROW EXECUTE PROCEDURE fnewemp();

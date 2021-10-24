@@ -1,0 +1,16 @@
+SET search_path TO universidade;
+CREATE OR REPLACE FUNCTION modalu()
+RETURNS TRIGGER AS $$
+DECLARE
+myprof professor%ROWTYPE;
+BEGIN
+SELECT id_prof FROM professor INTO myprof;
+IF NEW.id_prof <> myprof.id_prof THEN
+RAISE EXCEPTION 'PROFESSOR NÃO CADASTRADO';
+END IF;
+RETURN NEW; -- correto
+END;
+$$ LANGUAGE plpgsql;
+
+CREATE TRIGGER modalu BEFORE INSERT OR UPDATE ON aluno
+FOR EACH ROW EXECUTE PROCEDURE modalu();

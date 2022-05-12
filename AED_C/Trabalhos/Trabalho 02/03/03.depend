@@ -25,3 +25,16 @@
 	"pilha.h"
 	<string.h>
 
+1635038302 source:c:\users\deded\desktop\arquivos\git\ufu\materias_ufu\aed_c\trabalhos\trabalho 02\03\pilha.c
+	<stdio.h>
+	<stdlib.h>
+	"pilha.h"
+
+1635038302 c:\users\deded\desktop\arquivos\git\ufu\materias_ufu\aed_c\trabalhos\trabalho 02\03\pilha.h
+
+1635038302 source:c:\users\deded\desktop\arquivos\git\ufu\materias_ufu\aed_c\trabalhos\trabalho 02\03\usuario.c
+	<stdio.h>
+	<stdlib.h>
+	"pilha.h"
+	<string.h>
+

@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Poo2  UML">
+  <ClassDiagramComponents>
+    <Class name="Aforte" package="poo2.atk" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="atacar" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Afraco" package="poo2.atk" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="atacar" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Amedio" package="poo2.atk" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="atacar" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Ataque" package="poo2.atk" visibility="public" isAbstract="true" xPosition="920.0" yPosition="20.0">
+      <Fields>
+        <Field name="dano" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="atacar" returnType="void" visibility="public" isAbstract="true"/>
+        <Method name="getDano" returnType="int" visibility="public"/>
+        <Method name="setDano" returnType="void" visibility="public">
+          <Argument type="int" name="dano"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Inimigo" package="poo2.enemy" visibility="public" isAbstract="true" xPosition="1220.0" yPosition="20.0">
+      <Fields>
+        <Field name="x" type="int" visibility="private"/>
+        <Field name="y" type="int" visibility="private"/>
+        <Field name="vida" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="x"/>
+          <Argument type="int" name="y"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getX" returnType="int" visibility="public"/>
+        <Method name="setX" returnType="void" visibility="public">
+          <Argument type="int" name="x"/>
+        </Method>
+        <Method name="getY" returnType="int" visibility="public"/>
+        <Method name="setY" returnType="void" visibility="public">
+          <Argument type="int" name="y"/>
+        </Method>
+        <Method name="getVida" returnType="int" visibility="public"/>
+        <Method name="setVida" returnType="void" visibility="public">
+          <Argument type="int" name="vida"/>
+        </Method>
+        <Method name="causarDano" returnType="void" visibility="public">
+          <Argument type="int" name="dano"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Inimigo1" package="poo2.enemy" visibility="public" xPosition="1520.0" yPosition="20.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="x"/>
+          <Argument type="int" name="y"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="update" returnType="void" visibility="public">
+          <Argument type="Observable" name="subject"/>
+          <Argument type="Object" name="arg"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Inimigo2" package="poo2.enemy" visibility="public" xPosition="1820.0" yPosition="20.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="x"/>
+          <Argument type="int" name="y"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="update" returnType="void" visibility="public">
+          <Argument type="Observable" name="subject"/>
+          <Argument type="Object" name="arg"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Inimigo3" package="poo2.enemy" visibility="public" xPosition="2120.0" yPosition="20.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="x"/>
+          <Argument type="int" name="y"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="update" returnType="void" visibility="public">
+          <Argument type="Observable" name="subject"/>
+          <Argument type="Object" name="arg"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Jogo" package="poo2" visibility="public" xPosition="20.0" yPosition="420.0">
+      <Fields>
+        <Field name="pers" type="Personagem" visibility="private"/>
+        <Field name="inimigos" type="Inimigo" visibility="package"/>
+        <Field name="e1" type="Escudo" visibility="package"/>
+        <Field name="e5" type="Escudo" visibility="package"/>
+        <Field name="e10" type="Escudo" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="paint" returnType="void" visibility="public">
+          <Argument type="Graphics" name="g"/>
+        </Method>
+        <Method name="jogar" returnType="void" visibility="public">
+          <Argument type="Jogo" name="jogo"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Palto" package="poo2.jump" visibility="public" xPosition="320.0" yPosition="420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="pular" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Pbaixo" package="poo2.jump" visibility="public" xPosition="620.0" yPosition="420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="pular" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Pmedio" package="poo2.jump" visibility="public" xPosition="920.0" yPosition="420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="pular" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Pulo" package="poo2.jump" visibility="public" isAbstract="true" xPosition="1220.0" yPosition="420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="pular" returnType="void" visibility="public" isAbstract="true"/>
+      </Methods>
+    </Class>
+    <Class name="Saude" package="poo2.life" visibility="public" isAbstract="true" xPosition="1479.0" yPosition="420.0">
+      <Fields>
+        <Field name="personagem" type="Personagem" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Personagem" name="personagem"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getPersonagem" returnType="Personagem" visibility="public"/>
+        <Method name="setPersonagem" returnType="void" visibility="public">
+          <Argument type="Personagem" name="personagem"/>
+        </Method>
+        <Method name="perderVida" returnType="void" visibility="public">
+          <Argument type="int" name="quant"/>
+        </Method>
+        <Method name="ganharVida" returnType="void" visibility="public">
+          <Argument type="int" name="quant"/>
+        </Method>
+        <Method name="verificarEstado" returnType="void" visibility="protected" isAbstract="true"/>
+      </Methods>
+    </Class>
+    <Class name="Sforte" package="poo2.life" visibility="public" xPosition="1820.0" yPosition="420.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Personagem" name="personagem"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="verificarEstado" returnType="void" visibility="protected"/>
+      </Methods>
+    </Class>
+    <Class name="Smorto" package="poo2.life" visibility="public" xPosition="2120.0" yPosition="420.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Personagem" name="personagem"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="verificarEstado" returnType="void" visibility="protected"/>
+      </Methods>
+    </Class>
+    <Class name="Snormal" package="poo2.life" visibility="public" xPosition="20.0" yPosition="820.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Personagem" name="personagem"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="verificarEstado" returnType="void" visibility="protected"/>
+      </Methods>
+    </Class>
+    <Class name="Sperigo" package="poo2.life" visibility="public" xPosition="320.0" yPosition="820.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Personagem" name="personagem"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="verificarEstado" returnType="void" visibility="protected"/>
+      </Methods>
+    </Class>
+    <Class name="Personagem" package="poo2" visibility="public" isAbstract="true" xPosition="620.0" yPosition="820.0">
+      <Fields>
+        <Field name="p" type="Pulo" visibility="private"/>
+        <Field name="c" type="Corrida" visibility="private"/>
+        <Field name="a" type="Ataque" visibility="public"/>
+        <Field name="saude" type="Saude" visibility="private"/>
+        <Field name="vida" type="int" visibility="private"/>
+        <Field name="vidaTot" type="int" visibility="private"/>
+        <Field name="x" type="int" visibility="private"/>
+        <Field name="y" type="int" visibility="private"/>
+        <Field name="i1" type="Inimigo" visibility="public"/>
+        <Field name="e1" type="Escudo" visibility="public"/>
+        <Field name="p1" type="boolean" visibility="public"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="setPulo" returnType="void" visibility="public">
+          <Argument type="Pulo" name="p"/>
+        </Method>
+        <Method name="setCorrida" returnType="void" visibility="public">
+          <Argument type="Corrida" name="c"/>
+        </Method>
+        <Method name="setAtaque" returnType="void" visibility="public">
+          <Argument type="Ataque" name="a"/>
+        </Method>
+        <Method name="pular" returnType="void" visibility="public"/>
+        <Method name="correr" returnType="void" visibility="public"/>
+        <Method name="atacar" returnType="void" visibility="public"/>
+        <Method name="status" returnType="void" visibility="public"/>
+        <Method name="getVida" returnType="int" visibility="public"/>
+        <Method name="setVida" returnType="void" visibility="public">
+          <Argument type="int" name="vida"/>
+        </Method>
+        <Method name="getVidaTot" returnType="int" visibility="public"/>
+        <Method name="setVidaTot" returnType="void" visibility="public">
+          <Argument type="int" name="vidaTot"/>
+        </Method>
+        <Method name="getSaude" returnType="Saude" visibility="public"/>
+        <Method name="setSaude" returnType="void" visibility="public">
+          <Argument type="Saude" name="saude"/>
+        </Method>
+        <Method name="perderVida" returnType="void" visibility="public">
+          <Argument type="int" name="dano"/>
+        </Method>
+        <Method name="ganharVida" returnType="void" visibility="public">
+          <Argument type="int" name="dano"/>
+        </Method>
+        <Method name="getX" returnType="int" visibility="public"/>
+        <Method name="setX" returnType="void" visibility="public">
+          <Argument type="int" name="x"/>
+        </Method>
+        <Method name="getY" returnType="int" visibility="public"/>
+        <Method name="setY" returnType="void" visibility="public">
+          <Argument type="int" name="y"/>
+        </Method>
+        <Method name="show" returnType="void" visibility="public"/>
+        <Method name="keyTyped" returnType="void" visibility="public">
+          <Argument type="KeyEvent" name="e"/>
+        </Method>
+        <Method name="keyPressed" returnType="void" visibility="public">
+          <Argument type="KeyEvent" name="e"/>
+        </Method>
+        <Method name="keyReleased" returnType="void" visibility="public">
+          <Argument type="KeyEvent" name="e"/>
+        </Method>
+        <Method name="qntescudo" returnType="int" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Personagem1" package="poo2" visibility="public" xPosition="908.0" yPosition="755.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Inimigo[]" name="ini"/>
+          <Argument type="Escudo" name="e1"/>
+          <Argument type="Escudo" name="e2"/>
+          <Argument type="Escudo" name="e3"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Personagem2" package="poo2" visibility="public" xPosition="1141.0" yPosition="922.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Inimigo[]" name="ini"/>
+          <Argument type="Escudo" name="e1"/>
+          <Argument type="Escudo" name="e2"/>
+          <Argument type="Escudo" name="e3"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Personagem3" package="poo2" visibility="public" xPosition="1429.0" yPosition="770.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Inimigo[]" name="ini"/>
+          <Argument type="Escudo" name="e1"/>
+          <Argument type="Escudo" name="e2"/>
+          <Argument type="Escudo" name="e3"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Poo2_1" package="poo2" visibility="public" xPosition="1803.0" yPosition="969.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Poder" package="poo2.power" visibility="public" isAbstract="true" xPosition="2120.0" yPosition="820.0">
+      <Fields>
+        <Field name="ataqueDecorado" type="Ataque" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Ataque" name="ataqueDecorado"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getDano" returnType="int" visibility="public"/>
+        <Method name="atacar" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Poder1" package="poo2.power" visibility="public" xPosition="20.0" yPosition="1220.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Ataque" name="ataqueDecorado"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Poder2" package="poo2.power" visibility="public" xPosition="320.0" yPosition="1220.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Ataque" name="ataqueDecorado"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Poder3" package="poo2.power" visibility="public" xPosition="892.0" yPosition="1383.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Ataque" name="ataqueDecorado"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Cdevagar" package="poo2.run" visibility="public" xPosition="920.0" yPosition="1220.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="correr" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Cmedio" package="poo2.run" visibility="public" xPosition="1220.0" yPosition="1220.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="correr" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Corrida" package="poo2.run" visibility="public" isAbstract="true" xPosition="1520.0" yPosition="1220.0">
+      <Fields>
+        <Field name="velocidade" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="correr" returnType="void" visibility="public" isAbstract="true"/>
+        <Method name="getVelocidade" returnType="int" visibility="public"/>
+        <Method name="setVelocidade" returnType="void" visibility="public">
+          <Argument type="int" name="velocidade"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Crapido" package="poo2.run" visibility="public" xPosition="1820.0" yPosition="1220.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="correr" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Escudo" package="poo2.shield" visibility="public" isAbstract="true" xPosition="2120.0" yPosition="1220.0">
+      <Fields>
+        <Field name="sucessor" type="Escudo" visibility="private"/>
+        <Field name="x" type="int" visibility="private"/>
+        <Field name="y" type="int" visibility="private"/>
+        <Field name="existe" type="boolean" visibility="public"/>
+        <Field name="qntescudo" type="int" visibility="public"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="reduzirDano" returnType="int" visibility="public" isAbstract="true">
+          <Argument type="int" name="dano"/>
+        </Method>
+        <Method name="getSucessor" returnType="Escudo" visibility="public"/>
+        <Method name="setSucessor" returnType="void" visibility="public">
+          <Argument type="Escudo" name="sucessor"/>
+        </Method>
+        <Method name="getX" returnType="int" visibility="public"/>
+        <Method name="setX" returnType="void" visibility="public">
+          <Argument type="int" name="x"/>
+        </Method>
+        <Method name="getY" returnType="int" visibility="public"/>
+        <Method name="setY" returnType="void" visibility="public">
+          <Argument type="int" name="y"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Escudo1" package="poo2.shield" visibility="public" xPosition="20.0" yPosition="1620.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="x"/>
+          <Argument type="int" name="y"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="reduzirDano" returnType="int" visibility="public">
+          <Argument type="int" name="dano"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Escudo10" package="poo2.shield" visibility="public" xPosition="320.0" yPosition="1620.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="x"/>
+          <Argument type="int" name="y"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="reduzirDano" returnType="int" visibility="public">
+          <Argument type="int" name="dano"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Escudo5" package="poo2.shield" visibility="public" xPosition="870.0" yPosition="1620.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="x"/>
+          <Argument type="int" name="y"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="reduzirDano" returnType="int" visibility="public">
+          <Argument type="int" name="dano"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="poo2.atk.Aforte" target="poo2.atk.Ataque"/>
+    <IsRelation name="is" source="poo2.Personagem1" target="poo2.Personagem"/>
+    <IsRelation name="is" source="poo2.run.Cdevagar" target="poo2.run.Corrida"/>
+    <HasRelation name="e1" source="poo2.Personagem" target="poo2.shield.Escudo" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="poo2.power.Poder" target="poo2.atk.Ataque"/>
+    <IsRelation name="is" source="poo2.jump.Pmedio" target="poo2.jump.Pulo"/>
+    <IsRelation name="is" source="poo2.life.Sforte" target="poo2.life.Saude"/>
+    <HasRelation name="e5" source="poo2.Jogo" target="poo2.shield.Escudo" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="poo2.shield.Escudo" target="poo2.shield.Escudo" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="poo2.enemy.Inimigo3" target="poo2.enemy.Inimigo"/>
+    <HasRelation name="sucessor" source="poo2.shield.Escudo" target="poo2.shield.Escudo" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="poo2.Personagem" target="poo2.run.Corrida" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="poo2.Jogo" target="poo2.Jogo" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="i1" source="poo2.Personagem" target="poo2.enemy.Inimigo" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="e1" source="poo2.Jogo" target="poo2.shield.Escudo" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="poo2.enemy.Inimigo1" target="poo2.enemy.Inimigo"/>
+    <IsRelation name="is" source="poo2.life.Snormal" target="poo2.life.Saude"/>
+    <IsRelation name="is" source="poo2.power.Poder3" target="poo2.power.Poder"/>
+    <HasRelation name="ataqueDecorado" source="poo2.power.Poder" target="poo2.atk.Ataque" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="poo2.shield.Escudo10" target="poo2.shield.Escudo"/>
+    <IsRelation name="is" source="poo2.shield.Escudo1" target="poo2.shield.Escudo"/>
+    <UseRelation source="poo2.Personagem" target="poo2.atk.Ataque" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="poo2.life.Sperigo" target="poo2.life.Saude"/>
+    <HasRelation name="personagem" source="poo2.life.Saude" target="poo2.Personagem" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="a" source="poo2.Personagem" target="poo2.atk.Ataque" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="pers" source="poo2.Jogo" target="poo2.Personagem" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="poo2.Personagem" target="poo2.life.Saude" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="c" source="poo2.Personagem" target="poo2.run.Corrida" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="p" source="poo2.Personagem" target="poo2.jump.Pulo" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="poo2.power.Poder2" target="poo2.power.Poder"/>
+    <IsRelation name="is" source="poo2.Personagem2" target="poo2.Personagem"/>
+    <IsRelation name="is" source="poo2.atk.Amedio" target="poo2.atk.Ataque"/>
+    <IsRelation name="is" source="poo2.life.Smorto" target="poo2.life.Saude"/>
+    <HasRelation name="inimigos" source="poo2.Jogo" target="poo2.enemy.Inimigo" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="poo2.Personagem" target="poo2.jump.Pulo" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="poo2.enemy.Inimigo2" target="poo2.enemy.Inimigo"/>
+    <IsRelation name="is" source="poo2.jump.Pbaixo" target="poo2.jump.Pulo"/>
+    <IsRelation name="is" source="poo2.jump.Palto" target="poo2.jump.Pulo"/>
+    <IsRelation name="is" source="poo2.shield.Escudo5" target="poo2.shield.Escudo"/>
+    <HasRelation name="saude" source="poo2.Personagem" target="poo2.life.Saude" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="poo2.run.Cmedio" target="poo2.run.Corrida"/>
+    <IsRelation name="is" source="poo2.power.Poder1" target="poo2.power.Poder"/>
+    <HasRelation name="e10" source="poo2.Jogo" target="poo2.shield.Escudo" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="poo2.life.Saude" target="poo2.Personagem" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="poo2.run.Crapido" target="poo2.run.Corrida"/>
+    <IsRelation name="is" source="poo2.atk.Afraco" target="poo2.atk.Ataque"/>
+    <IsRelation name="is" source="poo2.Personagem3" target="poo2.Personagem"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

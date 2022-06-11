@@ -32,7 +32,7 @@ int main()
     quad = 1;
     retorno = 1;
     for(i=0;i<9;i++) {                      //Cria uma matriz [9][9] com 0 e 1, de acordo com a matriz original(mat[9][9])
-        for(j=0;j<9;j++) {                  // em que o 1 é um valor ja estabelecido e que nao pode ser alterado
+        for(j=0;j<9;j++) {                  // em que o 1 ï¿½ um valor ja estabelecido e que nao pode ser alterado
             if(mat[i][j]==0) {              // e o 0 um valor a ser descoberto, e que deve ser alterado
                     vazio[i][j]=0;}
             else{vazio[i][j]=1;}
@@ -99,6 +99,7 @@ int main()
         }
         printf("\n");
     }
+    system("pause");
     return 0;
 }
 //OBS : EU DEIXEI OS PRINTF'S CHECANDO LINHAS, COLUNAS, QUADRANTES E RETORNANDO PARA UM MELHOR ENTERNDIMENTO DA EXEUCAO DO PROGRAMA!

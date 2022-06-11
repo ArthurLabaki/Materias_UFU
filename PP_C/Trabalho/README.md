@@ -1,11 +1,12 @@
-# Sudoku
+# Sudoku Solver para PP
 
-## Algoritmo para resolver sudoku
+## Algoritmo em C para resolver jogos Sudoku para a matéria de Programação Procedimental
 
 O algoritmo lê o arquivo sudoku.txt e imprime a resposta para o usuário.
 No arquivo txt, deve-se colocar os números que já estão presentes no sudoku e os 
-faltantes devem ser preenchidos com 0. Também devem ser colocados no formato de tabela.
+faltantes devem ser preenchidos com 0. O formato do arquivo txt e os numeros devem ser como o exemplo abaixo.
 
+Exemplo:
 ```
 0 0 3 0 2 0 6 0 0
 9 0 0 3 0 5 0 0 1

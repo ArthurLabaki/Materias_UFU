@@ -6,13 +6,14 @@ import java.util.Scanner; // Leitura do teclado
 public class Trab_POO_Forca {
 
     public static void main(String[] args) {
-        System.out.println("Bem-Vindo ao Jogo da Forca!");
-        System.out.println("Utilize apenas letras minúsculas (a,b,c,...,y,x,z)");
-        System.out.println("Fique tranquilo, as palavras não tem nenhum acento (´,^,~,`)\n");
+        System.out.println("Bem-Vindo ao Jogo da Forca");
+        System.out.println("Tente acertar a pálavra escolhida aleatoriamente antes de acabar as suas tentativas");
+        System.out.println("Fique tranquilo, as palavras não tem nenhum acento (´,^,~,`)");
+        System.out.println("Boa sorte!");
 
         String[] Palavra = {"ouro", "gladiador", "humano", "carnaval", "palavras", "roda", "abacaxi", "carta", "tocha", "escova",
             "trevo", "mulher", "alarme", "romance", "professor", "java", "pinturas", "soma", "mosquito", "rio", "brasil", "laranja", "filhote",
-            "rins", "sol", "vida", "foguete", "guitarra", "coruja", "nicotina"};  // Array de Palavras (30)
+            "rins", "sol", "vida", "foguete", "guitarra", "coruja", "nicotina", "soldados", "rosa", "carne", "gasolina", "vela", "futebo", "dificuldade"};  // Array de Palavras (30)
 
         Random random = new Random();
         int num_ale = random.nextInt(30);    // Sorteia um numero aleatorio ateh 30 (0->29)
@@ -36,12 +37,13 @@ public class Trab_POO_Forca {
             for (int i = 0; i < Palavra[num_ale].length(); i++) {   // Imprime o vetor de char
                 System.out.print(" " + unders[i] + " ");
             }
- 
+
             System.out.println("\n ");
             
             Scanner letra = new Scanner(System.in);
             System.out.println("Digite uma letra: ");   // Le uma letra do teclado e salva em l[]
             l[k] = letra.nextLine().charAt(0);
+            l[k] = Character.toLowerCase(l[k]);
             
             boolean acerto = false;    
             boolean repetida = false;
@@ -84,7 +86,7 @@ public class Trab_POO_Forca {
             System.out.println("A palavra era: "+Palavra[num_ale]);
         }
         else{
-            System.out.println("Parabéns!!! Você ganhouu!!");
+            System.out.println("Parabéns!!! Você acertou a palavra secreta "+Palavra[num_ale]);
         }
     }
 }

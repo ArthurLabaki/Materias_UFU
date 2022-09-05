@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>File Jolt</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="../_css/estilo.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        main {
+            padding-top: 2%;
+        }
+
+        main img {
+            width: 110%;
+            padding-bottom: 5%;
+        }
+
+        .log {
+            font-size: 45px;
+            color: azure;
+            text-shadow: 0.1em 0 0 black;
+            text-align: center;
+            margin: -3% auto 2%;
+        }
+
+        .form-control {
+            height: 50%;
+            width: 90%;
+            margin: 4%;
+            border: 3px solid black;
+        }
+
+        .form-label {
+            font-size: 35px;
+            color: azure;
+            text-align: center;
+            margin: 0 auto;
+            padding-left: 20%;
+        }
+
+        .btn {
+            border: 3px solid black;
+            background: azure;
+            margin-top: 25%;
+            color: black;
+        }
+
+        .btn:hover {
+            background-color: #999;
+        }
+
+
+        .outros {
+            font-size: 30px;
+            color: azure;
+            text-decoration: none;
+        }
+
+        .outros:hover {
+            color: #999;
+        }
+
+        .pn {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<!-- Logar -->
+
+<body>
+
+    <main>
+        <div class="container pb-2">
+            <div class="row">
+                <div class="col-sm-2 m-auto">
+                    <a href="../" alt="file Jolt" id="logo-login">
+                        <img src="../_img/logo1.png">
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mx-auto col-lg-9">
+                    <form class="p-4 p-md-5 border border-3 border-dark rounded-5">
+                        <div class="row">
+                            <div class="log col-sm-6"> Login</div>
+                        </div>
+                        <div class="row m-auto">
+                            <div class="col-sm-3 m-auto">
+                                <label class="form-label">Usuário:</label>
+                            </div>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="input-user" placeholder="User">
+                            </div>
+                        </div>
+
+                        <div class="row m-auto">
+                            <div class="col-sm-3 m-auto">
+                                <label class="form-label">Senha:</label>
+                            </div>
+                            <div class="col-sm-9">
+                                <input type="password" class="form-control" id="input-pass" placeholder="Password">
+                            </div>
+                        </div>
+
+                        <div class="row m-auto">
+                            <div class="col-sm-2 m-auto">
+                                <a href="../nav-logado.html">
+                                    <button class="but3 btn btn-outline-secondary btn-lg btn-light"
+                                        type="button">Logar</button>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="row">
+                        <div class="col-sm-3 m-auto">
+                            <a class="outros" href="../recuperarconta">Esqueci a senha </a>
+                        </div>
+                        <div class="col-sm-3 m-auto">
+                            <a class="outros" href="../criarconta">Criar conta</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <p id="foot">© 2022 Todos os direitos reservados <br> Desenvolvido por Alexandre Petusk, Arthur Labaki,
+                Klesley Oliveira, Túlio Roquete e Wellington Cesar
+            </p>
+        </div>
+    </footer>
+
+
+    <!-- Fim -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

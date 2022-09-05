@@ -1,0 +1,203 @@
+openapi: 3.0.0
+info:
+  title: File-jolt
+  version: "0.1"
+  description: Backend para o servico filejolt
+servers:
+  - url: "https://eds.wellingtoncesar.com.br/"
+paths:
+  /api/download:
+    get:
+      summary: Baixa o arquivo solicitado
+      description: ""
+      tags:
+        - file
+      parameters:
+        - name: user
+          in: query
+          required: true
+          description: Nome do usuario dono do arquivo
+          schema:
+            type: string
+        - name: file
+          in: query
+          required: true
+          description: Nome do arquivo
+          schema:
+            type: string
+        - name: version
+          in: query
+          required: false
+          description: Versao do arquivo
+          schema:
+            default: latest
+            type: string
+      responses:
+        "200":
+          description: Arquivo baixado com sucesso
+          content:
+            applitcation/octet-strem:
+              schema:
+                type: string
+                format: binary
+        "404":
+          description: Arquivo nao econtrado
+  /api/file-create:
+    put:
+      summary: Cria um novo file
+      description: ""
+      tags:
+        - file
+      parameters:
+        - name: file
+          in: query
+          required: true
+          description: Nome do file
+          schema:
+            type: string
+      responses:
+        "201":
+          description: O file foi criado com sucesso
+        "400":
+          description: Um file com esse nome ja existe para o usuario
+        "401":
+          description: O usuario nao esta autenticado
+  /api/upload:
+    put:
+      summary: Sobe o arquivo fornecido para o file especificado
+      description: ""
+      tags:
+        - file
+      parameters:
+        - name: file
+          in: query
+          required: true
+          description: Nome do file
+          schema:
+            type: string
+        - name: version
+          in: query
+          required: true
+          description: Versao do arquivo
+          schema:
+            type: string
+      requestBody:
+        description: O arquivo a ser subido
+        required: true
+        content:
+          applitcation/octet-strem:
+            schema:
+              type: string
+              format: binary
+      responses:
+        "201":
+          description: Arquivo subido com sucesso
+        "401":
+          description: O usuario nao esta autenticado
+        "404":
+          description: File nao encontrado
+  /api/featured:
+    get:
+      summary: Recebe uma lista de files em destaque.
+      description: ""
+      tags:
+        - content
+      parameters:
+        - name: feature-type
+          in: query
+          required: true
+          description: "Tipo de destaque: mais recentes, mais baixados ou mais votados"
+          schema:
+            type: string
+            enum:
+              - time
+              - downloads
+              - votes
+      responses:
+        "200":
+          description: Requesicao respondida com sucesso
+          content:
+            text/json:
+              example:
+                - jorge.filme1
+                - claudia.livro2
+              schema:
+                type: array
+                items:
+                  type: string
+        "400":
+          description: Tipo de destaque nao reconhecido
+  /api/library:
+    get:
+      summary: Recebe uma lista dos files na biblioteca do usuario.
+      description: ""
+      tags:
+        - user
+      responses:
+        "200":
+          description: Requesicao respondida com sucesso
+          content:
+            text/json:
+              example:
+                - jorge.filme1
+                - claudia.livro2
+              schema:
+                type: array
+                items:
+                  type: string
+        "401":
+          description: O usuario nao esta logado
+  /api/search:
+    get:
+      summary: Files correspondentes a uma pesqusia
+      description: ""
+      tags:
+        - content
+      parameters:
+        - name: text
+          in: query
+          required: true
+          description: Termo pesquisado
+          schema:
+            type: string
+            enum:
+              - time
+              - downloads
+              - votes
+      responses:
+        "200":
+          description: Requesicao respondida com sucesso
+          content:
+            text/json:
+              example:
+                - jorge.filme1
+                - claudia.livro2
+              schema:
+                type: array
+                items:
+                  type: string
+  /api/create-user:
+    post:
+      summary: Cria um novo usuario
+      description: ""
+      tags:
+        - user
+      requestBody:
+        description: Informacoes do usuario a ser criado
+        required: true
+        content:
+          text/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                password:
+                  type: string
+                email:
+                  type: string
+      responses:
+        "201":
+          description: Usuario criado com sucesso
+        "400":
+          description: Algum campo nao foi preenchido corretamente

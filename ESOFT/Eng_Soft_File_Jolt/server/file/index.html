@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>File Jolt</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="../_css/estilo.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        .all {
+            margin-left: 10%;
+            margin-top: 2%;
+            margin-bottom: 4%;
+        }
+
+        .exemplo {
+            margin-right: 10%;
+            height: 500px;
+            width: 89%;
+            background-image: linear-gradient(to bottom, red, blue);
+            padding: 2%;
+        }
+
+        .votes {
+            text-align: right;
+            margin-right: 11%;
+        }
+
+        .esp {
+            margin-left: 10%;
+            margin-bottom: 1%;
+        }
+
+        .info {
+            background: rgba(68, 68, 68, 0.747);
+            margin-top: 50%;
+            height: 250px;
+            width: 80%;
+        }
+
+        main div div p {
+            padding-top: 2%;
+            padding-left: 2%;
+            padding-right: 2%;
+            font-size: large;
+            line-height: 1.7em;
+            text-align: justify;
+        }
+
+        .inf {
+            margin-top: 3%;
+            margin-left: 9%;
+            margin-bottom: 1%;
+        }
+
+        .dnw {
+            text-align: right;
+            margin-right: 19%;
+        }
+
+        .icn {
+            width: 3em;
+            height: 3em;
+        }
+
+        .com {
+            margin-top: 2%;
+            margin-bottom: -1%;
+        }
+
+        .cmt-font {
+            font-size: medium;
+            text-align: justify;
+        }
+
+        .coment {
+            background: rgba(68, 68, 68, 0.747);
+            margin-top: 5%;
+            width: 80%;
+        }
+
+        .inpt {
+            padding-top: 2%;
+            padding-bottom: 2%;
+            margin: 0 auto;
+            width: 80%;
+        }
+
+        .tcom {
+            margin-top: 1%;
+            margin-bottom: 3%;
+        }
+    </style>
+
+</head>
+<!-- Exemplo de File -->
+
+<body>
+    <nav class="navbar navbar-expanded">
+        <div class="container-fluid">
+
+            <a class="navbar-brand p-20" href="../" alt="Logo File Jolt">
+                <img src="../_img/logo1.png" />
+            </a>
+
+            <form class="d-flex">
+                <div class="form-group mx-2">
+                    <input class="form-control" type="text" placeholder="Pesquisa">
+                </div>
+                <a href="../busca">
+                    <button type="button" class="btn btn-light m-auto" id="pesqisa-btn"> Pesquisar </button>
+                </a>
+            </form>
+
+            <a href="../login">
+                <button type="button" class="btn btn-light" id="login-btn"> Login </button>
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container pb-5">
+
+            <div class="row">
+                <div class="files col-sm-11 m-auto p-4 border border-3 border-dark" id="files">
+                    <div class="all row">
+                        <h2 id="title">Título do File</h2>
+                    </div>
+                    <div class="all row">
+                        <h3 id="user">User2</h3>
+                    </div>
+                    <div class="all row">
+                        <img id="capa" src="../_img/img-smp.jpg" class="exemplo img-thumbnail mt-2" alt="Img">
+                    </div>
+                    <div class="esp row">
+                        <div class="col sm-6">
+                            <h3>Votos</h3>
+                        </div>
+                        <div class="votes col sm-6">
+                            <h3>Downloads</h3>
+                        </div>
+                    </div>
+                    <div class="esp row">
+                        <div class="col sm-6">
+                            <h3 id="votes">Número</h3>
+                        </div>
+                        <div class="votes col sm-6">
+                            <h3 id="downloads">Número</h3>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="files col-sm-11 m-auto border border-3 border-dark" id="files">
+                    <div class="all row">
+                        <h2>Informações do file</h2>
+                    </div>
+
+                    <div class="row">
+                        <div class="info col-sm-11 m-auto border border-3 border-dark">
+                            <p id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque viverra
+                                magna convallis
+                                ex viverra hendrerit. Proin ut nunc semper, dictum ante eget, aliquet justo. Quisque
+                                venenatis bibendum condimentum. Nullam pretium eros urna, ac aliquam libero dignissim
+                                ac. Cras ac nibh sed eros ultricies congue vitae ullamcorper nibh. Phasellus nec nibh a
+                                metus ultrices eleifend id ut felis. Aenean hendrerit cursus sem a blandit. Duis
+                                tincidunt massa augue, a euismod magna ultrices quis. Quisque ullamcorper imperdiet erat
+                                id scelerisque.</p>
+                        </div>
+                        <div class="inf row">
+                            <div class="col sm-6">
+                                <h3>Votar</h3>
+                            </div>
+                            <div class="dnw col sm-1">
+                                <!-- <i class="icn bi bi-hand-thumbs-up"></i> -->
+                                <h3>
+                                    <a id="downloadb">
+                                        Baixar
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="files col-sm-11 m-auto p-4 pb-5 border border-3 border-dark" id="files">
+                    <div class="all row">
+                        <h2>Comentários</h2>
+                    </div>
+                    <div class="row">
+                        <div class="coment col-sm-11 m-auto border border-3 border-dark">
+                            <div class="com row">
+                                <h4> User1 :</h4>
+                                <p class="cmt-font"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod
+                                    tempor
+                                    incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero
+                                    nunc
+                                    consequat interdum varius.</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="coment col-sm-11 m-auto border border-3 border-dark">
+                            <div class="com row">
+                                <h4> User1 :</h4>
+                                <p class="cmt-font"> Lacus laoreet non curabitur gravida arcu. Orci a scelerisque
+                                    purus semper eget duis at tellus at. Mi in nulla posuere sollicitudin aliquam
+                                    ultrices sagittis. Aliquam ultrices sagittis orci a scelerisque purus semper
+                                    eget. Quisque egestas diam in arcu.</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="coment col-sm-11 m-auto border border-3 border-dark">
+                            <div class="com row">
+                                <h4> User2 :</h4>
+                                <p class="cmt-font"> Morbi quis commodo odio aenean sed adipiscing. Tortor at auctor
+                                    urna nunc id cursus metus aliquam eleifend.</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="tcom col-sm-3 m-auto">
+                            <h4>Ver todos comentários</h4>
+                        </div>
+                    </div>
+
+
+                    <div class="row mt-4">
+                        <div class="coment col-sm-11 m-auto border border-3 border-dark">
+                            <div class="com row">
+                                <h3> Comentar :</h3>
+                                <div class="inpt input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="Comentário">
+                                    <button class="btn btn-outline-secondary" type="button"
+                                        id="button-addon2">Enviar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <p id="foot">© 2022 Todos os direitos reservados <br> Desenvolvido por Alexandre Petusk, Arthur Labaki,
+                Klesley Oliveira, Túlio Roquete e Wellington Cesar
+            </p>
+        </div>
+    </footer>
+    <!-- Fim -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="pfile.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+programa p1 
+begin
+int : i1, i2, i3;
+char : c1, c2;
+float : f1, f2, f3;
+c1 := 'lfa';
+i1 := 1;
+i2 := 2;
+if ( f1 < f2 ) 
+then 
+begin
+f3 := i2 + i3;
+end
+else
+begin 
+f3 := i2 - i3;
+end
+repeat
+begin
+f1 := f2;
+end
+while (f1 ~= f2)
+f1 := f1 + 1;
+while (f1 ~= f2)
+do
+begin
+f1 := f1^2;
+end
+end

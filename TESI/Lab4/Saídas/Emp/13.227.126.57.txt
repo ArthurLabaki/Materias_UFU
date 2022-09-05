@@ -1,0 +1,24 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-06-02 22:02 EDT
+Initiating Ping Scan at 22:02
+Scanning 13.227.126.57 [4 ports]
+Completed Ping Scan at 22:02, 0.04s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 22:02
+Completed Parallel DNS resolution of 1 host. at 22:02, 0.02s elapsed
+Initiating SYN Stealth Scan at 22:02
+Scanning server-13-227-126-57.gru1.r.cloudfront.net (13.227.126.57) [65536 ports]
+SYN Stealth Scan Timing: About 17.54% done; ETC: 22:05 (0:02:26 remaining)
+SYN Stealth Scan Timing: About 39.89% done; ETC: 22:04 (0:01:32 remaining)
+SYN Stealth Scan Timing: About 71.42% done; ETC: 22:04 (0:00:36 remaining)
+Completed SYN Stealth Scan at 22:04, 115.59s elapsed (65536 total ports)
+Initiating OS detection (try #1) against server-13-227-126-57.gru1.r.cloudfront.net (13.227.126.57)
+Retrying OS detection (try #2) against server-13-227-126-57.gru1.r.cloudfront.net (13.227.126.57)
+Nmap scan report for server-13-227-126-57.gru1.r.cloudfront.net (13.227.126.57)
+Host is up (0.0092s latency).
+All 65536 scanned ports on server-13-227-126-57.gru1.r.cloudfront.net (13.227.126.57) are in ignored states.
+Not shown: 65536 filtered tcp ports (no-response)
+Too many fingerprints match this host to give specific OS details
+
+Read data files from: /snap/nmap/2629/bin/../share/nmap
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 119.27 seconds
+           Raw packets sent: 131201 (5.776MB) | Rcvd: 94 (4.036KB)

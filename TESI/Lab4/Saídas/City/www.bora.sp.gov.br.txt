@@ -1,0 +1,30 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-06-02 12:32 EDT
+Initiating Ping Scan at 12:32
+Scanning www.bora.sp.gov.br (177.70.12.34) [4 ports]
+Completed Ping Scan at 12:32, 0.04s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 12:32
+Completed Parallel DNS resolution of 1 host. at 12:32, 0.01s elapsed
+Initiating SYN Stealth Scan at 12:32
+Scanning www.bora.sp.gov.br (177.70.12.34) [65536 ports]
+Discovered open port 53/tcp on 177.70.12.34
+Discovered open port 110/tcp on 177.70.12.34
+SYN Stealth Scan Timing: About 19.52% done; ETC: 12:34 (0:02:08 remaining)
+SYN Stealth Scan Timing: About 47.33% done; ETC: 12:34 (0:01:08 remaining)
+Completed SYN Stealth Scan at 12:33, 106.34s elapsed (65536 total ports)
+Initiating OS detection (try #1) against www.bora.sp.gov.br (177.70.12.34)
+Retrying OS detection (try #2) against www.bora.sp.gov.br (177.70.12.34)
+Nmap scan report for www.bora.sp.gov.br (177.70.12.34)
+Host is up (0.036s latency).
+rDNS record for 177.70.12.34: server.instartecnologia.com.br
+Not shown: 65534 filtered tcp ports (no-response)
+PORT    STATE SERVICE
+53/tcp  open  domain
+110/tcp open  pop3
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: 2N Helios IP VoIP doorbell (98%), Grandstream GXP1105 VoIP phone (98%), Garmin Virb Elite action camera (95%), Advanced Illumination DCS-100E lighting controller (94%), Enlogic PDU (FreeRTOS/lwIP) (94%), Smart Mirage CX06 satellite receiver (94%), Ocean Signal E101V emergency beacon (FreeRTOS/lwIP) (93%), AzBox Bravissimo Twin satellite TV decoder (92%), Cognex DataMan 200 ID reader (lwIP TCP/IP stack) (92%), DTE Energy Bridge (lwIP stack) (92%)
+No exact OS matches for host (test conditions non-ideal).
+
+Read data files from: /snap/nmap/2629/bin/../share/nmap
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 115.80 seconds
+           Raw packets sent: 131265 (5.780MB) | Rcvd: 274 (11.288KB)

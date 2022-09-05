@@ -1,0 +1,24 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-06-02 12:34 EDT
+Initiating Ping Scan at 12:34
+Scanning uru.sp.gov.br (177.126.176.83) [4 ports]
+Completed Ping Scan at 12:34, 0.09s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 12:34
+Completed Parallel DNS resolution of 1 host. at 12:34, 0.13s elapsed
+Initiating SYN Stealth Scan at 12:34
+Scanning uru.sp.gov.br (177.126.176.83) [65536 ports]
+SYN Stealth Scan Timing: About 20.17% done; ETC: 12:36 (0:02:03 remaining)
+SYN Stealth Scan Timing: About 48.25% done; ETC: 12:36 (0:01:05 remaining)
+Completed SYN Stealth Scan at 12:35, 107.94s elapsed (65536 total ports)
+Initiating OS detection (try #1) against uru.sp.gov.br (177.126.176.83)
+Retrying OS detection (try #2) against uru.sp.gov.br (177.126.176.83)
+Nmap scan report for uru.sp.gov.br (177.126.176.83)
+Host is up (0.00029s latency).
+rDNS record for 177.126.176.83: 83.176.126.177.static.sp2.alog.com.br
+All 65536 scanned ports on uru.sp.gov.br (177.126.176.83) are in ignored states.
+Not shown: 65536 filtered tcp ports (no-response)
+Too many fingerprints match this host to give specific OS details
+
+Read data files from: /snap/nmap/2629/bin/../share/nmap
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 111.41 seconds
+           Raw packets sent: 131202 (5.777MB) | Rcvd: 89 (3.560KB)

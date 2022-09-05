@@ -1,0 +1,212 @@
+Analyzer Log
+
+2022-07-03 02:33:19,015 [analyzer] DEBUG: Starting analyzer from: C:\tmpt1gcja
+2022-07-03 02:33:19,030 [analyzer] DEBUG: Pipe server name: \??\PIPE\lHvqXAjcagHTVAqTJAatp
+2022-07-03 02:33:19,030 [analyzer] DEBUG: Log pipe server name: \??\PIPE\ZhqgylVoVRbSrcLQlTRsCKXCXoqFhIrX
+2022-07-03 02:33:19,437 [analyzer] DEBUG: Started auxiliary module Curtain
+2022-07-03 02:33:19,437 [analyzer] DEBUG: Started auxiliary module DbgView
+2022-07-03 02:33:20,155 [analyzer] DEBUG: Started auxiliary module Disguise
+2022-07-03 02:33:20,358 [analyzer] DEBUG: Loaded monitor into process with pid 508
+2022-07-03 02:33:20,358 [analyzer] DEBUG: Started auxiliary module DumpTLSMasterSecrets
+2022-07-03 02:33:20,358 [analyzer] DEBUG: Started auxiliary module Human
+2022-07-03 02:33:20,358 [analyzer] DEBUG: Started auxiliary module InstallCertificate
+2022-07-03 02:33:20,358 [analyzer] DEBUG: Started auxiliary module Reboot
+2022-07-03 02:33:20,405 [analyzer] DEBUG: Started auxiliary module RecentFiles
+2022-07-03 02:33:20,405 [analyzer] DEBUG: Started auxiliary module Screenshots
+2022-07-03 02:33:20,405 [analyzer] DEBUG: Started auxiliary module Sysmon
+2022-07-03 02:33:20,405 [analyzer] DEBUG: Started auxiliary module LoadZer0m0n
+2022-07-03 02:33:20,562 [lib.api.process] INFO: Successfully executed process from path u'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\Petya.exe' with arguments '' and pid 3064
+2022-07-03 02:33:20,750 [analyzer] DEBUG: Loaded monitor into process with pid 3064
+2022-07-03 02:33:23,625 [analyzer] INFO: Added new file to list with pid 3064 and path \Device\Harddisk0\DR0
+
+Cuckoo Log
+
+2022-07-03 02:34:08,182 [cuckoo.core.scheduler] DEBUG: Task #3158668: no machine available yet
+2022-07-03 02:34:18,208 [cuckoo.core.scheduler] DEBUG: Task #3158668: no machine available yet
+2022-07-03 02:34:28,238 [cuckoo.core.scheduler] DEBUG: Task #3158668: no machine available yet
+2022-07-03 02:34:38,267 [cuckoo.core.scheduler] DEBUG: Task #3158668: no machine available yet
+2022-07-03 02:34:48,294 [cuckoo.core.scheduler] DEBUG: Task #3158668: no machine available yet
+2022-07-03 02:34:58,321 [cuckoo.core.scheduler] DEBUG: Task #3158668: no machine available yet
+2022-07-03 02:35:08,348 [cuckoo.core.scheduler] DEBUG: Task #3158668: no machine available yet
+2022-07-03 02:35:18,372 [cuckoo.core.scheduler] DEBUG: Task #3158668: no machine available yet
+2022-07-03 02:35:28,400 [cuckoo.core.scheduler] DEBUG: Task #3158668: no machine available yet
+2022-07-03 02:35:38,425 [cuckoo.core.scheduler] DEBUG: Task #3158668: no machine available yet
+2022-07-03 02:35:48,452 [cuckoo.core.scheduler] DEBUG: Task #3158668: no machine available yet
+2022-07-03 02:35:58,487 [cuckoo.core.scheduler] DEBUG: Task #3158668: no machine available yet
+2022-07-03 02:36:08,520 [cuckoo.core.scheduler] DEBUG: Task #3158668: no machine available yet
+2022-07-03 02:36:18,550 [cuckoo.core.scheduler] INFO: Task #3158668: acquired machine win7x642 (label=win7x642)
+2022-07-03 02:36:18,551 [cuckoo.core.resultserver] DEBUG: Now tracking machine 192.168.168.202 for task #3158668
+2022-07-03 02:36:18,702 [cuckoo.auxiliary.sniffer] INFO: Started sniffer with PID 3067685 (interface=vboxnet0, host=192.168.168.202)
+2022-07-03 02:36:19,599 [cuckoo.machinery.virtualbox] DEBUG: Starting vm win7x642
+2022-07-03 02:36:20,022 [cuckoo.machinery.virtualbox] DEBUG: Restoring virtual machine win7x642 to vmcloak
+2022-07-03 02:40:06,019 [cuckoo.core.guest] INFO: Starting analysis #3158668 on guest (id=win7x642, ip=192.168.168.202)
+2022-07-03 02:40:07,023 [cuckoo.core.guest] DEBUG: win7x642: not ready yet
+2022-07-03 02:40:12,057 [cuckoo.core.guest] INFO: Guest is running Cuckoo Agent 0.10 (id=win7x642, ip=192.168.168.202)
+2022-07-03 02:40:12,133 [cuckoo.core.guest] DEBUG: Uploading analyzer to guest (id=win7x642, ip=192.168.168.202, monitor=latest, size=6659294)
+2022-07-03 02:40:13,892 [cuckoo.core.resultserver] DEBUG: Task #3158668: live log analysis.log initialized.
+2022-07-03 02:40:15,219 [cuckoo.core.resultserver] DEBUG: Task #3158668 is sending a BSON stream
+2022-07-03 02:40:15,559 [cuckoo.core.resultserver] DEBUG: Task #3158668 is sending a BSON stream
+2022-07-03 02:40:16,400 [cuckoo.core.resultserver] DEBUG: Task #3158668: File upload for 'shots/0001.jpg'
+2022-07-03 02:40:16,447 [cuckoo.core.resultserver] DEBUG: Task #3158668 uploaded file length: 133545
+2022-07-03 02:40:27,272 [cuckoo.core.guest] WARNING: Virtual Machine /status failed. This can indicate the guest losing network connectivity
+2022-07-03 02:40:35,288 [cuckoo.core.guest] WARNING: Virtual Machine /status failed. This can indicate the guest losing network connectivity
+2022-07-03 02:40:43,305 [cuckoo.core.guest] WARNING: Virtual Machine /status failed. This can indicate the guest losing network connectivity
+2022-07-03 02:40:43,314 [cuckoo.core.guest] DEBUG: win7x642: analysis #3158668 still processing
+2022-07-03 02:40:51,324 [cuckoo.core.guest] WARNING: Virtual Machine /status failed. This can indicate the guest losing network connectivity
+2022-07-03 02:40:59,341 [cuckoo.core.guest] WARNING: Virtual Machine /status failed. This can indicate the guest losing network connectivity
+2022-07-03 02:41:07,355 [cuckoo.core.guest] WARNING: Virtual Machine /status failed. This can indicate the guest losing network connectivity
+2022-07-03 02:41:14,472 [cuckoo.core.guest] WARNING: Virtual Machine /status failed. This can indicate the guest losing network connectivity
+2022-07-03 02:41:17,540 [cuckoo.core.guest] WARNING: Virtual Machine /status failed. This can indicate the guest losing network connectivity
+2022-07-03 02:41:17,544 [cuckoo.core.guest] DEBUG: win7x642: analysis #3158668 still processing
+2022-07-03 02:41:23,620 [cuckoo.core.guest] WARNING: Virtual Machine /status failed. This can indicate the guest losing network connectivity
+2022-07-03 02:41:26,696 [cuckoo.core.guest] WARNING: Virtual Machine /status failed. This can indicate the guest losing network connectivity
+2022-07-03 02:41:32,773 [cuckoo.core.guest] WARNING: Virtual Machine /status failed. This can indicate the guest losing network connectivity
+2022-07-03 02:41:35,844 [cuckoo.core.guest] WARNING: Virtual Machine /status failed. This can indicate the guest losing network connectivity
+2022-07-03 02:41:41,924 [cuckoo.core.guest] WARNING: Virtual Machine /status failed. This can indicate the guest losing network connectivity
+2022-07-03 02:41:41,928 [cuckoo.core.guest] DEBUG: win7x642: analysis #3158668 still processing
+2022-07-03 02:41:44,996 [cuckoo.core.guest] WARNING: Virtual Machine /status failed. This can indicate the guest losing network connectivity
+2022-07-03 02:41:51,076 [cuckoo.core.guest] WARNING: Virtual Machine /status failed. This can indicate the guest losing network connectivity
+2022-07-03 02:41:54,148 [cuckoo.core.guest] WARNING: Virtual Machine /status failed. This can indicate the guest losing network connectivity
+2022-07-03 02:42:00,234 [cuckoo.core.guest] WARNING: Virtual Machine /status failed. This can indicate the guest losing network connectivity
+2022-07-03 02:42:03,300 [cuckoo.core.guest] WARNING: Virtual Machine /status failed. This can indicate the guest losing network connectivity
+2022-07-03 02:42:03,303 [cuckoo.core.guest] DEBUG: win7x642: analysis #3158668 still processing
+2022-07-03 02:42:09,380 [cuckoo.core.guest] WARNING: Virtual Machine /status failed. This can indicate the guest losing network connectivity
+2022-07-03 02:42:12,456 [cuckoo.core.guest] WARNING: Virtual Machine /status failed. This can indicate the guest losing network connectivity
+2022-07-03 02:42:18,533 [cuckoo.core.guest] WARNING: Virtual Machine /status failed. This can indicate the guest losing network connectivity
+2022-07-03 02:42:21,608 [cuckoo.core.guest] WARNING: Virtual Machine /status failed. This can indicate the guest losing network connectivity
+2022-07-03 02:42:27,688 [cuckoo.core.guest] WARNING: Virtual Machine /status failed. This can indicate the guest losing network connectivity
+2022-07-03 02:42:27,695 [cuckoo.core.guest] DEBUG: win7x642: analysis #3158668 still processing
+2022-07-03 02:42:30,756 [cuckoo.core.guest] WARNING: Virtual Machine /status failed. This can indicate the guest losing network connectivity
+2022-07-03 02:42:36,836 [cuckoo.core.guest] WARNING: Virtual Machine /status failed. This can indicate the guest losing network connectivity
+2022-07-03 02:42:39,908 [cuckoo.core.guest] WARNING: Virtual Machine /status failed. This can indicate the guest losing network connectivity
+2022-07-03 02:42:45,988 [cuckoo.core.guest] WARNING: Virtual Machine /status failed. This can indicate the guest losing network connectivity
+2022-07-03 02:42:49,060 [cuckoo.core.guest] WARNING: Virtual Machine /status failed. This can indicate the guest losing network connectivity
+2022-07-03 02:42:49,064 [cuckoo.core.guest] DEBUG: win7x642: analysis #3158668 still processing
+2022-07-03 02:42:55,140 [cuckoo.core.guest] WARNING: Virtual Machine /status failed. This can indicate the guest losing network connectivity
+2022-07-03 02:42:58,212 [cuckoo.core.guest] WARNING: Virtual Machine /status failed. This can indicate the guest losing network connectivity
+2022-07-03 02:43:04,309 [cuckoo.core.guest] WARNING: Virtual Machine /status failed. This can indicate the guest losing network connectivity
+2022-07-03 02:43:07,364 [cuckoo.core.guest] WARNING: Virtual Machine /status failed. This can indicate the guest losing network connectivity
+2022-07-03 02:43:13,448 [cuckoo.core.guest] WARNING: Virtual Machine /status failed. This can indicate the guest losing network connectivity
+2022-07-03 02:43:13,452 [cuckoo.core.guest] DEBUG: win7x642: analysis #3158668 still processing
+2022-07-03 02:43:16,454 [cuckoo.core.guest] INFO: win7x642: end of analysis reached!
+2022-07-03 02:43:16,462 [cuckoo.core.plugins] DEBUG: Stopped auxiliary module: Redsocks
+2022-07-03 02:43:16,533 [cuckoo.core.plugins] DEBUG: Stopped auxiliary module: Sniffer
+2022-07-03 02:43:50,474 [cuckoo.machinery.virtualbox] INFO: Successfully generated memory dump for virtual machine with label win7x642 to path /srv/cuckoo/cwd/storage/analyses/3158668/memory.dmp
+2022-07-03 02:43:50,477 [cuckoo.machinery.virtualbox] DEBUG: Stopping vm win7x642
+2022-07-03 02:47:15,794 [cuckoo.core.resultserver] DEBUG: Stopped tracking machine 192.168.168.202 for task #3158668
+2022-07-03 02:47:15,795 [cuckoo.core.resultserver] DEBUG: Cancel <Context for LOG> for task 3158668
+2022-07-03 02:47:15,797 [cuckoo.core.resultserver] DEBUG: Cancel <Context for BSON> for task 3158668
+2022-07-03 02:47:15,800 [cuckoo.core.resultserver] DEBUG: Cancel <Context for BSON> for task 3158668
+2022-07-03 02:47:16,043 [cuckoo.core.scheduler] DEBUG: Released database task #3158668
+2022-07-03 02:47:16,213 [cuckoo.core.scheduler] INFO: Task #3158668: analysis procedure completed
+
+String - 
+PPPPPPPP
+bad allocation
+CorExitProcess
+_hypot
+_nextafter
+Unknown exception
+FlsAlloc
+FlsFree
+FlsGetValue
+FlsSetValue
+InitializeCriticalSectionEx
+CreateSemaphoreExW
+SetThreadStackGuarantee
+GetUserDefaultLocaleName
+IsValidLocaleName
+LCMapStringEx
+GetCurrentPackageId
+GetTickCount64
+GetFileInformationByHandleExW
+GetUserObjectInformationW
+GetProcessWindowStation
+__based(
+__cdecl
+__pascal
+__stdcall
+`vector vbase constructor iterator'
+`virtual displacement map'
+`eh vector constructor iterator'
+`eh vector destructor iterator'
+ Type Descriptor'
+Base Class Descriptor at (
+Base Class Array'
+Class Hierarchy Descriptor'
+function not supported
+no lock available
+not enough memory
+resource unavailable try again
+cross device link
+operation canceled
+host unreachable
+identifier removed
+illegal byte sequence
+inappropriate io control operation
+invalid seek
+is a directory
+message size
+network down
+network reset
+value too large
+wrong protocol type
+bad exception
+Unexpected exception in: omaha::Logging::DisableLogging
+Unexpected exception in: omaha::Logging::InternalLogMessageMaskedVA
+LOG_SYSTEM: Couldn't acquire lock -
+CreateMutexExW
+CreateEventExW
+oop_crashes_startsenderwithcommandline_failed
+crash_start_server_total
+crash_start_server_succeeded
+The stack pointer for a thread points outside the TiB stack segment.
+TiB Address: %x
+GoogleCrashHandler_unsigned.pdb
+HeapReAlloc
+HeapAlloc
+HeapFree
+GetModuleHandleW
+GetProcessHeap
+InitializeCriticalSectionAndSpinCount
+HeapDestroy
+RaiseException
+GetLastError
+GetProcAddress
+KERNEL32.dll
+USER32.dll
+GetSecurityDescriptorSacl
+GetSecurityDescriptorDacl
+GetSecurityDescriptorGroup
+MakeAbsoluteSD
+OpenProcessToken
+GetTokenInformation
+SetSecurityDescriptorOwner
+CreateSemaphoreW
+FreeLibrary
+LoadLibraryExW
+IsValidCodePage
+GetACP
+GetOEMCP
+SetProcessWindowStation
+CreateDesktopW
+NetApiBufferFree
+NETAPI32.dll
+UuidCreate
+RPCRT4.dll
+PathAppendW
+LogFilePath
+Google\Update\Log
+LOG_SYSTEM: [%s]: ERROR - Cannot create ETW log writer
+LOG_SYSTEM: [%s]: ERROR - Cannot create log writer to %s
+{C4F406E5-F024-4e3f-89A7-D5AB7663C3CD}
+CrashHandlerLaunchedForMinidump
+[CrashHandler][Preparing dump][%d-bit][pid %d]
+custom_info_filename
+/broker
+/ondemand
+uninstall
+
+Network - nenhum
+
+VM Memory Dump - não tem

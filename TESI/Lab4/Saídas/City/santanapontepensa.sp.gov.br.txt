@@ -1,0 +1,49 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-06-02 12:39 EDT
+Initiating Ping Scan at 12:39
+Scanning santanapontepensa.sp.gov.br (162.240.39.161) [4 ports]
+Completed Ping Scan at 12:39, 0.04s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 12:39
+Completed Parallel DNS resolution of 1 host. at 12:39, 0.01s elapsed
+Initiating SYN Stealth Scan at 12:39
+Scanning santanapontepensa.sp.gov.br (162.240.39.161) [65536 ports]
+Discovered open port 80/tcp on 162.240.39.161
+Discovered open port 995/tcp on 162.240.39.161
+SYN Stealth Scan Timing: About 7.47% done; ETC: 12:46 (0:06:24 remaining)
+SYN Stealth Scan Timing: About 24.02% done; ETC: 12:43 (0:03:13 remaining)
+SYN Stealth Scan Timing: About 44.56% done; ETC: 12:43 (0:01:53 remaining)
+SYN Stealth Scan Timing: About 68.95% done; ETC: 12:42 (0:00:55 remaining)
+Completed SYN Stealth Scan at 12:42, 154.09s elapsed (65536 total ports)
+Initiating OS detection (try #1) against santanapontepensa.sp.gov.br (162.240.39.161)
+Retrying OS detection (try #2) against santanapontepensa.sp.gov.br (162.240.39.161)
+Nmap scan report for santanapontepensa.sp.gov.br (162.240.39.161)
+Host is up (0.00029s latency).
+rDNS record for 162.240.39.161: vps-7833098.sitespublicos.com.br
+Not shown: 65520 filtered tcp ports (no-response)
+PORT      STATE  SERVICE
+80/tcp    open   http
+995/tcp   open   pop3s
+6919/tcp  closed unknown
+7748/tcp  closed unknown
+13640/tcp closed unknown
+19755/tcp closed unknown
+20377/tcp closed unknown
+21658/tcp closed unknown
+24934/tcp closed unknown
+29881/tcp closed unknown
+31778/tcp closed unknown
+34228/tcp closed unknown
+38560/tcp closed unknown
+49992/tcp closed unknown
+54826/tcp closed unknown
+57674/tcp closed unknown
+Device type: specialized|VoIP phone|webcam|firewall
+Running (JUST GUESSING): 2N embedded (89%), Grandstream embedded (89%), Garmin embedded (86%), FireBrick embedded (85%)
+OS CPE: cpe:/h:2n:helios cpe:/h:grandstream:gxp1105 cpe:/h:garmin:virb_elite cpe:/h:firebrick:fb2700
+Aggressive OS guesses: 2N Helios IP VoIP doorbell (89%), Grandstream GXP1105 VoIP phone (89%), Garmin Virb Elite action camera (86%), FireBrick FB2700 firewall (85%)
+No exact OS matches for host (test conditions non-ideal).
+IP ID Sequence Generation: Busy server or unknown class
+
+Read data files from: /snap/nmap/2629/bin/../share/nmap
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 160.85 seconds
+           Raw packets sent: 196847 (8.666MB) | Rcvd: 4317 (173.860KB)

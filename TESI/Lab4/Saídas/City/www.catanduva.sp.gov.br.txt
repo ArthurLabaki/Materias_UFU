@@ -1,0 +1,24 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-06-02 12:19 EDT
+Initiating Ping Scan at 12:19
+Scanning www.catanduva.sp.gov.br (177.21.48.228) [4 ports]
+Completed Ping Scan at 12:19, 0.03s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 12:19
+Completed Parallel DNS resolution of 1 host. at 12:19, 1.72s elapsed
+Initiating SYN Stealth Scan at 12:19
+Scanning www.catanduva.sp.gov.br (177.21.48.228) [65536 ports]
+SYN Stealth Scan Timing: About 19.17% done; ETC: 12:21 (0:02:11 remaining)
+SYN Stealth Scan Timing: About 45.78% done; ETC: 12:21 (0:01:12 remaining)
+Completed SYN Stealth Scan at 12:21, 110.70s elapsed (65536 total ports)
+Initiating OS detection (try #1) against www.catanduva.sp.gov.br (177.21.48.228)
+Retrying OS detection (try #2) against www.catanduva.sp.gov.br (177.21.48.228)
+Nmap scan report for www.catanduva.sp.gov.br (177.21.48.228)
+Host is up (0.00080s latency).
+rDNS record for 177.21.48.228: ns1.catanduva.sp.gov.br
+All 65536 scanned ports on www.catanduva.sp.gov.br (177.21.48.228) are in ignored states.
+Not shown: 65536 filtered tcp ports (no-response)
+Too many fingerprints match this host to give specific OS details
+
+Read data files from: /snap/nmap/2629/bin/../share/nmap
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 117.04 seconds
+           Raw packets sent: 131204 (5.777MB) | Rcvd: 89 (3.560KB)

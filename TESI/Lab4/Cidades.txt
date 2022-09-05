@@ -1,0 +1,41 @@
+Ribeirão Preto	
+Guarulhos
+Campinas
+São Bernardo do Campo
+Sorocaba
+São José do Rio Preto
+Araçatuba
+Barretos
+Catanduva
+Lins
+Brotas
+Colina
+Fartura
+Jales
+Piedade
+Borá
+Uru
+Nova Castilho
+Flora Rica
+Santana da Ponte Pensa
+
+https://www.ribeiraopreto.sp.gov.br/
+https://www.guarulhos.sp.gov.br/
+https://portal.campinas.sp.gov.br/
+https://www.saobernardo.sp.gov.br/
+https://www.sorocaba.sp.gov.br/
+https://www.riopreto.sp.gov.br/
+https://aracatuba.sp.gov.br/
+https://barretos.sp.gov.br/
+http://www.catanduva.sp.gov.br/
+https://www.lins.sp.gov.br/
+https://www.brotas.sp.gov.br/
+https://www.colina.sp.gov.br/
+https://www.fartura.sp.gov.br/
+https://jales.sp.gov.br/
+https://www.piedade.sp.gov.br/
+https://www.bora.sp.gov.br/
+https://uru.sp.gov.br/
+https://www.novacastilho.sp.gov.br/
+https://www.florarica.sp.gov.br/
+https://santanapontepensa.sp.gov.br/

@@ -1,0 +1,181 @@
+Process List - 
+Parent PID 	PID 	Name 	Create Time 	Exit Time 	# Threads 	# Handles 	Session ID
+0 	4 	System 	2020-06-16 01:36:34 UTC+0000 		95 	502 	None
+4 	284 	smss.exe 	2020-06-16 01:36:34 UTC+0000 		2 	33 	None
+348 	360 	csrss.exe 	2020-06-16 01:36:36 UTC+0000 		9 	488 	0
+348 	388 	wininit.exe 	2020-06-16 01:36:36 UTC+0000 		3 	82 	0
+396 	408 	csrss.exe 	2020-06-16 01:36:36 UTC+0000 		8 	250 	1
+396 	444 	winlogon.exe 	2020-06-16 01:36:36 UTC+0000 		4 	112 	1
+388 	488 	services.exe 	2020-06-16 01:36:36 UTC+0000 		21 	243 	0
+388 	500 	lsass.exe 	2020-06-16 01:36:36 UTC+0000 		13 	564 	0
+388 	508 	lsm.exe 	2020-06-16 01:36:36 UTC+0000 		11 	142 	0
+488 	620 	svchost.exe 	2020-06-16 01:36:36 UTC+0000 		13 	366 	0
+488 	696 	svchost.exe 	2020-06-16 01:36:37 UTC+0000 		10 	283 	0
+488 	772 	svchost.exe 	2020-06-16 01:36:37 UTC+0000 		23 	447 	0
+488 	832 	svchost.exe 	2020-06-16 01:36:37 UTC+0000 		21 	448 	0
+488 	876 	svchost.exe 	2020-06-16 01:36:37 UTC+0000 		17 	350 	0
+488 	908 	svchost.exe 	2020-06-16 01:36:37 UTC+0000 		38 	1059 	0
+488 	412 	svchost.exe 	2020-06-16 01:36:37 UTC+0000 		41 	586 	0
+488 	1052 	spoolsv.exe 	2020-06-16 01:36:37 UTC+0000 		15 	294 	0
+488 	1080 	svchost.exe 	2020-06-16 01:36:37 UTC+0000 		23 	339 	0
+488 	1236 	sysmon.exe 	2020-06-16 01:36:38 UTC+0000 		17 	518702 	0
+488 	1440 	taskhost.exe 	2020-06-16 01:36:38 UTC+0000 		13 	255 	1
+832 	1584 	dwm.exe 	2020-06-16 01:36:38 UTC+0000 		4 	77 	1
+1552 	1724 	explorer.exe 	2020-06-16 01:36:38 UTC+0000 		33 	809 	1
+620 	1760 	unsecapp.exe 	2020-06-16 01:36:38 UTC+0000 		4 	69 	0
+488 	1956 	svchost.exe 	2020-06-16 01:36:38 UTC+0000 		7 	106 	0
+1724 	1660 	pythonw.exe 	2020-06-16 01:36:39 UTC+0000 		2 	100 	1
+620 	1612 	WmiPrvSE.exe 	2020-06-16 01:36:40 UTC+0000 		6 	118 	0
+488 	2232 	SearchIndexer. 	2020-06-16 01:36:45 UTC+0000 		16 	700 	0
+488 	3004 	OSPPSVC.EXE 	2020-06-16 01:37:18 UTC+0000 		6 	156 	0
+488 	1740 	svchost.exe 	2020-06-16 01:38:38 UTC+0000 		13 	200 	0
+488 	2552 	mscorsvw.exe 	2020-06-16 01:38:38 UTC+0000 		7 	88 	0
+488 	2612 	mscorsvw.exe 	2020-06-16 01:38:39 UTC+0000 		7 	81 	0
+488 	2588 	sppsvc.exe 	2020-06-16 01:38:39 UTC+0000 		6 	180 	0
+908 	1464 	taskeng.exe 	2020-06-16 01:42:00 UTC+0000 		5 	84 	0
+1660 	2920 	pythonw.exe 	2020-06-16 01:45:30 UTC+0000 	2022-07-02 23:39:57 UTC+0000 	0 	None 	1
+488 	1972 	taskhost.exe 	2022-07-03 00:33:18 UTC+0000 		10 	162 	0
+2232 	1820 	SearchProtocol 	2022-07-03 00:33:19 UTC+0000 		9 	287 	0
+2232 	1496 	SearchFilterHo 	2022-07-03 00:33:19 UTC+0000 		7 	132 	0
+676 	2004 	{CBEEB8AE-E184 	2022-07-03 00:33:22 UTC+0000 		7 	83 	1
+2004 	2872 	{CBEEB8AE-E184 	2022-07-02 23:39:57 UTC+0000 		2 	56 	1
+
+
+Psxview - 
+process_id 	pslist 	psscan 	thrdproc 	pspcid 	csrss 	sessions 	deskthrd
+1612 	True 	False 	True 	True 	True 	True 	True
+444 	True 	False 	True 	True 	True 	True 	True
+1440 	True 	False 	True 	True 	True 	True 	True
+876 	True 	False 	True 	True 	True 	True 	True
+500 	True 	False 	True 	True 	True 	True 	False
+1496 	True 	False 	True 	True 	True 	True 	True
+2232 	True 	False 	True 	True 	True 	True 	True
+388 	True 	False 	True 	True 	True 	True 	True
+412 	True 	False 	True 	True 	True 	True 	True
+2872 	True 	False 	True 	True 	True 	True 	True
+1820 	True 	False 	True 	True 	True 	True 	True
+1972 	True 	False 	True 	True 	True 	True 	True
+2004 	True 	False 	True 	True 	True 	True 	True
+1584 	True 	False 	True 	True 	True 	True 	True
+2552 	True 	False 	True 	True 	True 	True 	True
+1740 	True 	False 	True 	True 	True 	True 	True
+3004 	True 	False 	True 	True 	True 	True 	True
+1956 	True 	False 	True 	True 	True 	True 	True
+1052 	True 	False 	True 	True 	True 	True 	True
+2588 	True 	False 	True 	True 	True 	True 	True
+620 	True 	False 	True 	True 	True 	True 	True
+908 	True 	False 	True 	True 	True 	True 	True
+832 	True 	False 	True 	True 	True 	True 	True
+696 	True 	False 	True 	True 	True 	True 	True
+1080 	True 	False 	True 	True 	True 	True 	True
+1660 	True 	False 	True 	True 	True 	True 	True
+1464 	True 	False 	True 	True 	True 	True 	True
+1724 	True 	False 	True 	True 	True 	True 	True
+1760 	True 	False 	True 	True 	True 	True 	True
+508 	True 	False 	True 	True 	True 	True 	False
+772 	True 	False 	True 	True 	True 	True 	True
+488 	True 	False 	True 	True 	True 	True 	False
+1236 	True 	False 	True 	True 	True 	True 	True
+2612 	True 	False 	True 	True 	True 	True 	True
+4 	True 	False 	True 	True 	False 	False 	False
+360 	True 	False 	True 	True 	False 	True 	True
+284 	True 	False 	True 	True 	False 	False 	False
+408 	True 	False 	True 	True 	False 	True 	True
+2920 	True 	False 	False 	True 	False 	True 	False
+
+
+Yarascan - 
+Owner 	Rule 	Hexdump
+Process svchost.exe Pid 908 	gen_memory_commands_shell_dev 	
+
+0x02da25b8  73 00 79 00 73 00 74 00 65 00 6d 00 69 00 6e 00   s.y.s.t.e.m.i.n.
+0x02da25c8  66 00 6f 00 2e 00 65 00 78 00 65 00 00 00 00 00   f.o...e.x.e.....
+0x02da25d8  3c e6 ac 5a b9 00 00 80 52 01 da 02 00 00 00 00   <..Z....R.......
+0x02da25e8  01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+
+Process svchost.exe Pid 908 	gen_memory_commands_shell_dev 	
+
+0x03b34278  73 00 79 00 73 00 74 00 65 00 6d 00 69 00 6e 00   s.y.s.t.e.m.i.n.
+0x03b34288  66 00 6f 00 2e 00 65 00 78 00 65 00 00 00 00 00   f.o...e.x.e.....
+0x03b34298  43 4d ba 5a b9 00 00 80 fa 01 b3 03 00 00 00 00   CM.Z............
+0x03b342a8  01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+
+
+Sockets - 
+Offset 	PID 	Local Address 	Local Port 	Remote Address 	Remote Port 	Protocol
+0x1061ce1b0 	1236 	192.168.168.203 	49243 	93.184.220.29 	80 	TCPv4
+0x21d46cd70 	1956 	0.0.0.0 	0 	* 	* 	UDPv4
+0x21d5aed60 	1740 	::1 	1900 	* 	* 	UDPv6
+0x21d915d70 	908 	0.0.0.0 	4500 	* 	* 	UDPv4
+0x21d915d70 	908 	:: 	4500 	* 	* 	UDPv6
+0x21d937480 	908 	0.0.0.0 	0 	* 	* 	UDPv4
+0x21d943670 	908 	0.0.0.0 	0 	* 	* 	UDPv4
+0x21d943670 	908 	:: 	0 	* 	* 	UDPv6
+0x21d42e770 	1956 	0.0.0.0 	49156 	0.0.0.0 	0 	TCPv4
+0x21d42e770 	1956 	:: 	49156 	:: 	0 	TCPv6
+0x21d43eda0 	1956 	0.0.0.0 	49156 	0.0.0.0 	0 	TCPv4
+0x21d51f010 	500 	0.0.0.0 	49158 	0.0.0.0 	0 	TCPv4
+0x21d688200 	4 	0.0.0.0 	445 	0.0.0.0 	0 	TCPv4
+0x21d688200 	4 	:: 	445 	:: 	0 	TCPv6
+0x21d726890 	1660 	0.0.0.0 	8000 	0.0.0.0 	0 	TCPv4
+0x21d819b40 	908 	0.0.0.0 	49154 	0.0.0.0 	0 	TCPv4
+0x21d819b40 	908 	:: 	49154 	:: 	0 	TCPv6
+0x21d4accf0 	1236 	192.168.168.203 	49244 	93.184.220.29 	80 	TCPv4
+0x21d52da70 	1660 	None 	0 	104.80.170.7 	0 	TCPv4
+0x21d6c04a0 	1024 	None 	0 	389b:cd08:80fa:ffff:389b:cd08:80fa:ffff 	0 	TCPv6
+0x21db09400 	772 	0.0.0.0 	49153 	0.0.0.0 	0 	TCPv4
+0x21db403f0 	388 	0.0.0.0 	49152 	0.0.0.0 	0 	TCPv4
+0x21db403f0 	388 	:: 	49152 	:: 	0 	TCPv6
+0x21db50670 	696 	0.0.0.0 	135 	0.0.0.0 	0 	TCPv4
+0x21db5cef0 	696 	0.0.0.0 	135 	0.0.0.0 	0 	TCPv4
+0x21db5cef0 	696 	:: 	135 	:: 	0 	TCPv6
+0x21db6cba0 	388 	0.0.0.0 	49152 	0.0.0.0 	0 	TCPv4
+0x21dce5610 	908 	0.0.0.0 	49154 	0.0.0.0 	0 	TCPv4
+0x21dda16d0 	500 	0.0.0.0 	49158 	0.0.0.0 	0 	TCPv4
+0x21dda16d0 	500 	:: 	49158 	:: 	0 	TCPv6
+0x21db57930 	1660 	192.168.168.203 	8000 	192.168.168.1 	56530 	TCPv4
+0x21dbb2010 	1660 	None 	0 	6870:8507:80fa:ffff:6870:8507:80fa:ffff 	0 	TCPv6
+0x21dd666c0 	1660 	192.168.168.203 	8000 	192.168.168.1 	56572 	TCPv4
+0x21e795d70 	1956 	0.0.0.0 	0 	* 	* 	UDPv4
+0x21e795d70 	1956 	:: 	0 	* 	* 	UDPv6
+0x21e9c4a40 	908 	0.0.0.0 	500 	* 	* 	UDPv4
+0x21e9c4a40 	908 	:: 	500 	* 	* 	UDPv6
+0x21e9c81c0 	908 	0.0.0.0 	500 	* 	* 	UDPv4
+0x21eb3c5a0 	1740 	127.0.0.1 	1900 	* 	* 	UDPv4
+0x21e534770 	772 	0.0.0.0 	49153 	0.0.0.0 	0 	TCPv4
+0x21e534770 	772 	:: 	49153 	:: 	0 	TCPv6
+0x21e97f9e0 	488 	0.0.0.0 	49155 	0.0.0.0 	0 	TCPv4
+0x21e97f9e0 	488 	:: 	49155 	:: 	0 	TCPv6
+0x21e9c72c0 	488 	0.0.0.0 	49155 	0.0.0.0 	0 	TCPv4
+0x21ea9f660 	1660 	127.0.0.1 	8000 	127.0.0.1 	49250 	TCPv4
+0x21ecd9240 	412 	None 	0 	104.112.133.7 	0 	TCPv4
+0x21f048db0 	908 	0.0.0.0 	4500 	* 	* 	UDPv4
+0x21f257010 	4 	192.168.168.203 	137 	* 	* 	UDPv4
+0x21f590010 	4 	192.168.168.203 	138 	* 	* 	UDPv4
+0x21f741ec0 	876 	0.0.0.0 	0 	* 	* 	UDPv4
+0x21f741ec0 	876 	:: 	0 	* 	* 	UDPv6
+0x21f7cd290 	4 	192.168.168.203 	139 	0.0.0.0 	0 	TCPv4
+0x21f806ec0 	1740 	127.0.0.1 	62414 	* 	* 	UDPv4
+0x21f827010 	772 	fe80::89d:ce64:f72b:221f 	546 	* 	* 	UDPv6
+0x21f9d6c10 	412 	0.0.0.0 	5355 	* 	* 	UDPv4
+0x21f9d6c10 	412 	:: 	5355 	* 	* 	UDPv6
+0x21fadfcb0 	412 	0.0.0.0 	5355 	* 	* 	UDPv4
+0x21faff010 	876 	0.0.0.0 	0 	* 	* 	UDPv4
+0x21faff010 	876 	:: 	0 	* 	* 	UDPv6
+0x21fcc1010 	1740 	192.168.168.203 	62413 	* 	* 	UDPv4
+0x21fce3830 	1740 	fe80::89d:ce64:f72b:221f 	62411 	* 	* 	UDPv6
+0x21fcf63b0 	412 	0.0.0.0 	0 	* 	* 	UDPv4
+0x21fcf63b0 	412 	:: 	0 	* 	* 	UDPv6
+0x21fcfc1c0 	1740 	fe80::89d:ce64:f72b:221f 	1900 	* 	* 	UDPv6
+0x21ff808a0 	1740 	192.168.168.203 	1900 	* 	* 	UDPv4
+0x21ffc2c20 	1740 	::1 	62412 	* 	* 	UDPv6
+0x21f834290 	1660 	192.168.168.203 	8000 	192.168.168.1 	56570 	TCPv4
+0x21fc01430 	2920 	192.168.168.203 	49238 	192.168.168.1 	34513 	TCPv4
+0x21fc27220 	2920 	192.168.168.203 	49247 	192.168.168.1 	34513 	TCPv4
+0x21fd4ccf0 	1236 	192.168.168.203 	49245 	23.52.27.27 	80 	TCPv4
+0x21fdc4cf0 	1 	192.168.168.203 	49227 	192.168.168.208 	1688 	TCPv4
+0x21fdef5b0 	1236 	192.168.168.203 	49242 	83.255.218.17 	80 	TCPv4
+0x21fed55a0 	2920 	192.168.168.203 	49240 	192.168.168.1 	34513 	TCPv4
+0x21fee4010 	2920 	127.0.0.1 	49250 	127.0.0.1 	8000 	TCPv4
+0x21ff26680 	2920 	192.168.168.203 	49236 	192.168.168.1 	34513 	TCPv4
+0x21ff7a400 	2920 	None 	0 	136.7.172.7 	0 	TCPv4

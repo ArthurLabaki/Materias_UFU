@@ -1,0 +1,133 @@
+Frame 84: 385 bytes on wire (3080 bits), 385 bytes captured (3080 bits) on interface enp0s3, id 0
+    Interface id: 0 (enp0s3)
+        Interface name: enp0s3
+    Encapsulation type: Ethernet (1)
+    Arrival Time: May 31, 2022 21:08:30.595716847 EDT
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1654045710.595716847 seconds
+    [Time delta from previous captured frame: 0.000283697 seconds]
+    [Time delta from previous displayed frame: 0.000000000 seconds]
+    [Time since reference or first frame: 12.300314257 seconds]
+    Frame Number: 84
+    Frame Length: 385 bytes (3080 bits)
+    Capture Length: 385 bytes (3080 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:tcp:http]
+    [Coloring Rule Name: HTTP]
+    [Coloring Rule String: http || tcp.port == 80 || http2]
+
+Ethernet II, Src: PcsCompu_5b:9b:ec (08:00:27:5b:9b:ec), Dst: RealtekU_12:35:00 (52:54:00:12:35:00)
+    Destination: RealtekU_12:35:00 (52:54:00:12:35:00)
+        Address: RealtekU_12:35:00 (52:54:00:12:35:00)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: PcsCompu_5b:9b:ec (08:00:27:5b:9b:ec)
+        Address: PcsCompu_5b:9b:ec (08:00:27:5b:9b:ec)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+
+Internet Protocol Version 4, Src: 10.0.2.6, Dst: 31.13.74.35
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 371
+    Identification: 0xdb07 (56071)
+    Flags: 0x4000, Don't fragment
+        0... .... .... .... = Reserved bit: Not set
+        .1.. .... .... .... = Don't fragment: Set
+        ..0. .... .... .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: TCP (6)
+    Header checksum: 0xe947 [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 10.0.2.6
+    Destination: 31.13.74.35
+
+Transmission Control Protocol, Src Port: 45958, Dst Port: 80, Seq: 3997901887, Ack: 7298, Len: 331
+    Source Port: 45958
+    Destination Port: 80
+    [Stream index: 4]
+    [TCP Segment Len: 331]
+    Sequence number: 3997901887
+    [Next sequence number: 3997902218]
+    Acknowledgment number: 7298
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window size value: 64240
+    [Calculated window size: 64240]
+    [Window size scaling factor: -2 (no window scaling used)]
+    Checksum: 0x769b [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+        [iRTT: 0.038867540 seconds]
+        [Bytes in flight: 331]
+        [Bytes sent since last PSH flag: 331]
+    [Timestamps]
+        [Time since first frame in this TCP stream: 0.039151237 seconds]
+        [Time since previous frame in this TCP stream: 0.000283697 seconds]
+    TCP payload (331 bytes)
+
+Hypertext Transfer Protocol
+    GET / HTTP/1.1\r\n
+        [Expert Info (Chat/Sequence): GET / HTTP/1.1\r\n]
+            [GET / HTTP/1.1\r\n]
+            [Severity level: Chat]
+            [Group: Sequence]
+        Request Method: GET
+        Request URI: /
+        Request Version: HTTP/1.1
+    Host: facebook.com\r\n
+    User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:83.0) Gecko/20100101 Firefox/83.0\r\n
+    Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\r\n
+    Accept-Language: en-US,en;q=0.5\r\n
+    Accept-Encoding: gzip, deflate\r\n
+    Connection: keep-alive\r\n
+    Upgrade-Insecure-Requests: 1\r\n
+    \r\n
+    [Full request URI: http://facebook.com/]
+    [HTTP request 1/1]
+    [Response in frame: 87]
+
+0000   52 54 00 12 35 00 08 00 27 5b 9b ec 08 00 45 00   RT..5...'[....E.
+0010   01 73 db 07 40 00 40 06 e9 47 0a 00 02 06 1f 0d   .s..@.@..G......
+0020   4a 23 b3 86 00 50 ee 4b 24 3f 00 00 1c 82 50 18   J#...P.K$?....P.
+0030   fa f0 76 9b 00 00 47 45 54 20 2f 20 48 54 54 50   ..v...GET / HTTP
+0040   2f 31 2e 31 0d 0a 48 6f 73 74 3a 20 66 61 63 65   /1.1..Host: face
+0050   62 6f 6f 6b 2e 63 6f 6d 0d 0a 55 73 65 72 2d 41   book.com..User-A
+0060   67 65 6e 74 3a 20 4d 6f 7a 69 6c 6c 61 2f 35 2e   gent: Mozilla/5.
+0070   30 20 28 58 31 31 3b 20 55 62 75 6e 74 75 3b 20   0 (X11; Ubuntu; 
+0080   4c 69 6e 75 78 20 78 38 36 5f 36 34 3b 20 72 76   Linux x86_64; rv
+0090   3a 38 33 2e 30 29 20 47 65 63 6b 6f 2f 32 30 31   :83.0) Gecko/201
+00a0   30 30 31 30 31 20 46 69 72 65 66 6f 78 2f 38 33   00101 Firefox/83
+00b0   2e 30 0d 0a 41 63 63 65 70 74 3a 20 74 65 78 74   .0..Accept: text
+00c0   2f 68 74 6d 6c 2c 61 70 70 6c 69 63 61 74 69 6f   /html,applicatio
+00d0   6e 2f 78 68 74 6d 6c 2b 78 6d 6c 2c 61 70 70 6c   n/xhtml+xml,appl
+00e0   69 63 61 74 69 6f 6e 2f 78 6d 6c 3b 71 3d 30 2e   ication/xml;q=0.
+00f0   39 2c 69 6d 61 67 65 2f 77 65 62 70 2c 2a 2f 2a   9,image/webp,*/*
+0100   3b 71 3d 30 2e 38 0d 0a 41 63 63 65 70 74 2d 4c   ;q=0.8..Accept-L
+0110   61 6e 67 75 61 67 65 3a 20 65 6e 2d 55 53 2c 65   anguage: en-US,e
+0120   6e 3b 71 3d 30 2e 35 0d 0a 41 63 63 65 70 74 2d   n;q=0.5..Accept-
+0130   45 6e 63 6f 64 69 6e 67 3a 20 67 7a 69 70 2c 20   Encoding: gzip, 
+0140   64 65 66 6c 61 74 65 0d 0a 43 6f 6e 6e 65 63 74   deflate..Connect
+0150   69 6f 6e 3a 20 6b 65 65 70 2d 61 6c 69 76 65 0d   ion: keep-alive.
+0160   0a 55 70 67 72 61 64 65 2d 49 6e 73 65 63 75 72   .Upgrade-Insecur
+0170   65 2d 52 65 71 75 65 73 74 73 3a 20 31 0d 0a 0d   e-Requests: 1...
+0180   0a                                                .
+

@@ -1,0 +1,38 @@
+TP8 - Explorar vulnerabilidades de segurança em um sistema web
+Vence 12 de julho de 2022 às 18:13Fecha 12 de julho de 2022 às 23:59
+Instruções
+Parte 1 - Configuração e reconhecimento do sistema
+
+Crie uma conta no serviço de computação em nuvem chamado Heroku.
+Faça o login no Heroku com o usuário e senha recém criado.
+Instale a aplicação vulnerável fornecida pelo OWASP chamada Juice Fruit acessando o seguinte link e clicando em “Deploy do Heroku”: https://github.com/juice-shop/juice-shop#from-sources
+Forneça um nome para a aplicação e selecione “Deploy app”.
+Após a instalação, teste a aplicação usando a seguinte URL: https://NOMEDAAPLICACAO.herokuapp.com/. Note que o Heroku é um serviço de computação em nuvem, ou seja, a aplicação está disponível para qualquer usuário que conheça tal URL.
+Navegue e faça o reconhecimento da aplicação. Gaste um tempo aqui. Identifique as principais funcionalidades e o layout da aplicação. Faça um tour pelo “caminho feliz” de cada uma das funcionalidades (por exemplo, crie um novo usuário e tente fazer um login ou tente colocar algum item no carrinho de compra e finalizar a compra). Faça as devidas anotações. Isso é essencial antes de investigar por vulnerabilidades de segurança em aplicações.
+Fique de olho nas ferramentas de desenvolvedor do navegador. Elas ajudam demais a entender o comportamento da aplicação. Tenha paciência e seja curioso!!!
+Parte 2 - Explorar o sistema e identificar vulnerabilidades
+
+Resolva cada um dos desafios abaixo. Cada desafio solucionado irá gerar uma mensagem na tela da aplicação. Pode ser necessário retornar a aplicação (botão “voltar” do navegador, para contabilizar a solução do desafio.
+
+Lista de vulnerabilidades:
+
+Encontrar a página que mostra o placar dos desafios (é altamente recomendável que vocês comecem por aqui – o score board permitirá que vocês visualizem a lista de problemas e também visualizem dicas para resolvê-los)
+Acessar um documento confidencial
+Provocar um erro que não é devidamente tratado pela aplicação
+Ler a política de privacidade/segurança da empresa
+Fazer o sistema redirecionar o usuário para um site de doação que está fora do ar
+Criar/registrar um usuário com senhas distintas nos campos "Password" e "Repeat Password"
+Verifique os pontos onde o sistema é vulnerável a XSS. Use a seguinte string: <iframe src="javascript:alert(`xss`)">
+Forneça uma nota zero na seção de feedback da loja
+Faça o login com a conta de administrador
+Acesse a seção de administração da loja
+Apague todos os feedbacks com 5 estrelas
+Faça o login com a conta do usuário MC Safesearch
+
+Bônus:
+
+Visualizar produtos no carrinho de compra de outros usuários
+Postar feedback usando outro nome de usuário
+Faça um pedido que te deixe rico! Ou seja, um pedido com valores negativos.
+
+IMPORTANTE: a resolução do exercício envolve tirar um print e anexe a sua pontuação (score). 

@@ -1,0 +1,15 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-06-02 14:07 EDT
+Nmap scan report for www.piedade.sp.gov.br (177.70.30.194)
+Host is up (0.065s latency).
+rDNS record for 177.70.30.194: server.swop.com.br
+Not shown: 993 filtered tcp ports (no-response)
+PORT    STATE SERVICE
+53/tcp  open  domain
+80/tcp  open  http
+143/tcp open  imap
+443/tcp open  https
+587/tcp open  submission
+993/tcp open  imaps
+995/tcp open  pop3s
+
+Nmap done: 1 IP address (1 host up) scanned in 1910.45 seconds

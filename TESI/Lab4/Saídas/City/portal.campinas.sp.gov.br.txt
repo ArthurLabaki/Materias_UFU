@@ -1,0 +1,26 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-06-02 12:05 EDT
+Initiating Ping Scan at 12:06
+Scanning portal.campinas.sp.gov.br (187.110.5.190) [4 ports]
+Completed Ping Scan at 12:06, 0.04s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 12:06
+Completed Parallel DNS resolution of 1 host. at 12:06, 0.13s elapsed
+Initiating SYN Stealth Scan at 12:06
+Scanning portal.campinas.sp.gov.br (187.110.5.190) [65536 ports]
+SYN Stealth Scan Timing: About 15.46% done; ETC: 12:09 (0:02:50 remaining)
+SYN Stealth Scan Timing: About 31.45% done; ETC: 12:09 (0:02:13 remaining)
+SYN Stealth Scan Timing: About 46.29% done; ETC: 12:09 (0:01:46 remaining)
+SYN Stealth Scan Timing: About 67.97% done; ETC: 12:08 (0:00:57 remaining)
+Completed SYN Stealth Scan at 12:08, 155.42s elapsed (65536 total ports)
+Initiating OS detection (try #1) against portal.campinas.sp.gov.br (187.110.5.190)
+Retrying OS detection (try #2) against portal.campinas.sp.gov.br (187.110.5.190)
+Nmap scan report for portal.campinas.sp.gov.br (187.110.5.190)
+Host is up (0.0018s latency).
+rDNS record for 187.110.5.190: pichot-sslexterno.ima.sp.gov.br
+All 65536 scanned ports on portal.campinas.sp.gov.br (187.110.5.190) are in ignored states.
+Not shown: 65536 filtered tcp ports (no-response)
+Too many fingerprints match this host to give specific OS details
+
+Read data files from: /snap/nmap/2629/bin/../share/nmap
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 164.68 seconds
+           Raw packets sent: 131238 (5.778MB) | Rcvd: 123 (4.920KB)

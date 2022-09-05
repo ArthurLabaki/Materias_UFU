@@ -1,0 +1,33 @@
+TP-5 - Varreduras múltiplas em portas específicas - CASA
+Vence 17 de junho de 2022 às 23:59
+Instruções
+Administradores de rede costumam ter duas grandes preocupações: i) serviços disponíveis em páginas Web e ii) controlar o acesso remoto às organizações. O objetivo da atividade é verificar como esses dois tipos de serviços são gerenciados dentro das universidades brasileiras e discutir o que pode ser feito para evitar problemas de segurança associados a tais serviços.
+
+Acesse os seguintes sites
+
+https://ipinfo.io/countries/br
+
+https://ipinfo.io/AS1916
+
+O primeiro deles mostra uma lista com cada uma das empresas que possuem blocos de endereços IP. O segundo deles detalha os blocos de endereços IP gerenciados pela Rede Nacional de Pesquisa (RNP), que controla boa parte da atribuição de IPs as universidades brasileiras. Escolha uma universidade brasileira presente em qualquer um dos links acima, com exceção da UFU.
+Para a universidade brasileira escolhida, selecione um bloco com, no mínimo, 1000 endereços IPv4.
+Os blocos de endereço são compostos da seguinte forma: x.y.z.w/k, por exemplo 143.107.0.0/16. Pesquise e explique o significado desse formato de apresentação de números IP. Mostre o prefixo da rede e a quantidade de endereços IP presentes no bloco escolhido no exercício 2.
+Realize um scan somente na porta 80 em todo o bloco IPv4 escolhido usando o Nmap ou a ferramenta  Masscan (https://github.com/robertdavidgraham/masscan). Elabore gráficos/tabelas que mostrem a relação entre serviços Web (porta 80 aberta) e endereços IP escaneados? O que é possível concluir sobre os resultados?
+Faça uma análise nos IPs que possuem a porta 80 aberta (por exemplo, abra o navegador e digite http://x.y.z.w onde x.y.z.w é o endereço IP com a porta 80 aberta). Que tipo de serviço está disponível? HTTPS? Telas de login? Serviços de monitoramento (câmeras)? Impressoras? Sites convencionais? Liste as suas descobertas mais interessantes e discuta os resultados.
+Explique a importância dos serviços SSH (porta 22) e Telnet (porta 23) para a administração remota de sistemas.
+Repita o exercício 4 para as portas 22 e 23.  
+Discuta sobre os possíveis riscos associados a serviços expostos na porta 80 e acesso remoto aberto via SSH e Telnet. O que poderia ser feito para se prevenir/mitigar os riscos?
+
+ 
+
+Algumas referências sobre o Nmap e Masscan:
+
+https://hackertarget.com/nmap-cheatsheet-a-quick-reference-guide/
+
+https://www.cyberciti.biz/security/nmap-command-examples-tutorials/
+
+https://resources.infosecinstitute.com/nmap-evade-firewall-scripting/#gref
+
+https://danielmiessler.com/study/masscan/
+
+http://www.100security.com.br/masscan/

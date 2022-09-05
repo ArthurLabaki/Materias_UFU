@@ -1,0 +1,24 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-06-02 12:17 EDT
+Initiating Ping Scan at 12:17
+Scanning barretos.sp.gov.br (177.234.144.162) [4 ports]
+Completed Ping Scan at 12:17, 0.04s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 12:17
+Completed Parallel DNS resolution of 1 host. at 12:17, 0.48s elapsed
+Initiating SYN Stealth Scan at 12:17
+Scanning barretos.sp.gov.br (177.234.144.162) [65536 ports]
+SYN Stealth Scan Timing: About 19.82% done; ETC: 12:19 (0:02:05 remaining)
+SYN Stealth Scan Timing: About 46.62% done; ETC: 12:19 (0:01:10 remaining)
+Completed SYN Stealth Scan at 12:19, 109.77s elapsed (65536 total ports)
+Initiating OS detection (try #1) against barretos.sp.gov.br (177.234.144.162)
+Retrying OS detection (try #2) against barretos.sp.gov.br (177.234.144.162)
+Nmap scan report for barretos.sp.gov.br (177.234.144.162)
+Host is up (0.0086s latency).
+rDNS record for 177.234.144.162: server.barretos.sp.gov.br
+All 65536 scanned ports on barretos.sp.gov.br (177.234.144.162) are in ignored states.
+Not shown: 65536 filtered tcp ports (no-response)
+Too many fingerprints match this host to give specific OS details
+
+Read data files from: /snap/nmap/2629/bin/../share/nmap
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 114.69 seconds
+           Raw packets sent: 131198 (5.776MB) | Rcvd: 120 (5.076KB)

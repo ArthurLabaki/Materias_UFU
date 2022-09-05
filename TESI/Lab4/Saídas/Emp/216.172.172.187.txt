@@ -1,0 +1,35 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-06-02 21:42 EDT
+Initiating Ping Scan at 21:42
+Scanning 216.172.172.187 [4 ports]
+Completed Ping Scan at 21:42, 0.05s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 21:42
+Completed Parallel DNS resolution of 1 host. at 21:42, 0.45s elapsed
+Initiating SYN Stealth Scan at 21:42
+Scanning br472-ip03.hostgator.com.br (216.172.172.187) [65536 ports]
+Discovered open port 2080/tcp on 216.172.172.187
+SYN Stealth Scan Timing: About 18.62% done; ETC: 21:45 (0:02:15 remaining)
+Discovered open port 2079/tcp on 216.172.172.187
+SYN Stealth Scan Timing: About 44.59% done; ETC: 21:44 (0:01:16 remaining)
+SYN Stealth Scan Timing: About 74.24% done; ETC: 21:44 (0:00:32 remaining)
+Completed SYN Stealth Scan at 21:44, 112.19s elapsed (65536 total ports)
+Initiating OS detection (try #1) against br472-ip03.hostgator.com.br (216.172.172.187)
+Retrying OS detection (try #2) against br472-ip03.hostgator.com.br (216.172.172.187)
+Nmap scan report for br472-ip03.hostgator.com.br (216.172.172.187)
+Host is up (0.13s latency).
+Not shown: 65534 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+2079/tcp open  idware-router
+2080/tcp open  autodesk-nlm
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: VoIP phone|webcam|specialized|general purpose
+Running (JUST GUESSING): Grandstream embedded (97%), Garmin embedded (92%), 2N embedded (91%), Philips embedded (88%), lwIP 1.4.X (88%), Cognex embedded (88%)
+OS CPE: cpe:/h:grandstream:gxp1105 cpe:/h:garmin:virb_elite cpe:/h:2n:helios cpe:/h:philips:hue_bridge cpe:/a:lwip_project:lwip:1.4 cpe:/a:lwip_project:lwip
+Aggressive OS guesses: Grandstream GXP1105 VoIP phone (97%), Garmin Virb Elite action camera (92%), 2N Helios IP VoIP doorbell (91%), Philips Hue Bridge (lwIP stack v1.4.0) (88%), Cognex DataMan 200 ID reader (lwIP TCP/IP stack) (88%)
+No exact OS matches for host (test conditions non-ideal).
+TCP Sequence Prediction: Difficulty=131 (Good luck!)
+IP ID Sequence Generation: Incremental
+
+Read data files from: /snap/nmap/2629/bin/../share/nmap
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 120.63 seconds
+           Raw packets sent: 131221 (5.777MB) | Rcvd: 4787 (191.828KB)

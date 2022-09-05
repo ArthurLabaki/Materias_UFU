@@ -1,0 +1,110 @@
+Analyzer Log
+
+2022-07-03 02:34:21,015 [analyzer] DEBUG: Starting analyzer from: C:\tmppw5mq4
+2022-07-03 02:34:21,030 [analyzer] DEBUG: Pipe server name: \??\PIPE\cRlyqDSVJFDKwrDEKh
+2022-07-03 02:34:21,030 [analyzer] DEBUG: Log pipe server name: \??\PIPE\zQesRDMhcABRgpjrqx
+2022-07-03 02:34:21,250 [analyzer] DEBUG: Started auxiliary module Curtain
+2022-07-03 02:34:21,250 [analyzer] DEBUG: Started auxiliary module DbgView
+2022-07-03 02:34:21,687 [analyzer] DEBUG: Started auxiliary module Disguise
+2022-07-03 02:34:21,890 [analyzer] DEBUG: Loaded monitor into process with pid 504
+2022-07-03 02:34:21,890 [analyzer] DEBUG: Started auxiliary module DumpTLSMasterSecrets
+2022-07-03 02:34:21,890 [analyzer] DEBUG: Started auxiliary module Human
+2022-07-03 02:34:21,890 [analyzer] DEBUG: Started auxiliary module InstallCertificate
+2022-07-03 02:34:21,890 [analyzer] DEBUG: Started auxiliary module Reboot
+2022-07-03 02:34:21,953 [analyzer] DEBUG: Started auxiliary module RecentFiles
+2022-07-03 02:34:21,953 [analyzer] DEBUG: Started auxiliary module Screenshots
+2022-07-03 02:34:21,953 [analyzer] DEBUG: Started auxiliary module Sysmon
+2022-07-03 02:34:21,967 [analyzer] DEBUG: Started auxiliary module LoadZer0m0n
+2022-07-03 02:34:22,092 [lib.api.process] INFO: Successfully executed process from path u'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\CryptLock.exe' with arguments '' and pid 1764
+2022-07-03 02:34:22,250 [analyzer] DEBUG: Loaded monitor into process with pid 1764
+2022-07-03 02:34:23,905 [analyzer] INFO: Injected into process with pid 1804 and name ''
+2022-07-03 02:34:23,967 [lib.api.process] ERROR: Failed to dump memory of 32-bit process with pid 1764.
+2022-07-03 02:34:24,046 [analyzer] DEBUG: Loaded monitor into process with pid 1804
+2022-07-03 02:34:24,092 [analyzer] INFO: Process with pid 1764 has terminated
+2022-07-03 01:42:39,733 [analyzer] INFO: Analysis timeout hit, terminating analysis.
+2022-07-03 01:42:39,888 [lib.api.process] ERROR: Failed to dump memory of 32-bit process with pid 1804.
+2022-07-03 01:42:40,233 [analyzer] INFO: Terminating remaining processes before shutdown.
+2022-07-03 01:42:40,233 [lib.api.process] INFO: Successfully terminated process with pid 1804.
+2022-07-03 01:42:40,233 [analyzer] INFO: Analysis completed.
+
+Cuckoo Log
+
+2022-07-03 02:38:32,343 [cuckoo.core.scheduler] DEBUG: Task #3158675: no machine available yet
+2022-07-03 02:38:42,373 [cuckoo.core.scheduler] DEBUG: Task #3158675: no machine available yet
+2022-07-03 02:38:52,408 [cuckoo.core.scheduler] INFO: Task #3158675: acquired machine win7x646 (label=win7x646)
+2022-07-03 02:38:52,409 [cuckoo.core.resultserver] DEBUG: Now tracking machine 192.168.168.206 for task #3158675
+2022-07-03 02:38:52,564 [cuckoo.auxiliary.sniffer] INFO: Started sniffer with PID 3070333 (interface=vboxnet0, host=192.168.168.206)
+2022-07-03 02:38:53,171 [cuckoo.machinery.virtualbox] DEBUG: Starting vm win7x646
+2022-07-03 02:38:53,595 [cuckoo.machinery.virtualbox] DEBUG: Restoring virtual machine win7x646 to vmcloak
+2022-07-03 02:41:32,400 [cuckoo.core.guest] INFO: Starting analysis #3158675 on guest (id=win7x646, ip=192.168.168.206)
+2022-07-03 02:41:33,404 [cuckoo.core.guest] DEBUG: win7x646: not ready yet
+2022-07-03 02:41:38,421 [cuckoo.core.guest] INFO: Guest is running Cuckoo Agent 0.10 (id=win7x646, ip=192.168.168.206)
+2022-07-03 02:41:38,498 [cuckoo.core.guest] DEBUG: Uploading analyzer to guest (id=win7x646, ip=192.168.168.206, monitor=latest, size=6659294)
+2022-07-03 02:41:39,630 [cuckoo.core.resultserver] DEBUG: Task #3158675: live log analysis.log initialized.
+2022-07-03 02:41:40,470 [cuckoo.core.resultserver] DEBUG: Task #3158675 is sending a BSON stream
+2022-07-03 02:41:40,814 [cuckoo.core.resultserver] DEBUG: Task #3158675 is sending a BSON stream
+2022-07-03 02:41:41,694 [cuckoo.core.resultserver] DEBUG: Task #3158675: File upload for 'shots/0001.jpg'
+2022-07-03 02:41:41,713 [cuckoo.core.resultserver] DEBUG: Task #3158675 uploaded file length: 133433
+2022-07-03 02:41:42,626 [cuckoo.core.resultserver] DEBUG: Task #3158675 is sending a BSON stream
+2022-07-03 02:41:44,180 [cuckoo.core.resultserver] DEBUG: Task #3158675: File upload for 'files/a2bc3059283d7cc7_CryptLock.exe'
+2022-07-03 02:41:44,190 [cuckoo.core.resultserver] DEBUG: Task #3158675 uploaded file length: 708608
+2022-07-03 02:41:54,346 [cuckoo.core.guest] DEBUG: win7x646: analysis #3158675 still processing
+2022-07-03 02:42:09,410 [cuckoo.core.guest] DEBUG: win7x646: analysis #3158675 still processing
+2022-07-03 02:42:24,539 [cuckoo.core.guest] DEBUG: win7x646: analysis #3158675 still processing
+2022-07-03 02:42:39,605 [cuckoo.core.guest] DEBUG: win7x646: analysis #3158675 still processing
+2022-07-03 02:42:40,027 [cuckoo.core.resultserver] DEBUG: Task #3158675: File upload for 'curtain/1656805360.01.curtain.log'
+2022-07-03 02:42:40,059 [cuckoo.core.resultserver] DEBUG: Task #3158675 uploaded file length: 36
+2022-07-03 02:42:40,195 [cuckoo.core.resultserver] DEBUG: Task #3158675: File upload for 'sysmon/1656805360.19.sysmon.xml'
+2022-07-03 02:42:40,238 [cuckoo.core.resultserver] DEBUG: Task #3158675 uploaded file length: 1470594
+2022-07-03 02:42:40,805 [cuckoo.core.resultserver] DEBUG: Task #3158675 had connection reset for <Context for LOG>
+2022-07-03 02:42:42,613 [cuckoo.core.guest] INFO: win7x646: analysis completed successfully
+2022-07-03 02:42:42,625 [cuckoo.core.plugins] DEBUG: Stopped auxiliary module: Redsocks
+2022-07-03 02:42:42,717 [cuckoo.core.plugins] DEBUG: Stopped auxiliary module: Sniffer
+2022-07-03 02:43:07,247 [cuckoo.machinery.virtualbox] INFO: Successfully generated memory dump for virtual machine with label win7x646 to path /srv/cuckoo/cwd/storage/analyses/3158675/memory.dmp
+2022-07-03 02:43:07,248 [cuckoo.machinery.virtualbox] DEBUG: Stopping vm win7x646
+2022-07-03 02:47:12,199 [cuckoo.core.resultserver] DEBUG: Stopped tracking machine 192.168.168.206 for task #3158675
+2022-07-03 02:47:12,354 [cuckoo.core.scheduler] DEBUG: Released database task #3158675
+2022-07-03 02:47:12,488 [cuckoo.core.scheduler] INFO: Task #3158675: analysis procedure completed
+
+Strings - É possivel ver algumas strings
+ios::eofbit set
+ios::failbit set
+ios::badbit set
+string too long
+invalid string position
+Unknown exception
+runtime error
+TLOSS error
+SING error
+DOMAIN error
+Microsoft Visual C++ Runtime Library
+Runtime Error!
+Program:
+<program name unknown>
+GetLastActivePopup
+GetActiveWindow
+MessageBoxA
+user32.dll
+H:mm:ss
+dddd, MMMM dd, yyyy
+M/d/yy
+December
+November
+October
+DeleteCriticalSection
+LeaveCriticalSection
+InterlockedDecrement
+InterlockedIncrement
+MultiByteToWideChar
+HeapReAlloc
+HeapAlloc
+HeapFree
+
+Network - Nenhuma
+
+Memory Dump - 
+gen_memory_commands_shell_dev
+csrss.exe
+wininit.exe
+lsass.exe
+OSPPSVC.EXE

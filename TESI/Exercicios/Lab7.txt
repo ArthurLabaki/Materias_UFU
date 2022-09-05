@@ -1,0 +1,44 @@
+TP7 - Análise de códigos maliciosos - CASA
+Vence 8 de julho de 2022 às 23:59
+Instruções
+Parte 1:
+
+Suponha que você esteja trabalhando com análise de códigos maliciosos e recebeu os seguintes hashes (lembrando que é muito comum identificar códigos maliciosos usando funções de hash criptográficas como SHA-1)
+
+196eb5bfd52d4a538d4d0a801808298faadec1fc9aeb07c231add0161b416807
+cd9c621c0398dd8935890ffbe48a6cb1ebf8e7170b58b2a4981d98813d121282
+7786483b897971c243102c6203d0f19608524cba52136ae5fa71803e74d55825
+a1b05e1fc423dd9540b3c34cec562626358f55213ca3b352052792eaf8a9c98a
+
+Com o auxílio de ferramentas como VirusTotal e VirusShare, responda as seguintes perguntas:
+
+1) Qual é o nome e o tipo de cada um dos malwares?
+2) Qual é o tipo do arquivo, tamanho e sistema operacional associado a tal arquivo?
+3) Algum antivírus conseguiu detectar todos os quatro malwares?
+4) Algum antivírus não conseguiu detectar nenhum dos malwares?
+5) Com base nas respostas 3) e 4) o que você pode dizer sobre a eficiência dos antivírus utilizados pelas ferramentas?
+
+Parte 2:
+
+Acesse o site do VirusShare e vá em About (https://virusshare.com/about). Solicite um registro para o email descrito na página. Fale que vocês são alunos da UFU e precisam do acesso para um trabalho acadêmico.
+
+Estude os seguintes links e selecione dois códigos maliciosos. Tente encontra-los no site do VirusShare (via hash ou nome):
+
+https://antivirus.com/2021/10/27/famous-virus-attacks/
+https://gatefy.com/blog/real-and-famous-cases-malware-attacks/
+https://fraudwatch.com/malware-attacks-a-list-of-real-and-famous-cases2/
+https://www.makeuseof.com/most-notorious-malware-attacks-ever/
+
+Acesse a versão do Cuckoo online fornecida pelo CERT: https://cuckoo.cert.ee
+
+Submeta os dois arquivos selecionados para a análise. Após o processamento do arquivo (deve demorar por volta de 30 minutos, anote o hash e o ID do processo para buscar "Recent") faça o seguinte:
+
+a) Clique em "Show Analyzer Log" e "Show Cuckoo Log". Qual é o SO da VM usada para executar o código malicioso? Quanto tempo demorou a análise? Qual é o endereço IP local atribuido para a VM?
+
+b) Vá com o cursor do mouse para a esquerda e selecione "Static Analysis". Clique em "Strings". Alguma string legível apareceu na lista? O que um antivírus poderia fazer com tal informação?
+
+c) Vá com o cursor do mouse para a esquerda e selecione "Network Analysis". O malware se comunicou com algum host externo? Se sim, liste os endereços IPs e URLs encontradas. Use alguma ferramenta que gerencie Black-Lists de URLs e endereços IP e verifique se os endereços/URLs estão em tais listas.
+
+d) Vá com o cursor do mouse para a esquerda e selecione "VM Memory Dump". O Cuckoo guarda tudo o que estava na memória principal da VM antes dela ser desligada. Quais informações foram encontradas nos códigos maliciosos selecionados?
+
+e) Conhecendo a existência de ferramentas como Cuckoo Sandbox e VirusShare, qual deve ser o comportamento de usuários avançados ao se deparar com URLs e arquivos desconhecidos?

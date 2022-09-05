@@ -1,0 +1,37 @@
+TP10 - Filtro de pacotes (Iptables)
+Vence 29 de julho de 2022 às 23:59
+Instruções
+Responda as seguintes perguntas. Use o modelo de relatório no Latex que você já está acostumado.
+
+1) O que é Iptables? Quais as suas principais aplicações?
+
+2) O que são chains, dentro do contexto de Iptables? Explique o funcionamento das três principais chains pré-definidas pelo Iptables.
+
+3) Configure duas VMs do Ubuntu Server (a imagem está no Teams) usando NatNetwork (VM1 e VM2). Faça o mesmo procedimento que vocês já estão acostumados: crie uma, faça o clone, configure a rede Nat. Caso as máquinas estejam com o mesmo IP, faça a alteração do IP manualmente em uma delas. Verifique se ambas as máquinas estão se comunicando (use o ping, por exemplo).
+
+Credenciais das VMs:
+
+Username: osboxes
+Password: osboxes.org
+
+4) Na VM1, verifique quais são as políticas atuais do Iptables.
+
+5) Na VM1, instale o SSH. Na VM2, tente acessar o serviço SSH da VM1.
+
+6) Na VM1, altere a política padrão de INPUT para DROP (sudo iptables -P INPUT DROP) e a política padrão de OUTPUT para ACCEPT (sudo iptables -P OUTPUT ACCEPT). O que isso quer dizer? Essa seria uma política inicial de controle de pacotes aceitável?
+
+7) Na VM2, faça um ping para a VM1. Faça o mesmo à partir da VM1. O que aconteceu?
+
+8) Na VM1, crie uma regra específica para a chain INPUT em que seja liberado o acesso ao "request" e ao "reply" de pacotes do tipo ICMP (regra 1: sudo iptables -A INPUT -p icmp --icmp-type echo-request -j ACCEPT /// regra 2: sudo iptables -A INPUT -p icmp --icmp-type echo-reply -j ACCEPT). Na VM2, faça um ping para a VM1. O ping agora está liberado?
+
+9) Na VM2, tente acessar o serviço de SSH na VM1. Explique o que aconteceu.
+
+10) Na VM1, libere o serviço SSH (sudo iptables -A INPUT -p tcp –-dport 22 -j ACCEPT). Na VM2, tente acessar o SSH. Explique o que aconteceu.
+
+11) Na VM1, mostre as políticas vigentes usando o comando: sudo iptables -L --line-numbers. As regras funcionam em ordem? Faça um experimento para verificar isso. Bloqueie o serviço SSH usando a diretiva REJECT ao invés de DROP. O que aconteceu?
+
+12) Apague a regra que liberava o SSH usando o comando: sudo iptables -D INPUT x (onde x é o número da regra). Tente acessar o SSH novamente. Qual é a resposta agora? Ela é diferente da diretiva anterior (DROP)?
+
+13) Seria possível refazer os passos anteriores criando regras para o endereço IP específico da VM2? Forneça ao menos um exemplo de como o comando ficaria em tal situação?
+
+14) Suponha que você esteja configurando um servidor Web para uma empresa. Além da porta 80, o servidor também responderá na porta 443. Para fins de gerenciamento, o servidor Web possui um SSH instalado. Contudo, a única máquina que pode acessar tal SSH é um computador que fica dentro da empresa com o IP: 10.0.2.7. Qualquer coisa além disso deve ser bloqueado pelo filtro de pacotes. Quais regras Iptables devem ser criadas para este servidor Web? Mostre como ficaria a tabela de regras do Iptables deste servidor Web. Dica: execute tais comandos em uma de suas VMs.

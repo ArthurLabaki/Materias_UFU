@@ -1,0 +1,25 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-06-02 12:03 EDT
+Initiating Ping Scan at 12:03
+Scanning www.guarulhos.sp.gov.br (131.100.128.78) [4 ports]
+Completed Ping Scan at 12:03, 0.08s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 12:03
+Completed Parallel DNS resolution of 1 host. at 12:03, 5.17s elapsed
+Initiating SYN Stealth Scan at 12:03
+Scanning www.guarulhos.sp.gov.br (131.100.128.78) [65536 ports]
+SYN Stealth Scan Timing: About 15.79% done; ETC: 12:06 (0:02:45 remaining)
+SYN Stealth Scan Timing: About 36.11% done; ETC: 12:06 (0:01:48 remaining)
+SYN Stealth Scan Timing: About 58.90% done; ETC: 12:06 (0:01:04 remaining)
+Completed SYN Stealth Scan at 12:05, 141.07s elapsed (65536 total ports)
+Initiating OS detection (try #1) against www.guarulhos.sp.gov.br (131.100.128.78)
+Retrying OS detection (try #2) against www.guarulhos.sp.gov.br (131.100.128.78)
+Nmap scan report for www.guarulhos.sp.gov.br (131.100.128.78)
+Host is up (0.0031s latency).
+rDNS record for 131.100.128.78: ivlz-131-100-128-78.iveloz.net.br
+All 65536 scanned ports on www.guarulhos.sp.gov.br (131.100.128.78) are in ignored states.
+Not shown: 65536 filtered tcp ports (no-response)
+Too many fingerprints match this host to give specific OS details
+
+Read data files from: /snap/nmap/2629/bin/../share/nmap
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 153.91 seconds
+           Raw packets sent: 131227 (5.778MB) | Rcvd: 112 (4.480KB)

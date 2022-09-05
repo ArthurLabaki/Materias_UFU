@@ -1,0 +1,24 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-06-02 12:15 EDT
+Initiating Ping Scan at 12:15
+Scanning aracatuba.sp.gov.br (177.153.48.243) [4 ports]
+Completed Ping Scan at 12:15, 0.06s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 12:15
+Completed Parallel DNS resolution of 1 host. at 12:15, 0.21s elapsed
+Initiating SYN Stealth Scan at 12:15
+Scanning aracatuba.sp.gov.br (177.153.48.243) [65536 ports]
+SYN Stealth Scan Timing: About 19.39% done; ETC: 12:17 (0:02:09 remaining)
+SYN Stealth Scan Timing: About 45.82% done; ETC: 12:17 (0:01:12 remaining)
+Completed SYN Stealth Scan at 12:17, 110.52s elapsed (65536 total ports)
+Initiating OS detection (try #1) against aracatuba.sp.gov.br (177.153.48.243)
+Retrying OS detection (try #2) against aracatuba.sp.gov.br (177.153.48.243)
+Nmap scan report for aracatuba.sp.gov.br (177.153.48.243)
+Host is up (0.010s latency).
+rDNS record for 177.153.48.243: vpshost3770.publiccloud.locaweb.com.br
+All 65536 scanned ports on aracatuba.sp.gov.br (177.153.48.243) are in ignored states.
+Not shown: 65536 filtered tcp ports (no-response)
+Too many fingerprints match this host to give specific OS details
+
+Read data files from: /snap/nmap/2629/bin/../share/nmap
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 115.07 seconds
+           Raw packets sent: 131199 (5.776MB) | Rcvd: 92 (3.956KB)

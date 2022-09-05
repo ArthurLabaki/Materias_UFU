@@ -1,0 +1,24 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-06-02 12:30 EDT
+Initiating Ping Scan at 12:30
+Scanning www.piedade.sp.gov.br (177.70.30.194) [4 ports]
+Completed Ping Scan at 12:30, 0.04s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 12:30
+Completed Parallel DNS resolution of 1 host. at 12:30, 0.14s elapsed
+Initiating SYN Stealth Scan at 12:30
+Scanning www.piedade.sp.gov.br (177.70.30.194) [65536 ports]
+SYN Stealth Scan Timing: About 20.86% done; ETC: 12:32 (0:01:58 remaining)
+SYN Stealth Scan Timing: About 48.80% done; ETC: 12:32 (0:01:04 remaining)
+Completed SYN Stealth Scan at 12:32, 106.39s elapsed (65536 total ports)
+Initiating OS detection (try #1) against www.piedade.sp.gov.br (177.70.30.194)
+Retrying OS detection (try #2) against www.piedade.sp.gov.br (177.70.30.194)
+Nmap scan report for www.piedade.sp.gov.br (177.70.30.194)
+Host is up (0.00034s latency).
+rDNS record for 177.70.30.194: server.swop.com.br
+All 65536 scanned ports on www.piedade.sp.gov.br (177.70.30.194) are in ignored states.
+Not shown: 65536 filtered tcp ports (no-response)
+Too many fingerprints match this host to give specific OS details
+
+Read data files from: /snap/nmap/2629/bin/../share/nmap
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 110.76 seconds
+           Raw packets sent: 131202 (5.777MB) | Rcvd: 87 (3.480KB)

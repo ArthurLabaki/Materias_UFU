@@ -1,0 +1,23 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-06-02 12:10 EDT
+Initiating Ping Scan at 12:10
+Scanning www.sorocaba.sp.gov.br (170.247.9.94) [4 ports]
+Completed Ping Scan at 12:10, 0.04s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 12:10
+Completed Parallel DNS resolution of 1 host. at 12:10, 0.93s elapsed
+Initiating SYN Stealth Scan at 12:10
+Scanning www.sorocaba.sp.gov.br (170.247.9.94) [65536 ports]
+SYN Stealth Scan Timing: About 19.39% done; ETC: 12:13 (0:02:09 remaining)
+SYN Stealth Scan Timing: About 46.08% done; ETC: 12:12 (0:01:11 remaining)
+Completed SYN Stealth Scan at 12:12, 109.58s elapsed (65536 total ports)
+Initiating OS detection (try #1) against www.sorocaba.sp.gov.br (170.247.9.94)
+Retrying OS detection (try #2) against www.sorocaba.sp.gov.br (170.247.9.94)
+Nmap scan report for www.sorocaba.sp.gov.br (170.247.9.94)
+Host is up (0.00047s latency).
+All 65536 scanned ports on www.sorocaba.sp.gov.br (170.247.9.94) are in ignored states.
+Not shown: 65536 filtered tcp ports (no-response)
+Too many fingerprints match this host to give specific OS details
+
+Read data files from: /snap/nmap/2629/bin/../share/nmap
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 114.16 seconds
+           Raw packets sent: 131204 (5.777MB) | Rcvd: 89 (3.560KB)

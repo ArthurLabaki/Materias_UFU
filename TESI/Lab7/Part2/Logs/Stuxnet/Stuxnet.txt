@@ -1,0 +1,103 @@
+ Analyzer Log
+
+2022-07-03 02:33:19,015 [analyzer] DEBUG: Starting analyzer from: C:\tmpwwr_kc
+2022-07-03 02:33:19,015 [analyzer] DEBUG: Pipe server name: \??\PIPE\xHjDtiJfikrwMcUau
+2022-07-03 02:33:19,015 [analyzer] DEBUG: Log pipe server name: \??\PIPE\EZkcKemkbJVDgroxQOLklp
+2022-07-03 02:33:19,265 [analyzer] DEBUG: Started auxiliary module Curtain
+2022-07-03 02:33:19,280 [analyzer] DEBUG: Started auxiliary module DbgView
+2022-07-03 02:33:19,796 [analyzer] DEBUG: Started auxiliary module Disguise
+2022-07-03 02:33:20,000 [analyzer] DEBUG: Loaded monitor into process with pid 504
+2022-07-03 02:33:20,000 [analyzer] DEBUG: Started auxiliary module DumpTLSMasterSecrets
+2022-07-03 02:33:20,000 [analyzer] DEBUG: Started auxiliary module Human
+2022-07-03 02:33:20,000 [analyzer] DEBUG: Started auxiliary module InstallCertificate
+2022-07-03 02:33:20,000 [analyzer] DEBUG: Started auxiliary module Reboot
+2022-07-03 02:33:20,078 [analyzer] DEBUG: Started auxiliary module RecentFiles
+2022-07-03 02:33:20,078 [analyzer] DEBUG: Started auxiliary module Screenshots
+2022-07-03 02:33:20,078 [analyzer] DEBUG: Started auxiliary module Sysmon
+2022-07-03 02:33:20,078 [analyzer] DEBUG: Started auxiliary module LoadZer0m0n
+2022-07-03 02:33:20,203 [lib.api.process] INFO: Successfully executed process from path u'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\Stuxnet.exe' with arguments '' and pid 1824
+2022-07-03 02:33:20,375 [analyzer] DEBUG: Loaded monitor into process with pid 1824
+2022-07-03 02:33:20,467 [lib.api.process] ERROR: Failed to dump memory of 32-bit process with pid 1824.
+2022-07-03 02:33:21,203 [analyzer] INFO: Process with pid 1824 has terminated
+2022-07-03 02:33:21,203 [analyzer] INFO: Process list is empty, terminating analysis.
+2022-07-03 02:33:22,421 [analyzer] INFO: Terminating remaining processes before shutdown.
+2022-07-03 02:33:22,437 [analyzer] INFO: Analysis completed.
+
+Cuckoo Log
+
+2022-07-03 02:36:20,690 [cuckoo.core.scheduler] DEBUG: Task #3158671: no machine available yet
+2022-07-03 02:36:30,721 [cuckoo.core.scheduler] DEBUG: Task #3158671: no machine available yet
+2022-07-03 02:36:40,748 [cuckoo.core.scheduler] DEBUG: Task #3158671: no machine available yet
+2022-07-03 02:36:50,773 [cuckoo.core.scheduler] DEBUG: Task #3158671: no machine available yet
+2022-07-03 02:37:00,797 [cuckoo.core.scheduler] DEBUG: Task #3158671: no machine available yet
+2022-07-03 02:37:10,824 [cuckoo.core.scheduler] DEBUG: Task #3158671: no machine available yet
+2022-07-03 02:37:20,854 [cuckoo.core.scheduler] DEBUG: Task #3158671: no machine available yet
+2022-07-03 02:37:30,895 [cuckoo.core.scheduler] DEBUG: Task #3158671: no machine available yet
+2022-07-03 02:37:40,919 [cuckoo.core.scheduler] DEBUG: Task #3158671: no machine available yet
+2022-07-03 02:37:50,942 [cuckoo.core.scheduler] DEBUG: Task #3158671: no machine available yet
+2022-07-03 02:38:01,194 [cuckoo.core.scheduler] DEBUG: Task #3158671: no machine available yet
+2022-07-03 02:38:11,221 [cuckoo.core.scheduler] DEBUG: Task #3158671: no machine available yet
+2022-07-03 02:38:21,248 [cuckoo.core.scheduler] DEBUG: Task #3158671: no machine available yet
+2022-07-03 02:38:31,273 [cuckoo.core.scheduler] DEBUG: Task #3158671: no machine available yet
+2022-07-03 02:38:41,312 [cuckoo.core.scheduler] DEBUG: Task #3158671: no machine available yet
+2022-07-03 02:38:51,342 [cuckoo.core.scheduler] DEBUG: Task #3158671: no machine available yet
+2022-07-03 02:39:01,364 [cuckoo.core.scheduler] DEBUG: Task #3158671: no machine available yet
+2022-07-03 02:39:11,389 [cuckoo.core.scheduler] DEBUG: Task #3158671: no machine available yet
+2022-07-03 02:39:21,415 [cuckoo.core.scheduler] DEBUG: Task #3158671: no machine available yet
+2022-07-03 02:39:31,449 [cuckoo.core.scheduler] DEBUG: Task #3158671: no machine available yet
+2022-07-03 02:39:41,481 [cuckoo.core.scheduler] INFO: Task #3158671: acquired machine win7x645 (label=win7x645)
+2022-07-03 02:39:41,481 [cuckoo.core.resultserver] DEBUG: Now tracking machine 192.168.168.205 for task #3158671
+2022-07-03 02:39:41,653 [cuckoo.auxiliary.sniffer] INFO: Started sniffer with PID 3071544 (interface=vboxnet0, host=192.168.168.205)
+2022-07-03 02:39:42,176 [cuckoo.machinery.virtualbox] DEBUG: Starting vm win7x645
+2022-07-03 02:39:42,590 [cuckoo.machinery.virtualbox] DEBUG: Restoring virtual machine win7x645 to vmcloak
+2022-07-03 02:43:18,074 [cuckoo.core.guest] INFO: Starting analysis #3158671 on guest (id=win7x645, ip=192.168.168.205)
+2022-07-03 02:43:19,079 [cuckoo.core.guest] DEBUG: win7x645: not ready yet
+2022-07-03 02:43:24,100 [cuckoo.core.guest] INFO: Guest is running Cuckoo Agent 0.10 (id=win7x645, ip=192.168.168.205)
+2022-07-03 02:43:24,165 [cuckoo.core.guest] DEBUG: Uploading analyzer to guest (id=win7x645, ip=192.168.168.205, monitor=latest, size=6659294)
+2022-07-03 02:43:25,596 [cuckoo.core.resultserver] DEBUG: Task #3158671: live log analysis.log initialized.
+2022-07-03 02:43:26,540 [cuckoo.core.resultserver] DEBUG: Task #3158671 is sending a BSON stream
+2022-07-03 02:43:26,895 [cuckoo.core.resultserver] DEBUG: Task #3158671 is sending a BSON stream
+2022-07-03 02:43:27,791 [cuckoo.core.resultserver] DEBUG: Task #3158671: File upload for 'shots/0001.jpg'
+2022-07-03 02:43:27,824 [cuckoo.core.resultserver] DEBUG: Task #3158671 uploaded file length: 133454
+2022-07-03 02:43:28,931 [cuckoo.core.resultserver] DEBUG: Task #3158671: File upload for 'curtain/1656808402.33.curtain.log'
+2022-07-03 02:43:28,975 [cuckoo.core.resultserver] DEBUG: Task #3158671 uploaded file length: 36
+2022-07-03 02:43:29,028 [cuckoo.core.resultserver] DEBUG: Task #3158671: File upload for 'sysmon/1656808402.42.sysmon.xml'
+2022-07-03 02:43:29,099 [cuckoo.core.resultserver] DEBUG: Task #3158671 uploaded file length: 205936
+2022-07-03 02:43:29,865 [cuckoo.core.resultserver] DEBUG: Task #3158671 had connection reset for <Context for LOG>
+2022-07-03 02:43:31,150 [cuckoo.core.guest] INFO: win7x645: analysis completed successfully
+2022-07-03 02:43:31,161 [cuckoo.core.plugins] DEBUG: Stopped auxiliary module: Redsocks
+2022-07-03 02:43:31,254 [cuckoo.core.plugins] DEBUG: Stopped auxiliary module: Sniffer
+2022-07-03 02:44:04,076 [cuckoo.machinery.virtualbox] INFO: Successfully generated memory dump for virtual machine with label win7x645 to path /srv/cuckoo/cwd/storage/analyses/3158671/memory.dmp
+2022-07-03 02:44:04,077 [cuckoo.machinery.virtualbox] DEBUG: Stopping vm win7x645
+2022-07-03 02:48:00,044 [cuckoo.core.resultserver] DEBUG: Stopped tracking machine 192.168.168.205 for task #3158671
+2022-07-03 02:48:00,191 [cuckoo.core.scheduler] DEBUG: Released database task #3158671
+2022-07-03 02:48:00,334 [cuckoo.core.scheduler] INFO: Task #3158671: analysis procedure completed
+
+Strings - 
+Pj@jDh
+ZwMapViewOfSection
+ZwCreateSection
+ZwOpenFile
+ZwClose
+ZwQueryAttributesFile
+ZwCreateSection
+FreeLibrary
+LoadLibraryW
+CloseHandle
+DeleteFileA
+KERNEL32.dll
+wsprintfW
+DllUnregisterServer
+DllUnregisterServerEx
+gK1~A
+KERNEL32.DLL.ASLR.%08x
+
+Network - nenhum
+
+gen_memory_commands_shell_dev
+csrss.exe
+svchost.exe
+sysmon.exe
+dwm.exe
+taskhost.exe
+lsm.exe

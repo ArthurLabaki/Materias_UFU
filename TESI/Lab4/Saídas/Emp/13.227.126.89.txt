@@ -1,0 +1,29 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-06-02 22:06 EDT
+Initiating Ping Scan at 22:06
+Scanning 13.227.126.89 [4 ports]
+Completed Ping Scan at 22:06, 0.03s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 22:06
+Completed Parallel DNS resolution of 1 host. at 22:06, 0.04s elapsed
+Initiating SYN Stealth Scan at 22:06
+Scanning server-13-227-126-89.gru1.r.cloudfront.net (13.227.126.89) [65536 ports]
+Discovered open port 443/tcp on 13.227.126.89
+SYN Stealth Scan Timing: About 18.04% done; ETC: 22:09 (0:02:21 remaining)
+SYN Stealth Scan Timing: About 44.07% done; ETC: 22:08 (0:01:17 remaining)
+Completed SYN Stealth Scan at 22:08, 113.59s elapsed (65536 total ports)
+Initiating OS detection (try #1) against server-13-227-126-89.gru1.r.cloudfront.net (13.227.126.89)
+Retrying OS detection (try #2) against server-13-227-126-89.gru1.r.cloudfront.net (13.227.126.89)
+Nmap scan report for server-13-227-126-89.gru1.r.cloudfront.net (13.227.126.89)
+Host is up (0.030s latency).
+Not shown: 65535 filtered tcp ports (no-response)
+PORT    STATE SERVICE
+443/tcp open  https
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: 2N Helios IP VoIP doorbell (98%), Grandstream GXP1105 VoIP phone (98%), Garmin Virb Elite action camera (95%), Advanced Illumination DCS-100E lighting controller (94%), Enlogic PDU (FreeRTOS/lwIP) (94%), Smart Mirage CX06 satellite receiver (94%), Ocean Signal E101V emergency beacon (FreeRTOS/lwIP) (93%), AzBox Bravissimo Twin satellite TV decoder (92%), Cognex DataMan 200 ID reader (lwIP TCP/IP stack) (92%), DTE Energy Bridge (lwIP stack) (92%)
+No exact OS matches for host (test conditions non-ideal).
+TCP Sequence Prediction: Difficulty=0 (Trivial joke)
+IP ID Sequence Generation: Incremental
+
+Read data files from: /snap/nmap/2629/bin/../share/nmap
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 119.65 seconds
+           Raw packets sent: 131243 (5.779MB) | Rcvd: 111 (4.780KB)

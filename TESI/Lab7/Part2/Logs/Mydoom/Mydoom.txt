@@ -1,0 +1,77 @@
+Analyzer Log
+
+2022-07-03 02:34:21,000 [analyzer] DEBUG: Starting analyzer from: C:\tmpd0os1j
+2022-07-03 02:34:21,015 [analyzer] DEBUG: Pipe server name: \??\PIPE\nraKTegpkoLIKwDpO
+2022-07-03 02:34:21,015 [analyzer] DEBUG: Log pipe server name: \??\PIPE\vMWDqwenJFosjIuSusAAeRLcrxLmHrwq
+2022-07-03 02:34:21,312 [analyzer] DEBUG: Started auxiliary module Curtain
+2022-07-03 02:34:21,312 [analyzer] DEBUG: Started auxiliary module DbgView
+2022-07-03 02:34:22,217 [analyzer] DEBUG: Started auxiliary module Disguise
+2022-07-03 02:34:22,437 [analyzer] DEBUG: Loaded monitor into process with pid 512
+2022-07-03 02:34:22,437 [analyzer] DEBUG: Started auxiliary module DumpTLSMasterSecrets
+2022-07-03 02:34:22,437 [analyzer] DEBUG: Started auxiliary module Human
+2022-07-03 02:34:22,437 [analyzer] DEBUG: Started auxiliary module InstallCertificate
+2022-07-03 02:34:22,437 [analyzer] DEBUG: Started auxiliary module Reboot
+2022-07-03 02:34:22,483 [analyzer] DEBUG: Started auxiliary module RecentFiles
+2022-07-03 02:34:22,483 [analyzer] DEBUG: Started auxiliary module Screenshots
+2022-07-03 02:34:22,483 [analyzer] DEBUG: Started auxiliary module Sysmon
+2022-07-03 02:34:22,483 [analyzer] DEBUG: Started auxiliary module LoadZer0m0n
+2022-07-03 02:34:22,671 [lib.api.process] INFO: Successfully executed process from path u'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\Mydoom.exe' with arguments '' and pid 2960
+2022-07-03 02:34:22,858 [analyzer] DEBUG: Loaded monitor into process with pid 2960
+2022-07-03 02:34:22,875 [analyzer] INFO: Added new file to list with pid 2960 and path C:\Users\Administrator\AppData\Local\Temp\Message
+2022-07-03 02:34:22,875 [analyzer] INFO: Added new file to list with pid 2960 and path C:\Windows\SysWOW64\shimgapi.dll
+2022-07-03 02:34:23,687 [analyzer] INFO: Process with pid 2960 has terminated
+2022-07-03 02:34:23,687 [analyzer] INFO: Process list is empty, terminating analysis.
+2022-07-03 02:34:24,842 [analyzer] INFO: Terminating remaining processes before shutdown.
+2022-07-03 02:34:24,858 [analyzer] INFO: Analysis completed.
+
+Cuckoo Log
+
+2022-07-03 02:39:47,018 [cuckoo.core.scheduler] DEBUG: Task #3158680: no machine available yet
+2022-07-03 02:39:57,051 [cuckoo.core.scheduler] DEBUG: Task #3158680: no machine available yet
+2022-07-03 02:40:07,076 [cuckoo.core.scheduler] DEBUG: Task #3158680: no machine available yet
+2022-07-03 02:40:17,110 [cuckoo.core.scheduler] INFO: Task #3158680: acquired machine win7x6429 (label=win7x6429)
+2022-07-03 02:40:17,112 [cuckoo.core.resultserver] DEBUG: Now tracking machine 192.168.168.229 for task #3158680
+2022-07-03 02:40:17,254 [cuckoo.auxiliary.sniffer] INFO: Started sniffer with PID 3072206 (interface=vboxnet0, host=192.168.168.229)
+2022-07-03 02:40:17,414 [cuckoo.machinery.virtualbox] DEBUG: Starting vm win7x6429
+2022-07-03 02:40:17,774 [cuckoo.machinery.virtualbox] DEBUG: Restoring virtual machine win7x6429 to vmcloak
+2022-07-03 02:44:53,082 [cuckoo.core.guest] INFO: Starting analysis #3158680 on guest (id=win7x6429, ip=192.168.168.229)
+2022-07-03 02:44:54,086 [cuckoo.core.guest] DEBUG: win7x6429: not ready yet
+2022-07-03 02:44:59,120 [cuckoo.core.guest] INFO: Guest is running Cuckoo Agent 0.10 (id=win7x6429, ip=192.168.168.229)
+2022-07-03 02:44:59,327 [cuckoo.core.guest] DEBUG: Uploading analyzer to guest (id=win7x6429, ip=192.168.168.229, monitor=latest, size=6659294)
+2022-07-03 02:45:00,830 [cuckoo.core.resultserver] DEBUG: Task #3158680: live log analysis.log initialized.
+2022-07-03 02:45:02,251 [cuckoo.core.resultserver] DEBUG: Task #3158680 is sending a BSON stream
+2022-07-03 02:45:02,661 [cuckoo.core.resultserver] DEBUG: Task #3158680 is sending a BSON stream
+2022-07-03 02:45:03,467 [cuckoo.core.resultserver] DEBUG: Task #3158680: File upload for 'shots/0001.jpg'
+2022-07-03 02:45:03,480 [cuckoo.core.resultserver] DEBUG: Task #3158680 uploaded file length: 133343
+2022-07-03 02:45:04,637 [cuckoo.core.resultserver] DEBUG: Task #3158680: File upload for 'curtain/1656808464.75.curtain.log'
+2022-07-03 02:45:04,640 [cuckoo.core.resultserver] DEBUG: Task #3158680 uploaded file length: 36
+2022-07-03 02:45:04,730 [cuckoo.core.resultserver] DEBUG: Task #3158680: File upload for 'sysmon/1656808464.84.sysmon.xml'
+2022-07-03 02:45:04,735 [cuckoo.core.resultserver] DEBUG: Task #3158680: File upload for 'files/fa3f934083746a70_shimgapi.dll'
+2022-07-03 02:45:04,737 [cuckoo.core.resultserver] DEBUG: Task #3158680 uploaded file length: 4096
+2022-07-03 02:45:04,738 [cuckoo.core.resultserver] DEBUG: Task #3158680 uploaded file length: 186580
+2022-07-03 02:45:04,740 [cuckoo.core.resultserver] DEBUG: Task #3158680: File upload for 'files/348d981d77d2856d_message'
+2022-07-03 02:45:04,742 [cuckoo.core.resultserver] DEBUG: Task #3158680 uploaded file length: 2560
+2022-07-03 02:45:05,520 [cuckoo.core.resultserver] DEBUG: Task #3158680 had connection reset for <Context for LOG>
+2022-07-03 02:45:06,399 [cuckoo.core.guest] INFO: win7x6429: analysis completed successfully
+2022-07-03 02:45:06,407 [cuckoo.core.plugins] DEBUG: Stopped auxiliary module: Redsocks
+2022-07-03 02:45:06,477 [cuckoo.core.plugins] DEBUG: Stopped auxiliary module: Sniffer
+2022-07-03 02:45:35,832 [cuckoo.machinery.virtualbox] INFO: Successfully generated memory dump for virtual machine with label win7x6429 to path /srv/cuckoo/cwd/storage/analyses/3158680/memory.dmp
+2022-07-03 02:45:35,833 [cuckoo.machinery.virtualbox] DEBUG: Stopping vm win7x6429
+2022-07-03 02:48:55,923 [cuckoo.core.resultserver] DEBUG: Stopped tracking machine 192.168.168.229 for task #3158680
+2022-07-03 02:48:56,079 [cuckoo.core.scheduler] DEBUG: Released database task #3158680
+2022-07-03 02:48:56,243 [cuckoo.core.scheduler] INFO: Task #3158680: analysis procedure completed
+
+String - É possivel ver algumas string diferentes, como:
+
+KERNEL32.DLL
+ADVAPI32.dll
+MSVCRT.dll
+USER32.dll
+WS2_32.dll
+LoadLibraryA
+GetProcAddress
+ExitProcess
+
+Network - nenhum
+
+VM Memory Dump - É possivel ver alguns processos

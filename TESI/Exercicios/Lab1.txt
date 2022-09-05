@@ -1,0 +1,27 @@
+TP1 - Virtualização e conceitos básicos de Linux
+Vence 20 de maio de 2022 às 23:59
+Instruções
+
+Escrever o relatório em Latex! Usar o template disponível em "Arquivos". O Overleaf é ótimo editor online...
+Pesquise e explique o conceito de virtualização (máquinas virtuais). Qual a importância desse paradigma para a gerência e segurança de servidores? (mostre as referências que foram usadas para escrever a resposta)
+Instale a versão mais recente do software Virtual Box em seu computador (https://www.virtualbox.org/).
+Use o tutorial fornecido pela equipe do projeto SEED Labs para carregar a imagem da máquina virtual que será utilizada ao longo da disciplina https://github.com/seed-labs/seed-labs/blob/master/manuals/vm/seedvm-manual.md- Link para a imagem da máquina virtual: https://drive.google.com/file/d/138fqx0F8bThLm9ka8cnuxmrD6irtz_4m/view?usp=sharing)
+Use livros ou tutoriais disponíveis na Internet para explorar os seguintes comandos básicos do Linux:
+Entrar, listar e criar/apagar diretórios.
+Copiar arquivos.
+Visualizar conteúdo de arquivos.
+Mostrar a função de um determinado comando.
+Listar processos e finalizar processos.
+Mostrar uso de recursos do sistema como memória e processamento.
+Alterar permissão/dono/grupo de um determinado arquivo ou diretório.
+Compactar/descompactar arquivos e diretórios.
+Mostrar o uso dos discos rígidos.
+Abrir um novo terminal remoto SSH e copiar arquivos entre diferentes máquinas Linux.
+Instalar novos softwares/pacotes (Ubuntu).
+Verificar se uma máquina remota está conectada à rede (ping).
+Descobrir o endereço IP designado às placas de rede do computador.
+Faça um clone da máquina virtual carregada no item 3. Carregue as duas imagens ao mesmo tempo e verifique o endereço IP de cada uma delas. Elas podem conversar entre si? Acerte as configurações até que isso seja possível.
+Pesquise e explique o conceito de Shell scripting.
+Com base nos comandos recém aprendidos, crie dois bash/shell-scripts.
+Fornecer permissão de escrita/execução/leitura de um determinado diretório, compactá-lo e copiar o arquivo compactado para um diretório de sua escolha.
+Simular uma função de backup de arquivos. Ou seja, compactar diferentes arquivos, alterar o nome do arquivo de backup de acordo com o dia e a hora e enviar tal arquivo para outro computador remoto. Faça os testes com as duas máquinas virtuais recém-criadas.

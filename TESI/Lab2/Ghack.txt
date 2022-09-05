@@ -1,0 +1,10 @@
+intitle:   -no titulo da busca
+inurl:     -na url do site  
+intext:    -em qualquer area do site
+" "        -termo exato
+*          -qualquer coisa
++ e -      -adicionae e remover termos
+site:      -site especifico
+filetype:  -tipo de arquivo
+robots.txt -pastas mapeadas pelo google
+index of/   -diretorio não indexado (normalmente no titulo)

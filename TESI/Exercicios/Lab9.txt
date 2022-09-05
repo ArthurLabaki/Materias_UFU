@@ -1,0 +1,10 @@
+TP9 - Estudo sobre vulnerabilidades de segurança
+Vence 19 de julho de 2022 às 23:59
+Instruções
+Pesquise e explique o conceito de vulnerabilidade de segurança.
+Pesquise e explique a importância da fundação OWASP para o ecossistema de segurança de software.
+Liste e explique os principais projetos da OWASP.
+O que é o projeto OWASP Top 10?
+Explique o significado das siglas é CVE, CWE e CVSS.
+Liste as cinco primeiras vulnerabilidades elencadas pela OWASP – Top 10 (https://owasp.org/www-project-top-ten/). Forneça uma breve explicação sobre cada uma delas.
+Anexe um PDF (seguindo o modelo do Overleaf) com as respostas.

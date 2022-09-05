@@ -1,0 +1,156 @@
+ Analyzer Log
+
+2022-07-03 02:33:19,015 [analyzer] DEBUG: Starting analyzer from: C:\tmpl4240h
+2022-07-03 02:33:19,030 [analyzer] DEBUG: Pipe server name: \??\PIPE\dQcxNccrRGeKEfoNtmLokXZWkK
+2022-07-03 02:33:19,030 [analyzer] DEBUG: Log pipe server name: \??\PIPE\xgmftojTONMAxTZo
+2022-07-03 02:33:19,562 [analyzer] DEBUG: Started auxiliary module Curtain
+2022-07-03 02:33:19,578 [analyzer] DEBUG: Started auxiliary module DbgView
+2022-07-03 02:33:20,265 [analyzer] DEBUG: Started auxiliary module Disguise
+2022-07-03 02:33:20,467 [analyzer] DEBUG: Loaded monitor into process with pid 508
+2022-07-03 02:33:20,467 [analyzer] DEBUG: Started auxiliary module DumpTLSMasterSecrets
+2022-07-03 02:33:20,467 [analyzer] DEBUG: Started auxiliary module Human
+2022-07-03 02:33:20,467 [analyzer] DEBUG: Started auxiliary module InstallCertificate
+2022-07-03 02:33:20,467 [analyzer] DEBUG: Started auxiliary module Reboot
+2022-07-03 02:33:20,546 [analyzer] DEBUG: Started auxiliary module RecentFiles
+2022-07-03 02:33:20,546 [analyzer] DEBUG: Started auxiliary module Screenshots
+2022-07-03 02:33:20,546 [analyzer] DEBUG: Started auxiliary module Sysmon
+2022-07-03 02:33:20,546 [analyzer] DEBUG: Started auxiliary module LoadZer0m0n
+2022-07-03 02:33:20,546 [modules.packages.ie] INFO: Submitted file is missing extension, adding .html
+2022-07-03 02:33:20,671 [lib.api.process] INFO: Successfully executed process from path 'C:\\Program Files\\Internet Explorer\\iexplore.exe' with arguments [u'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\SQL SLM.html'] and pid 2820
+2022-07-03 02:33:20,812 [analyzer] DEBUG: Loaded monitor into process with pid 2820
+2022-07-03 02:33:22,375 [analyzer] DEBUG: Following legitimate IE11 process: "C:\Program Files (x86)\Internet Explorer\IEXPLORE.EXE" SCODEF:2820 CREDAT:275457 /prefetch:2!
+2022-07-03 02:33:22,421 [analyzer] INFO: Injected into process with pid 816 and name u'iexplore.exe'
+2022-07-03 02:33:22,500 [lib.api.process] ERROR: Failed to dump memory of 32-bit process with pid 816.
+2022-07-03 02:33:22,640 [analyzer] INFO: Added new file to list with pid 2820 and path C:\Users\Administrator\AppData\Local\Microsoft\Internet Explorer\Recovery\High\Active\RecoveryStore.{BCE0B9E5-FA67-11EC-B707-4E5B298E6B76}.dat
+2022-07-03 02:33:22,687 [analyzer] DEBUG: Loaded monitor into process with pid 816
+2022-07-03 02:33:22,687 [analyzer] INFO: Added new file to list with pid 2820 and path C:\Users\Administrator\AppData\Local\Temp\~DF220A9BD355F11FBC.TMP
+2022-07-03 02:33:23,015 [analyzer] DEBUG: Error resolving function mshtml!CDocument_write through our custom callback.
+2022-07-03 02:33:23,015 [analyzer] DEBUG: Error resolving function mshtml!CElement_put_innerHTML through our custom callback.
+2022-07-03 02:33:23,030 [analyzer] DEBUG: Error resolving function mshtml!CHyperlink_SetUrlComponent through our custom callback.
+2022-07-03 02:33:23,030 [analyzer] DEBUG: Error resolving function mshtml!CIFrameElement_CreateElement through our custom callback.
+2022-07-03 02:33:23,030 [analyzer] DEBUG: Error resolving function mshtml!CImgElement_put_src through our custom callback.
+2022-07-03 02:33:23,030 [analyzer] DEBUG: Error resolving function mshtml!CScriptElement_put_src through our custom callback.
+2022-07-03 02:33:23,030 [analyzer] DEBUG: Error resolving function mshtml!CWindow_AddTimeoutCode through our custom callback.
+2022-07-03 02:33:23,046 [analyzer] DEBUG: Error resolving function mshtml!CDocument_write through our custom callback.
+2022-07-03 02:33:23,046 [analyzer] DEBUG: Error resolving function mshtml!CElement_put_innerHTML through our custom callback.
+2022-07-03 02:33:23,046 [analyzer] DEBUG: Error resolving function mshtml!CHyperlink_SetUrlComponent through our custom callback.
+2022-07-03 02:33:23,046 [analyzer] DEBUG: Error resolving function mshtml!CIFrameElement_CreateElement through our custom callback.
+2022-07-03 02:33:23,046 [analyzer] DEBUG: Error resolving function mshtml!CImgElement_put_src through our custom callback.
+2022-07-03 02:33:23,046 [analyzer] DEBUG: Error resolving function mshtml!CScriptElement_put_src through our custom callback.
+2022-07-03 02:33:23,046 [analyzer] DEBUG: Error resolving function mshtml!CWindow_AddTimeoutCode through our custom callback.
+2022-07-03 02:33:23,342 [analyzer] INFO: Added new file to list with pid 2820 and path C:\Users\Administrator\AppData\Local\Microsoft\Internet Explorer\Recovery\High\Active\{BCE0B9E7-FA67-11EC-B707-4E5B298E6B76}.dat
+2022-07-03 02:33:23,358 [analyzer] INFO: Added new file to list with pid 2820 and path C:\Users\Administrator\AppData\Local\Temp\~DF631D9D9B93A6107D.TMP
+2022-07-03 02:33:23,437 [analyzer] DEBUG: Error resolving function mshtml!CDocument_write through our custom callback.
+2022-07-03 02:33:23,437 [analyzer] DEBUG: Error resolving function mshtml!CElement_put_innerHTML through our custom callback.
+2022-07-03 02:33:23,437 [analyzer] DEBUG: Error resolving function mshtml!CHyperlink_SetUrlComponent through our custom callback.
+2022-07-03 02:33:23,437 [analyzer] DEBUG: Error resolving function mshtml!CIFrameElement_CreateElement through our custom callback.
+2022-07-03 02:33:23,437 [analyzer] DEBUG: Error resolving function mshtml!CImgElement_put_src through our custom callback.
+2022-07-03 02:33:23,437 [analyzer] DEBUG: Error resolving function mshtml!CScriptElement_put_src through our custom callback.
+2022-07-03 02:33:23,437 [analyzer] DEBUG: Error resolving function mshtml!CWindow_AddTimeoutCode through our custom callback.
+2022-07-03 02:33:25,155 [analyzer] INFO: Added new file to list with pid 816 and path C:\Users\Administrator\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.IE5\SZ2LU1Y0\share[1].js
+2022-07-03 02:33:25,515 [analyzer] INFO: Added new file to list with pid 816 and path C:\Users\Administrator\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.IE5\YUE14ZF3\share_view[1].js
+2022-07-03 02:33:25,592 [analyzer] INFO: Added new file to list with pid 816 and path C:\Users\Administrator\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.IE5\O0WV7MX9\share_api[1].js
+2022-07-03 02:33:25,842 [analyzer] INFO: Added new file to list with pid 816 and path C:\Users\Administrator\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.IE5\SZ2LU1Y0\tangram[1].js
+2022-07-03 02:33:25,921 [analyzer] INFO: Added new file to list with pid 816 and path C:\Users\Administrator\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.IE5\SZ2LU1Y0\view_base[1].js
+2022-07-03 02:33:26,155 [analyzer] INFO: Added new file to list with pid 816 and path C:\Users\Administrator\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.IE5\OKU0TWGK\api_base[1].js
+2022-07-03 02:33:27,128 [analyzer] INFO: Added new file to list with pid 816 and path C:\Users\Administrator\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.IE5\YUE14ZF3\partners[1].js
+2022-07-03 02:33:27,128 [analyzer] INFO: Added new file to list with pid 816 and path C:\Users\Administrator\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.IE5\YUE14ZF3\share_style0_24[1].css
+2022-07-03 02:33:27,565 [analyzer] INFO: Added new file to list with pid 816 and path C:\Users\Administrator\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.IE5\O0WV7MX9\icons_0_24[1].png
+2022-07-03 02:33:28,535 [analyzer] INFO: Added new file to list with pid 816 and path C:\Users\Administrator\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.IE5\OKU0TWGK\logger[1].js
+2022-07-03 01:41:31,364 [analyzer] INFO: Analysis timeout hit, terminating analysis.
+2022-07-03 01:41:31,568 [lib.api.process] ERROR: Failed to dump memory of 64-bit process with pid 2820.
+2022-07-03 01:41:31,614 [lib.api.process] ERROR: Failed to dump memory of 32-bit process with pid 816.
+2022-07-03 01:41:31,911 [analyzer] INFO: Terminating remaining processes before shutdown.
+2022-07-03 01:41:31,911 [lib.api.process] INFO: Successfully terminated process with pid 2820.
+2022-07-03 01:41:31,911 [lib.api.process] INFO: Successfully terminated process with pid 816.
+2022-07-03 01:41:31,957 [analyzer] WARNING: File at path u'c:\\users\\administrator\\appdata\\local\\temp\\~df631d9d9b93a6107d.tmp' does not exist, skip.
+2022-07-03 01:41:31,973 [analyzer] WARNING: File at path u'c:\\users\\administrator\\appdata\\local\\temp\\~df220a9bd355f11fbc.tmp' does not exist, skip.
+2022-07-03 01:41:31,989 [analyzer] INFO: Analysis completed.
+
+Cuckoo Log
+
+2022-07-03 02:34:15,648 [cuckoo.core.scheduler] DEBUG: Task #3158669: no machine available yet
+2022-07-03 02:34:25,671 [cuckoo.core.scheduler] DEBUG: Task #3158669: no machine available yet
+2022-07-03 02:34:35,712 [cuckoo.core.scheduler] DEBUG: Task #3158669: no machine available yet
+2022-07-03 02:34:45,736 [cuckoo.core.scheduler] DEBUG: Task #3158669: no machine available yet
+2022-07-03 02:34:55,755 [cuckoo.core.scheduler] DEBUG: Task #3158669: no machine available yet
+2022-07-03 02:35:05,783 [cuckoo.core.scheduler] DEBUG: Task #3158669: no machine available yet
+2022-07-03 02:35:15,808 [cuckoo.core.scheduler] DEBUG: Task #3158669: no machine available yet
+2022-07-03 02:35:25,833 [cuckoo.core.scheduler] DEBUG: Task #3158669: no machine available yet
+2022-07-03 02:35:35,868 [cuckoo.core.scheduler] DEBUG: Task #3158669: no machine available yet
+2022-07-03 02:35:45,896 [cuckoo.core.scheduler] DEBUG: Task #3158669: no machine available yet
+2022-07-03 02:35:55,921 [cuckoo.core.scheduler] DEBUG: Task #3158669: no machine available yet
+2022-07-03 02:36:05,967 [cuckoo.core.scheduler] DEBUG: Task #3158669: no machine available yet
+2022-07-03 02:36:16,013 [cuckoo.core.scheduler] DEBUG: Task #3158669: no machine available yet
+2022-07-03 02:36:26,051 [cuckoo.core.scheduler] DEBUG: Task #3158669: no machine available yet
+2022-07-03 02:36:36,090 [cuckoo.core.scheduler] DEBUG: Task #3158669: no machine available yet
+2022-07-03 02:36:46,142 [cuckoo.core.scheduler] DEBUG: Task #3158669: no machine available yet
+2022-07-03 02:36:56,180 [cuckoo.core.scheduler] DEBUG: Task #3158669: no machine available yet
+2022-07-03 02:37:06,215 [cuckoo.core.scheduler] DEBUG: Task #3158669: no machine available yet
+2022-07-03 02:37:16,267 [cuckoo.core.scheduler] DEBUG: Task #3158669: no machine available yet
+2022-07-03 02:37:26,323 [cuckoo.core.scheduler] INFO: Task #3158669: acquired machine win7x649 (label=win7x649)
+2022-07-03 02:37:26,327 [cuckoo.core.resultserver] DEBUG: Now tracking machine 192.168.168.209 for task #3158669
+2022-07-03 02:37:26,499 [cuckoo.auxiliary.sniffer] INFO: Started sniffer with PID 3068726 (interface=vboxnet0, host=192.168.168.209)
+2022-07-03 02:37:26,801 [cuckoo.machinery.virtualbox] DEBUG: Starting vm win7x649
+2022-07-03 02:37:27,238 [cuckoo.machinery.virtualbox] DEBUG: Restoring virtual machine win7x649 to vmcloak
+2022-07-03 02:40:22,142 [cuckoo.core.guest] INFO: Starting analysis #3158669 on guest (id=win7x649, ip=192.168.168.209)
+2022-07-03 02:40:23,147 [cuckoo.core.guest] DEBUG: win7x649: not ready yet
+2022-07-03 02:40:28,225 [cuckoo.core.guest] INFO: Guest is running Cuckoo Agent 0.10 (id=win7x649, ip=192.168.168.209)
+2022-07-03 02:40:28,453 [cuckoo.core.guest] DEBUG: Uploading analyzer to guest (id=win7x649, ip=192.168.168.209, monitor=latest, size=6659294)
+2022-07-03 02:40:30,647 [cuckoo.core.resultserver] DEBUG: Task #3158669: live log analysis.log initialized.
+2022-07-03 02:40:32,076 [cuckoo.core.resultserver] DEBUG: Task #3158669 is sending a BSON stream
+2022-07-03 02:40:32,418 [cuckoo.core.resultserver] DEBUG: Task #3158669 is sending a BSON stream
+2022-07-03 02:40:33,334 [cuckoo.core.resultserver] DEBUG: Task #3158669: File upload for 'shots/0001.jpg'
+2022-07-03 02:40:33,344 [cuckoo.core.resultserver] DEBUG: Task #3158669 uploaded file length: 133433
+2022-07-03 02:40:34,292 [cuckoo.core.resultserver] DEBUG: Task #3158669 is sending a BSON stream
+2022-07-03 02:40:35,476 [cuckoo.core.resultserver] DEBUG: Task #3158669: File upload for 'shots/0002.jpg'
+2022-07-03 02:40:35,480 [cuckoo.core.resultserver] DEBUG: Task #3158669 uploaded file length: 24418
+2022-07-03 02:40:36,575 [cuckoo.core.resultserver] DEBUG: Task #3158669: File upload for 'shots/0003.jpg'
+2022-07-03 02:40:36,585 [cuckoo.core.resultserver] DEBUG: Task #3158669 uploaded file length: 82653
+2022-07-03 02:40:45,022 [cuckoo.core.guest] DEBUG: win7x649: analysis #3158669 still processing
+2022-07-03 02:41:00,093 [cuckoo.core.guest] DEBUG: win7x649: analysis #3158669 still processing
+2022-07-03 02:41:15,160 [cuckoo.core.guest] DEBUG: win7x649: analysis #3158669 still processing
+2022-07-03 02:41:30,235 [cuckoo.core.guest] DEBUG: win7x649: analysis #3158669 still processing
+2022-07-03 02:41:31,727 [cuckoo.core.resultserver] DEBUG: Task #3158669: File upload for 'curtain/1656805291.71.curtain.log'
+2022-07-03 02:41:31,730 [cuckoo.core.resultserver] DEBUG: Task #3158669 uploaded file length: 36
+2022-07-03 02:41:31,914 [cuckoo.core.resultserver] DEBUG: Task #3158669: File upload for 'sysmon/1656805291.9.sysmon.xml'
+2022-07-03 02:41:31,928 [cuckoo.core.resultserver] DEBUG: Task #3158669 uploaded file length: 1924134
+2022-07-03 02:41:31,935 [cuckoo.core.resultserver] DEBUG: Task #3158669: File upload for 'files/14a42e9371611c4b_api_base[1].js'
+2022-07-03 02:41:31,938 [cuckoo.core.resultserver] DEBUG: Task #3158669 uploaded file length: 1468
+2022-07-03 02:41:31,952 [cuckoo.core.resultserver] DEBUG: Task #3158669: File upload for 'files/67c1704e2aac44a0_share_style0_24[1].css'
+2022-07-03 02:41:31,956 [cuckoo.core.resultserver] DEBUG: Task #3158669 uploaded file length: 3816
+2022-07-03 02:41:31,963 [cuckoo.core.resultserver] DEBUG: Task #3158669: File upload for 'files/0629ab3410234c50_partners[1].js'
+2022-07-03 02:41:31,973 [cuckoo.core.resultserver] DEBUG: Task #3158669 uploaded file length: 1866
+2022-07-03 02:41:31,976 [cuckoo.core.resultserver] DEBUG: Task #3158669: File upload for 'files/0bfe738a5b2a2884_{bce0b9e7-fa67-11ec-b707-4e5b298e6b76}.dat'
+2022-07-03 02:41:31,983 [cuckoo.core.resultserver] DEBUG: Task #3158669 uploaded file length: 6656
+2022-07-03 02:41:31,986 [cuckoo.core.resultserver] DEBUG: Task #3158669: File upload for 'files/0a761914b5c673c7_view_base[1].js'
+2022-07-03 02:41:31,988 [cuckoo.core.resultserver] DEBUG: Task #3158669 uploaded file length: 1616
+2022-07-03 02:41:31,990 [cuckoo.core.resultserver] DEBUG: Task #3158669: File upload for 'files/2b7fc19ce6cbcd3a_tangram[1].js'
+2022-07-03 02:41:31,992 [cuckoo.core.resultserver] DEBUG: Task #3158669: File upload for 'files/9d8ca3901382fcb7_share[1].js'
+2022-07-03 02:41:31,996 [cuckoo.core.resultserver] DEBUG: Task #3158669 uploaded file length: 17305
+2022-07-03 02:41:31,998 [cuckoo.core.resultserver] DEBUG: Task #3158669: File upload for 'files/077a78aab6058468_share_api[1].js'
+2022-07-03 02:41:32,069 [cuckoo.core.resultserver] DEBUG: Task #3158669 uploaded file length: 636
+2022-07-03 02:41:32,072 [cuckoo.core.resultserver] DEBUG: Task #3158669: File upload for 'files/cb18f69444d3a92b_share_view[1].js'
+2022-07-03 02:41:32,075 [cuckoo.core.resultserver] DEBUG: Task #3158669 uploaded file length: 1410
+2022-07-03 02:41:32,077 [cuckoo.core.resultserver] DEBUG: Task #3158669 uploaded file length: 109287
+2022-07-03 02:41:32,082 [cuckoo.core.resultserver] DEBUG: Task #3158669: File upload for 'files/7a53c67ab93896f9_logger[1].js'
+2022-07-03 02:41:32,085 [cuckoo.core.resultserver] DEBUG: Task #3158669 uploaded file length: 2159
+2022-07-03 02:41:32,087 [cuckoo.core.resultserver] DEBUG: Task #3158669: File upload for 'files/73c7e480fa461861_recoverystore.{bce0b9e5-fa67-11ec-b707-4e5b298e6b76}.dat'
+2022-07-03 02:41:32,088 [cuckoo.core.resultserver] DEBUG: Task #3158669 uploaded file length: 5632
+2022-07-03 02:41:32,090 [cuckoo.core.resultserver] DEBUG: Task #3158669: File upload for 'files/585d0b1a974a830c_icons_0_24[1].png'
+2022-07-03 02:41:32,092 [cuckoo.core.resultserver] DEBUG: Task #3158669 uploaded file length: 21968
+2022-07-03 02:41:32,762 [cuckoo.core.resultserver] DEBUG: Task #3158669: File upload for 'shots/0004.jpg'
+2022-07-03 02:41:32,782 [cuckoo.core.resultserver] DEBUG: Task #3158669 uploaded file length: 133413
+2022-07-03 02:41:32,794 [cuckoo.core.resultserver] DEBUG: Task #3158669 had connection reset for <Context for LOG>
+2022-07-03 02:41:33,246 [cuckoo.core.guest] INFO: win7x649: analysis completed successfully
+2022-07-03 02:41:33,253 [cuckoo.core.plugins] DEBUG: Stopped auxiliary module: Redsocks
+2022-07-03 02:41:33,321 [cuckoo.core.plugins] DEBUG: Stopped auxiliary module: Sniffer
+2022-07-03 02:42:00,162 [cuckoo.machinery.virtualbox] INFO: Successfully generated memory dump for virtual machine with label win7x649 to path /srv/cuckoo/cwd/storage/analyses/3158669/memory.dmp
+2022-07-03 02:42:00,165 [cuckoo.machinery.virtualbox] DEBUG: Stopping vm win7x649
+2022-07-03 02:46:46,949 [cuckoo.core.resultserver] DEBUG: Stopped tracking machine 192.168.168.209 for task #3158669
+2022-07-03 02:46:47,086 [cuckoo.core.scheduler] DEBUG: Released database task #3158669
+2022-07-03 02:46:47,207 [cuckoo.core.scheduler] INFO: Task #3158669: analysis procedure completed
+
+String - Basicamente um codigo HTML infectado - Não consigo coloca-lo aqui no txt
+
+Network - 11 HTTP

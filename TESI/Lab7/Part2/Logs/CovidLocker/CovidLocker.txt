@@ -1,0 +1,75 @@
+Analyzer Log
+
+2022-07-03 02:33:18,004 [root] DEBUG: Starting analyzer from: /tmp/tmpKliZgX
+2022-07-03 02:33:18,005 [root] DEBUG: Storing results at: /tmp/bQctVL
+2022-07-03 02:33:18,008 [root] ERROR: Traceback (most recent call last):
+  File "/tmp/tmpKliZgX/analyzer.py", line 340, in <module>
+    success = analyzer.run()
+  File "/tmp/tmpKliZgX/analyzer.py", line 129, in run
+    self.config.file_name, **kwargs)
+  File "/tmp/tmpKliZgX/lib/core/packages.py", line 42, in choose_package_class
+    "exist.".format(name))
+Exception: Unable to import package "7z": it does not exist.
+Traceback (most recent call last):
+  File "/tmp/tmpKliZgX/analyzer.py", line 340, in <module>
+    success = analyzer.run()
+  File "/tmp/tmpKliZgX/analyzer.py", line 129, in run
+    self.config.file_name, **kwargs)
+  File "/tmp/tmpKliZgX/lib/core/packages.py", line 42, in choose_package_class
+    "exist.".format(name))
+Exception: Unable to import package "7z": it does not exist.
+
+Cuckoo Log
+
+2022-07-03 02:33:22,811 [cuckoo.core.scheduler] INFO: Task #3158662: acquired machine Ubuntu1904x641 (label=Ubuntu1904x641)
+2022-07-03 02:33:22,812 [cuckoo.core.resultserver] DEBUG: Now tracking machine 192.168.168.101 for task #3158662
+2022-07-03 02:33:22,970 [cuckoo.auxiliary.sniffer] INFO: Started sniffer with PID 3064778 (interface=vboxnet0, host=192.168.168.101)
+2022-07-03 02:33:23,259 [androguard.core.api_specific_resources] WARNING: Requested API level 29 is larger than maximum we have, returning API level 28 instead.
+2022-07-03 02:33:23,275 [cuckoo.common.objects] DEBUG: Picked package com.device.security and main activity com.device.security.activities.MainActivity.
+2022-07-03 02:33:23,443 [cuckoo.machinery.virtualbox] DEBUG: Starting vm Ubuntu1904x641
+2022-07-03 02:33:23,839 [cuckoo.machinery.virtualbox] DEBUG: Restoring virtual machine Ubuntu1904x641 to Snapshot
+2022-07-03 02:37:54,441 [cuckoo.core.guest] INFO: Starting analysis #3158662 on guest (id=Ubuntu1904x641, ip=192.168.168.101)
+2022-07-03 02:37:55,445 [cuckoo.core.guest] DEBUG: Ubuntu1904x641: not ready yet
+2022-07-03 02:38:00,500 [cuckoo.core.guest] INFO: Guest is running Cuckoo Agent 0.10 (id=Ubuntu1904x641, ip=192.168.168.101)
+2022-07-03 02:38:00,526 [cuckoo.core.guest] DEBUG: Uploading analyzer to guest (id=Ubuntu1904x641, ip=192.168.168.101, monitor=latest, size=72028)
+2022-07-03 02:38:02,186 [cuckoo.core.resultserver] DEBUG: Task #3158662: live log analysis.log initialized.
+2022-07-03 02:38:05,063 [cuckoo.core.guest] INFO: Ubuntu1904x641: analysis completed successfully
+2022-07-03 02:38:05,073 [cuckoo.core.plugins] DEBUG: Stopped auxiliary module: Redsocks
+2022-07-03 02:38:05,167 [cuckoo.core.plugins] DEBUG: Stopped auxiliary module: Sniffer
+2022-07-03 02:38:20,340 [cuckoo.machinery.virtualbox] INFO: Successfully generated memory dump for virtual machine with label Ubuntu1904x641 to path /srv/cuckoo/cwd/storage/analyses/3158662/memory.dmp
+2022-07-03 02:38:20,342 [cuckoo.machinery.virtualbox] DEBUG: Stopping vm Ubuntu1904x641
+2022-07-03 02:41:08,811 [cuckoo.core.resultserver] DEBUG: Stopped tracking machine 192.168.168.101 for task #3158662
+2022-07-03 02:41:08,946 [cuckoo.core.scheduler] DEBUG: Released database task #3158662
+2022-07-03 02:41:09,090 [cuckoo.core.scheduler] INFO: Task #3158662: analysis procedure completed
+
+
+É Possivel ver algumas strings como:
+META-INF/androidx.activity_activity.version5
+META-INF/androidx.appcompat_appcompat-resources.version5
+META-INF/androidx.appcompat_appcompat.version5
+META-INF/androidx.arch.core_core-runtime.version2.0.0
+META-INF/androidx.core_core-ktx.version5
+META-INF/androidx.core_core.version5
+META-INF/androidx.cursoradapter_cursoradapter.version5
+META-INF/androidx.customview_customview.version5
+META-INF/androidx.drawerlayout_drawerlayout.version5
+META-INF/androidx.fragment_fragment.version5
+META-INF/androidx.interpolator_interpolator.version5
+META-INF/androidx.lifecycle_lifecycle-livedata-core.version5
+META-INF/androidx.lifecycle_lifecycle-livedata.version5
+META-INF/androidx.lifecycle_lifecycle-runtime.version5
+META-INF/androidx.lifecycle_lifecycle-viewmodel.version5
+META-INF/androidx.loader_loader.version5
+META-INF/androidx.savedstate_savedstate.version5
+META-INF/androidx.vectordrawable_vectordrawable-animated.version1.1.0
+META-INF/androidx.vectordrawable_vectordrawable.version5
+META-INF/androidx.versionedparcelable_versionedparcelable.version5
+META-INF/androidx.viewpager_viewpager.version5
+META-INF/core-ktx_release.kotlin_modulemSQo
+META-INF/kotlin-android-extensions-runtime.kotlin_modulec```f```
+META-INF/kotlin-stdlib-common-coroutines.kotlin_modulec```f```
+
+Network - nenhuma
+Por ser um .APK, parece que não foi possivel realisar a analise correta do cuckoo.
+
+VM Memory Dump - Não tem

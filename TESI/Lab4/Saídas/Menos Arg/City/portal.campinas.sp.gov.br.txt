@@ -1,0 +1,10 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-06-02 13:53 EDT
+Nmap scan report for portal.campinas.sp.gov.br (187.110.5.190)
+Host is up (0.054s latency).
+rDNS record for 187.110.5.190: pichot-sslexterno.ima.sp.gov.br
+Not shown: 998 filtered tcp ports (no-response)
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+Nmap done: 1 IP address (1 host up) scanned in 24.01 seconds

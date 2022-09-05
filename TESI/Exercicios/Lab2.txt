@@ -1,0 +1,25 @@
+TP2 - Primeiras atividades de reconhecimento
+Vence 28 de maio de 2022 às 23:59
+Instruções
+Vimos em sala de aula que o planejamento do ataque, também chamado de reconhecimento do alvo é uma das fases mais importantes para um atacante. Quanto maior o tempo coletando informações, maior a probabilidade de sucesso no ataque. Aprender a conduzir um processo de reconhecimento é uma habilidade muito importante no dia a dia dos profissionais da área de Computação. Existem dois tipos de estratégias de reconhecimento: ativo e passivo. O ativo envolve uma interação direta com o alvo enquanto que o passivo usa informações disponíveis na própria Internet. O objetivo deste laboratório é praticar o reconhecimento passivo e se acostumar com as diversas ferramentas dentro desse contexto.
+
+Selecione três empresas que funcionarão como alvos do reconhecimento. A primeira empresa deverá atuar em âmbito regional, a segunda nacional e a terceira deve ser uma empresa sediada em um outro país.
+A fase de reconhecimento possui duas tarefas: coletar o maior número possível de informação sobre o alvo e organizar tal informação para criar uma lista de potenciais alvos, ou endereços IP. Crie uma tabela para relacionar o endereço IP com outras informações encontradas ao longo do processo.
+Inicialmente, os alunos deverão coletar informações usando o próprio sistema do Google. Esse tipo de técnica também é conhecida como “Google Hacking” e é facilitada com o uso das diretivas de busca fornecidas pelo Google. Um exemplo de diretiva é a seguinte:
+
+site:ufu.br ssh
+
+O comando acima irá fazer uma busca pela palavra “ssh” somente dentro do domínio “ufu.br”. Tal estratégia permite diminuir os resultados da busca, facilitando a coleta de informações. Outra diretiva interessante é a “allintitle:” ou “intitle:”. Elas permitem buscar por conteúdos específicos no título do site. Por exemplo:
+
+allintitle:index of site:ufu.br
+
+Todas as páginas dentro do domínio ufu.br que tiverem exatamente o texto “index of site” irão aparecer na busca. O texto “index of” remete a lista de diretórios que são indexados pelo servidor web. Ou seja, a busca acima pode revelar diretórios/arquivos ocultos no servidor web de uma empresa. A diretiva “inurl:” é semelhante as anteriores porém mais genérica, visto que procura por palavras específicas em toda a página, não somente no título. A busca abaixo é uma tentativa de encontrar que tipo de informação?
+
+site:ufu.br inurl:admin
+
+Por fim, outra diretiva interessante é a “filetype:”. Ela permite procurar por tipos específicos de arquivos como por exemplo, pdf, pptx, doc e etc. Use as diretivas acima e outras que julgar necessário para coletar informações acerca de cada uma das empresas.
+Outra forma de usar o Google Hacking é a partir de diretivas já testadas por outros usuários. O site “Exploit database” condensa inúmeros tipos de diretivas que podem ser usadas para buscar novas informações. Acesse https://www.exploit-db.com/google-hacking-database vá em filtros e use ao menos três diretivas pré-definidas para o reconhecimento das três empresas. O sucesso em tais buscas pode revelar nomes de usuários e até senhas. Caso isso aconteça notifique o professor para que as medidas corretas possam ser tomadas, por exemplo, avisar a empresa sobre tal vulnerabilidade.
+O próximo passo envolve coletar informações sobre o próprio site de cada uma das empresas. Isso pode ser feito usando o comando “whois”. Abra o terminal e digite “whois url_do_site_da_empresa”. Execute o comando para as três empresas e anote tudo o que encontrar de interessante, inclusive outros hosts associados a empresa (servidores DNS, por exemplo).
+Seguindo uma linha semelhante ao “whois”, o serviço fornecido pela Netcraft (https://www.netcraft.com/) em “What’s that site running?” mostra outras URLs relacionadas a URL buscada, assim como relatórios, sistemas operacionais e blocos de endereços IP!!
+Após as buscas acima é possível que você já possua um bom conhecimento sobre alvo – nomes, domínios, diretórios, tecnologias, arquivos. O próximo passo envolve traduzir os nomes (www.ufu.br, por exemplo) para um endereço IP. A tradução é importante pois é justamente o endereço IP que está associado a uma placa de rede. Duas ferramentas permitem esse tipo de tradução: “host” e “nslookup”. Ambas podem ser acessadas via terminal. Para cada nome de host encontrado ao longo do reconhecimento faça a sua devida tradução para IP.
+Compare o reconhecimento feito em cada uma das empresas. As perguntas a seguir podem nortear a discussão dos resultados. Com base nos resultados é possível afirmar que certas empresas possuem preocupações maiores com segurança do que outras? Por exemplo, quantos IPs foram descobertos por empresa? Arquivos sensíveis foram descobertos em todas as empresas? As empresas escolhidas são “vulneráveis” as diretivas do Google listadas na “Exploit database”? Existe alguma diferença entre a empresa instalada na região com a empresa sediada fora do país?

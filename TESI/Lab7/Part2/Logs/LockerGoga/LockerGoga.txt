@@ -1,0 +1,216 @@
+Analyzer Log
+
+2022-07-03 02:33:18,015 [analyzer] DEBUG: Starting analyzer from: C:\tmp4nivwu
+2022-07-03 02:33:18,015 [analyzer] DEBUG: Pipe server name: \??\PIPE\KXOnufNDeqXOMdQXanhnNdpILcpsFzhg
+2022-07-03 02:33:18,030 [analyzer] DEBUG: Log pipe server name: \??\PIPE\kkZpUsHczlmboqnlzgOQC
+2022-07-03 02:33:18,500 [analyzer] DEBUG: Started auxiliary module Curtain
+2022-07-03 02:33:18,500 [analyzer] DEBUG: Started auxiliary module DbgView
+2022-07-03 02:33:19,312 [analyzer] DEBUG: Started auxiliary module Disguise
+2022-07-03 02:33:19,515 [analyzer] DEBUG: Loaded monitor into process with pid 508
+2022-07-03 02:33:19,515 [analyzer] DEBUG: Started auxiliary module DumpTLSMasterSecrets
+2022-07-03 02:33:19,515 [analyzer] DEBUG: Started auxiliary module Human
+2022-07-03 02:33:19,530 [analyzer] DEBUG: Started auxiliary module InstallCertificate
+2022-07-03 02:33:19,530 [analyzer] DEBUG: Started auxiliary module Reboot
+2022-07-03 02:33:19,592 [analyzer] DEBUG: Started auxiliary module RecentFiles
+2022-07-03 02:33:19,592 [analyzer] DEBUG: Started auxiliary module Screenshots
+2022-07-03 02:33:19,592 [analyzer] DEBUG: Started auxiliary module Sysmon
+2022-07-03 02:33:19,592 [analyzer] DEBUG: Started auxiliary module LoadZer0m0n
+2022-07-03 02:33:19,750 [lib.api.process] INFO: Successfully executed process from path u'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\LockerGoga.exe' with arguments '' and pid 2728
+2022-07-03 02:33:19,953 [analyzer] DEBUG: Loaded monitor into process with pid 2728
+2022-07-03 02:33:20,030 [analyzer] INFO: Injected into process with pid 1100 and name u'cmd.exe'
+2022-07-03 02:33:20,390 [analyzer] DEBUG: Loaded monitor into process with pid 1100
+2022-07-03 02:33:20,546 [lib.api.process] ERROR: Failed to dump memory of 64-bit process with pid 1100.
+2022-07-03 02:33:20,608 [analyzer] INFO: Injected into process with pid 2608 and name u'tgytutrc6390.exe'
+2022-07-03 02:33:20,687 [analyzer] INFO: Added new file to list with pid 2728 and path C:\Users\Public\Desktop\README_LOCKED.txt
+2022-07-03 02:33:20,765 [analyzer] INFO: Process with pid 1100 has terminated
+2022-07-03 02:33:20,828 [analyzer] DEBUG: Loaded monitor into process with pid 2608
+2022-07-03 02:33:20,858 [lib.api.process] ERROR: Failed to dump memory of 32-bit process with pid 2728.
+2022-07-03 02:33:20,937 [analyzer] INFO: Injected into process with pid 1816 and name u'logoff.exe'
+2022-07-03 01:41:48,015 [analyzer] INFO: Analysis timeout hit, terminating analysis.
+2022-07-03 01:41:48,015 [lib.api.process] WARNING: The process with pid 2728 is not alive, memory dump aborted
+2022-07-03 01:41:48,171 [lib.api.process] ERROR: Failed to dump memory of 32-bit process with pid 2608.
+2022-07-03 01:41:48,296 [lib.api.process] ERROR: Failed to dump memory of 64-bit process with pid 1816.
+2022-07-03 01:41:48,592 [analyzer] INFO: Terminating remaining processes before shutdown.
+2022-07-03 01:41:48,592 [lib.api.process] INFO: Successfully terminated process with pid 2608.
+2022-07-03 01:41:48,592 [lib.api.process] INFO: Successfully terminated process with pid 1816.
+2022-07-03 01:41:48,592 [analyzer] INFO: Analysis completed.
+
+Cuckoo Log
+
+2022-07-03 02:33:45,602 [cuckoo.core.scheduler] DEBUG: Task #3158665: no machine available yet
+2022-07-03 02:33:55,626 [cuckoo.core.scheduler] DEBUG: Task #3158665: no machine available yet
+2022-07-03 02:34:05,651 [cuckoo.core.scheduler] DEBUG: Task #3158665: no machine available yet
+2022-07-03 02:34:15,671 [cuckoo.core.scheduler] DEBUG: Task #3158665: no machine available yet
+2022-07-03 02:34:25,692 [cuckoo.core.scheduler] DEBUG: Task #3158665: no machine available yet
+2022-07-03 02:34:35,739 [cuckoo.core.scheduler] DEBUG: Task #3158665: no machine available yet
+2022-07-03 02:34:45,771 [cuckoo.core.scheduler] DEBUG: Task #3158665: no machine available yet
+2022-07-03 02:34:55,795 [cuckoo.core.scheduler] DEBUG: Task #3158665: no machine available yet
+2022-07-03 02:35:05,816 [cuckoo.core.scheduler] DEBUG: Task #3158665: no machine available yet
+2022-07-03 02:35:15,843 [cuckoo.core.scheduler] DEBUG: Task #3158665: no machine available yet
+2022-07-03 02:35:25,866 [cuckoo.core.scheduler] DEBUG: Task #3158665: no machine available yet
+2022-07-03 02:35:35,894 [cuckoo.core.scheduler] DEBUG: Task #3158665: no machine available yet
+2022-07-03 02:35:45,917 [cuckoo.core.scheduler] DEBUG: Task #3158665: no machine available yet
+2022-07-03 02:35:55,940 [cuckoo.core.scheduler] DEBUG: Task #3158665: no machine available yet
+2022-07-03 02:36:05,973 [cuckoo.core.scheduler] DEBUG: Task #3158665: no machine available yet
+2022-07-03 02:36:16,012 [cuckoo.core.scheduler] DEBUG: Task #3158665: no machine available yet
+2022-07-03 02:36:26,051 [cuckoo.core.scheduler] DEBUG: Task #3158665: no machine available yet
+2022-07-03 02:36:36,091 [cuckoo.core.scheduler] DEBUG: Task #3158665: no machine available yet
+2022-07-03 02:36:46,140 [cuckoo.core.scheduler] DEBUG: Task #3158665: no machine available yet
+2022-07-03 02:36:56,174 [cuckoo.core.scheduler] DEBUG: Task #3158665: no machine available yet
+2022-07-03 02:37:06,220 [cuckoo.core.scheduler] DEBUG: Task #3158665: no machine available yet
+2022-07-03 02:37:16,266 [cuckoo.core.scheduler] DEBUG: Task #3158665: no machine available yet
+2022-07-03 02:37:26,419 [cuckoo.core.scheduler] INFO: Task #3158665: acquired machine win7x6424 (label=win7x6424)
+2022-07-03 02:37:26,423 [cuckoo.core.resultserver] DEBUG: Now tracking machine 192.168.168.224 for task #3158665
+2022-07-03 02:37:26,588 [cuckoo.auxiliary.sniffer] INFO: Started sniffer with PID 3068727 (interface=vboxnet0, host=192.168.168.224)
+2022-07-03 02:37:30,744 [cuckoo.machinery.virtualbox] DEBUG: Starting vm win7x6424
+2022-07-03 02:37:31,104 [cuckoo.machinery.virtualbox] DEBUG: Restoring virtual machine win7x6424 to vmcloak
+2022-07-03 02:40:38,812 [cuckoo.core.guest] INFO: Starting analysis #3158665 on guest (id=win7x6424, ip=192.168.168.224)
+2022-07-03 02:40:39,818 [cuckoo.core.guest] DEBUG: win7x6424: not ready yet
+2022-07-03 02:40:44,844 [cuckoo.core.guest] INFO: Guest is running Cuckoo Agent 0.10 (id=win7x6424, ip=192.168.168.224)
+2022-07-03 02:40:44,988 [cuckoo.core.guest] DEBUG: Uploading analyzer to guest (id=win7x6424, ip=192.168.168.224, monitor=latest, size=6659294)
+2022-07-03 02:40:47,237 [cuckoo.core.resultserver] DEBUG: Task #3158665: live log analysis.log initialized.
+2022-07-03 02:40:48,702 [cuckoo.core.resultserver] DEBUG: Task #3158665 is sending a BSON stream
+2022-07-03 02:40:49,109 [cuckoo.core.resultserver] DEBUG: Task #3158665 is sending a BSON stream
+2022-07-03 02:40:49,382 [cuckoo.core.resultserver] DEBUG: Task #3158665 is sending a BSON stream
+2022-07-03 02:40:49,962 [cuckoo.core.resultserver] DEBUG: Task #3158665: File upload for 'shots/0001.jpg'
+2022-07-03 02:40:49,988 [cuckoo.core.resultserver] DEBUG: Task #3158665 is sending a BSON stream
+2022-07-03 02:40:50,010 [cuckoo.core.resultserver] DEBUG: Task #3158665 uploaded file length: 133433
+2022-07-03 02:40:50,296 [cuckoo.core.resultserver] DEBUG: Task #3158665 is sending a BSON stream
+2022-07-03 02:40:51,110 [cuckoo.core.resultserver] DEBUG: Task #3158665: File upload for 'shots/0002.jpg'
+2022-07-03 02:40:51,123 [cuckoo.core.resultserver] DEBUG: Task #3158665 uploaded file length: 133901
+2022-07-03 02:41:01,842 [cuckoo.core.guest] DEBUG: win7x6424: analysis #3158665 still processing
+2022-07-03 02:41:16,917 [cuckoo.core.guest] DEBUG: win7x6424: analysis #3158665 still processing
+2022-07-03 02:41:31,986 [cuckoo.core.guest] DEBUG: win7x6424: analysis #3158665 still processing
+2022-07-03 02:41:47,119 [cuckoo.core.guest] DEBUG: win7x6424: analysis #3158665 still processing
+2022-07-03 02:41:48,397 [cuckoo.core.resultserver] DEBUG: Task #3158665: File upload for 'curtain/1656805308.39.curtain.log'
+2022-07-03 02:41:48,400 [cuckoo.core.resultserver] DEBUG: Task #3158665 uploaded file length: 36
+2022-07-03 02:41:48,582 [cuckoo.core.resultserver] DEBUG: Task #3158665: File upload for 'sysmon/1656805308.58.sysmon.xml'
+2022-07-03 02:41:48,594 [cuckoo.core.resultserver] DEBUG: Task #3158665 uploaded file length: 1915402
+2022-07-03 02:41:48,604 [cuckoo.core.resultserver] DEBUG: Task #3158665: File upload for 'files/7fa663bf6aa84027_readme_locked.txt'
+2022-07-03 02:41:48,606 [cuckoo.core.resultserver] DEBUG: Task #3158665 uploaded file length: 1439
+2022-07-03 02:41:49,114 [cuckoo.core.resultserver] DEBUG: Task #3158665 had connection reset for <Context for LOG>
+2022-07-03 02:41:50,129 [cuckoo.core.guest] INFO: win7x6424: analysis completed successfully
+2022-07-03 02:41:50,137 [cuckoo.core.plugins] DEBUG: Stopped auxiliary module: Redsocks
+2022-07-03 02:41:50,213 [cuckoo.core.plugins] DEBUG: Stopped auxiliary module: Sniffer
+2022-07-03 02:42:18,434 [cuckoo.machinery.virtualbox] INFO: Successfully generated memory dump for virtual machine with label win7x6424 to path /srv/cuckoo/cwd/storage/analyses/3158665/memory.dmp
+2022-07-03 02:42:18,435 [cuckoo.machinery.virtualbox] DEBUG: Stopping vm win7x6424
+2022-07-03 02:46:47,108 [cuckoo.core.resultserver] DEBUG: Stopped tracking machine 192.168.168.224 for task #3158665
+2022-07-03 02:46:47,237 [cuckoo.core.scheduler] DEBUG: Released database task #3158665
+2022-07-03 02:46:47,402 [cuckoo.core.scheduler] INFO: Task #3158665: analysis procedure completed
+
+Strings - 
+option
+original_token
+option '%canonical_option%' only takes a single argument
+option '%canonical_option%' cannot be specified more than once
+option '%canonical_option%'
+canonical_option
+argument
+argument ('%value%')
+%prefix%
+prefix
+error_with_option_name::m_option_style can only be one of [0, allow_dash_for_short, allow_slash_for_short, allow_long_disguise or allow_long]
+and matches
+'%prefix%
+different versions of
+the argument ('%value%') for option '%canonical_option%' is invalid. Valid choices are 'on|off', 'yes|no', '1|0' and 'true|false'
+the argument ('%value%') for option '%canonical_option%' is invalid
+option '%canonical_option%' requires at least one argument
+option '%canonical_option%' is not valid
+the option '%canonical_option%' is required but missing
+CreateSymbolicLinkW
+boost::filesystem::current_path
+boost::filesystem::permissions
+boost::filesystem::rename
+boost::filesystem::temp_directory_path
+boost::filesystem::directory_iterator::construct
+boost::filesystem::directory_iterator::operator++
+boost::filesystem::path codecvt to wstring
+boost::filesystem::path codecvt to string
+BufferedTransformation: this object can't be reinitialized
+: this object doesn't support multiple channels
+is not a valid key length
+BitBucket
+Rounds
+Cryptographic algorithms are disabled before the power-up self tests are performed.
+Cryptographic algorithms are disabled after a power-up self test failed.
+: this object requires an IV
+: this object cannot use a null IV
+is less than the minimum of
+: IV length
+exceeds the maximum of
+: this object doesn't support a special last block
+NullRNG
+OutputBuffer
+FilterWithBufferedInput: invalid buffer size
+FilterWithBufferedInput
+RedirectionTargetPointer
+RedirectionBehavior
+ArraySink: missing OutputBuffer argument
+StreamTransformationFilter: invalid PKCS #7 block padding found
+StreamTransformationFilter: invalid W3C block padding found
+StreamTransformationFilter: invalid ones-and-zeros padding found
+StringStore: missing InputBuffer argument
+ValueNames
+: this key is too short to encrypt any messages
+for this public key
+: message length of
+Modulus
+SHA-256
+ThisObject:
+ThisPointer:
+: Missing required parameter '
+PublicExponent
+operation failed with error
+OS_Rng:
+Crypto++ RNG
+interrupted
+invalid seek
+io error
+is a directory
+message size
+network down
+network reset
+network unreachable
+no buffer space
+no child process
+ Type Descriptor'
+Base Class Descriptor at (
+Base Class Array'
+Class Hierarchy Descriptor'
+Complete Object Locator'
+template-parameter-
+generic-type-
+`anonymous namespace'
+`non-type-template-parameter
+Result too large
+Resource deadlock avoided
+Filename too long
+No locks available
+Function not implemented
+Directory not empty
+Illegal byte sequence
+CryptoMaterial: this object contains invalid values
+CryptoMaterial: this object does not support precomputation
+FeedbackSize
+OutputStreamPointer
+EncodingParameters
+CipherModeBase: feedback size cannot be specified for this cipher mode
+internal error
+NtReadFile
+NtWriteFile
+<requestedExecutionLevel level='requireAdministrator' uiAccess='false' />
+</requestedPrivileges>
+</security>
+</trustInfo>
+</assembly>
+
+Network - Nenhum
+
+VM Memory Dump
+gen_memory_commands_shell_dev
+svchost.exe
+sysmon.exe
+taskhost.exe
+mscorsvw.exe
+WmiPrvSE.exe

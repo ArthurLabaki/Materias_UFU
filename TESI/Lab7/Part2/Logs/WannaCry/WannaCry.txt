@@ -1,0 +1,259 @@
+Analyzer Log
+
+2022-07-03 02:34:22,015 [analyzer] DEBUG: Starting analyzer from: C:\tmp4hzt0l
+2022-07-03 02:34:22,015 [analyzer] DEBUG: Pipe server name: \??\PIPE\ykjyRfGlLeZUgedRxTCTfCdX
+2022-07-03 02:34:22,030 [analyzer] DEBUG: Log pipe server name: \??\PIPE\FhoTeWHVMerbwEYWFC
+2022-07-03 02:34:22,342 [analyzer] DEBUG: Started auxiliary module Curtain
+2022-07-03 02:34:22,342 [analyzer] DEBUG: Started auxiliary module DbgView
+2022-07-03 02:34:22,890 [analyzer] DEBUG: Started auxiliary module Disguise
+2022-07-03 02:34:23,092 [analyzer] DEBUG: Loaded monitor into process with pid 504
+2022-07-03 02:34:23,092 [analyzer] DEBUG: Started auxiliary module DumpTLSMasterSecrets
+2022-07-03 02:34:23,092 [analyzer] DEBUG: Started auxiliary module Human
+2022-07-03 02:34:23,092 [analyzer] DEBUG: Started auxiliary module InstallCertificate
+2022-07-03 02:34:23,092 [analyzer] DEBUG: Started auxiliary module Reboot
+2022-07-03 02:34:23,203 [analyzer] DEBUG: Started auxiliary module RecentFiles
+2022-07-03 02:34:23,203 [analyzer] DEBUG: Started auxiliary module Screenshots
+2022-07-03 02:34:23,203 [analyzer] DEBUG: Started auxiliary module Sysmon
+2022-07-03 02:34:23,203 [analyzer] DEBUG: Started auxiliary module LoadZer0m0n
+2022-07-03 02:34:23,328 [lib.api.process] INFO: Successfully executed process from path u'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\WCry.exe' with arguments '' and pid 2928
+2022-07-03 02:34:23,500 [analyzer] DEBUG: Loaded monitor into process with pid 2928
+2022-07-03 02:34:23,500 [analyzer] INFO: Added new file to list with pid 2928 and path C:\Users\Administrator\AppData\Local\Temp\c.wry
+2022-07-03 02:34:23,500 [analyzer] INFO: Added new file to list with pid 2928 and path C:\Users\Administrator\AppData\Local\Temp\m.wry
+2022-07-03 02:34:23,500 [analyzer] INFO: Added new file to list with pid 2928 and path C:\Users\Administrator\AppData\Local\Temp\r.wry
+2022-07-03 02:34:23,515 [analyzer] INFO: Added new file to list with pid 2928 and path C:\Users\Administrator\AppData\Local\Temp\t.wry
+2022-07-03 02:34:23,515 [analyzer] INFO: Added new file to list with pid 2928 and path C:\Users\Administrator\AppData\Local\Temp\u.wry
+2022-07-03 02:34:23,625 [analyzer] INFO: Added new file to list with pid 2928 and path C:\Users\Administrator\AppData\Local\Temp\172231656827663.bat
+2022-07-03 02:34:23,703 [analyzer] INFO: Injected into process with pid 1884 and name u'cmd.exe'
+2022-07-03 02:34:23,921 [analyzer] DEBUG: Loaded monitor into process with pid 1884
+2022-07-03 02:34:24,030 [analyzer] INFO: Injected into process with pid 1376 and name u'cscript.exe'
+2022-07-03 02:34:24,203 [analyzer] DEBUG: Loaded monitor into process with pid 1376
+2022-07-03 02:34:24,312 [analyzer] INFO: io=NULL
+2022-07-03 02:34:24,312 [analyzer] DEBUG: Error resolving function vbscript!COleScript_Compile through our custom callback.
+2022-07-03 02:34:24,328 [analyzer] INFO: io=NULL
+2022-07-03 02:34:24,328 [analyzer] DEBUG: Error resolving function vbscript!COleScript_Compile through our custom callback.
+2022-07-03 02:34:25,217 [analyzer] INFO: Added new file to list with pid 1376 and path C:\Users\Administrator\AppData\Local\Temp\!WannaDecryptor!.exe.lnk
+2022-07-03 02:34:25,265 [analyzer] INFO: Injected into process with pid 1692 and name u'explorer.exe'
+2022-07-03 02:34:25,358 [lib.api.process] ERROR: Failed to dump memory of 32-bit process with pid 1376.
+2022-07-03 02:34:25,437 [analyzer] INFO: Added pid 1884 for u'C:\\Users\\Administrator\\AppData\\Local\\Temp\\172231656827663.bat'
+2022-07-03 02:34:25,483 [analyzer] DEBUG: Loaded monitor into process with pid 1692
+2022-07-03 02:34:25,515 [lib.api.process] ERROR: Failed to dump memory of 32-bit process with pid 1884.
+2022-07-03 02:34:25,530 [analyzer] INFO: Added new file to list with pid 2928 and path C:\Users\Administrator\AppData\Local\Temp\!Please Read Me!.txt
+2022-07-03 02:34:26,328 [analyzer] INFO: Process with pid 1884 has terminated
+2022-07-03 02:34:27,171 [analyzer] INFO: Added new file to list with pid 2928 and path C:\Users\Administrator\AppData\Local\Temp\00000000.pky
+2022-07-03 02:34:27,187 [analyzer] INFO: Added new file to list with pid 2928 and path C:\Users\Administrator\AppData\Local\Temp\00000000.eky
+2022-07-03 02:34:27,187 [analyzer] INFO: Added new file to list with pid 2928 and path C:\Users\Administrator\AppData\Local\Temp\00000000.res
+2022-07-03 02:34:27,328 [analyzer] INFO: Process with pid 1376 has terminated
+2022-07-03 02:34:27,703 [analyzer] INFO: Injected into process with pid 2116 and name u'!WannaDecryptor!.exe'
+2022-07-03 02:34:27,717 [analyzer] INFO: Added new file to list with pid 2928 and path C:\Users\Administrator\Documents\dXBJsDSoJAKb.pptx.WCRYT
+2022-07-03 02:34:27,733 [analyzer] INFO: Added new file to list with pid 2928 and path C:\Users\Administrator\Documents\dXBJsDSoJAKb.pptx
+2022-07-03 02:34:27,750 [analyzer] INFO: Added new file to list with pid 2928 and path C:\Users\Administrator\Documents\HntXnRjQDaGUSAaJiY.ppt.WCRYT
+2022-07-03 02:34:27,765 [analyzer] INFO: Added new file to list with pid 2928 and path C:\Users\Administrator\Documents\HntXnRjQDaGUSAaJiY.ppt
+2022-07-03 02:34:27,796 [analyzer] INFO: Added new file to list with pid 2928 and path C:\Users\Administrator\Documents\jZYlXwknCZL.rtf.WCRYT
+2022-07-03 02:34:27,812 [analyzer] INFO: Added new file to list with pid 2928 and path C:\Users\Administrator\Documents\jZYlXwknCZL.rtf
+2022-07-03 02:34:27,828 [analyzer] INFO: Added new file to list with pid 2928 and path C:\Users\Administrator\Documents\lHAOAbRiwGxrGI.txt.WCRYT
+2022-07-03 02:34:27,842 [analyzer] INFO: Added new file to list with pid 2928 and path C:\Users\Administrator\Documents\lHAOAbRiwGxrGI.txt
+2022-07-03 02:34:27,858 [analyzer] INFO: Added new file to list with pid 2928 and path C:\Users\Administrator\Documents\lksuOrDbyERE.rtf.WCRYT
+2022-07-03 02:34:27,890 [analyzer] INFO: Added new file to list with pid 2928 and path C:\Users\Administrator\Documents\lksuOrDbyERE.rtf
+2022-07-03 02:34:27,905 [analyzer] INFO: Added new file to list with pid 2928 and path C:\Users\Administrator\Documents\QLnCGlGzLxOM.doc.WCRYT
+2022-07-03 02:34:27,921 [analyzer] INFO: Added new file to list with pid 2928 and path C:\Users\Administrator\Documents\QLnCGlGzLxOM.doc
+2022-07-03 02:34:27,937 [analyzer] DEBUG: Loaded monitor into process with pid 2116
+2022-07-03 02:34:28,015 [analyzer] INFO: Added new file to list with pid 2928 and path C:\Users\Administrator\Documents\xmPfEEltZL.rtf.WCRYT
+2022-07-03 02:34:28,030 [analyzer] INFO: Added new file to list with pid 2928 and path C:\Users\Administrator\Documents\xmPfEEltZL.rtf
+2022-07-03 02:34:28,046 [analyzer] INFO: Added new file to list with pid 2928 and path C:\Users\Administrator\Documents\FKdDDOVlgJvO.docm.WCRYT
+2022-07-03 02:34:28,062 [analyzer] INFO: Added new file to list with pid 2928 and path C:\Users\Administrator\Documents\FKdDDOVlgJvO.docm
+2022-07-03 02:34:28,078 [analyzer] INFO: Added new file to list with pid 2928 and path C:\Users\Administrator\Documents\OqAqHkyyRoROfHt.docm.WCRYT
+2022-07-03 02:34:28,092 [analyzer] INFO: Added new file to list with pid 2928 and path C:\Users\Administrator\Documents\OqAqHkyyRoROfHt.docm
+2022-07-03 02:34:28,108 [analyzer] INFO: Added new file to list with pid 2928 and path C:\Users\Administrator\Documents\TKdCEVptWNLhH.docm.WCRYT
+2022-07-03 02:34:28,140 [analyzer] INFO: Added new file to list with pid 2928 and path C:\Users\Administrator\Documents\TKdCEVptWNLhH.docm
+2022-07-03 02:34:28,312 [analyzer] INFO: Injected into process with pid 2440 and name u'taskkill.exe'
+2022-07-03 01:46:41,677 [lib.api.process] ERROR: Failed to dump memory of 32-bit process with pid 2116.
+2022-07-03 01:46:47,834 [analyzer] INFO: Analysis timeout hit, terminating analysis.
+2022-07-03 01:46:47,895 [lib.api.process] ERROR: Failed to dump memory of 32-bit process with pid 2928.
+2022-07-03 01:46:48,036 [lib.api.process] ERROR: Failed to dump memory of 64-bit process with pid 1692.
+2022-07-03 01:46:48,036 [lib.api.process] WARNING: The process with pid 2116 is not alive, memory dump aborted
+2022-07-03 01:46:48,115 [lib.api.process] ERROR: Failed to dump memory of 32-bit process with pid 2440.
+2022-07-03 01:46:48,490 [analyzer] INFO: Terminating remaining processes before shutdown.
+2022-07-03 01:46:48,490 [lib.api.process] INFO: Successfully terminated process with pid 2928.
+2022-07-03 01:46:48,490 [lib.api.process] INFO: Successfully terminated process with pid 1692.
+2022-07-03 01:46:48,490 [lib.api.process] INFO: Successfully terminated process with pid 2440.
+2022-07-03 01:46:48,645 [analyzer] INFO: Analysis completed.
+
+Cuckoo Log
+
+2022-07-03 02:40:25,201 [cuckoo.core.scheduler] DEBUG: Task #3158685: no machine available yet
+2022-07-03 02:40:35,228 [cuckoo.core.scheduler] DEBUG: Task #3158685: no machine available yet
+2022-07-03 02:40:45,269 [cuckoo.core.scheduler] INFO: Task #3158685: acquired machine win7x6420 (label=win7x6420)
+2022-07-03 02:40:45,270 [cuckoo.core.resultserver] DEBUG: Now tracking machine 192.168.168.220 for task #3158685
+2022-07-03 02:40:45,413 [cuckoo.auxiliary.sniffer] INFO: Started sniffer with PID 3072878 (interface=vboxnet0, host=192.168.168.220)
+2022-07-03 02:40:45,805 [cuckoo.machinery.virtualbox] DEBUG: Starting vm win7x6420
+2022-07-03 02:40:46,214 [cuckoo.machinery.virtualbox] DEBUG: Restoring virtual machine win7x6420 to vmcloak
+2022-07-03 02:45:40,221 [cuckoo.core.guest] INFO: Starting analysis #3158685 on guest (id=win7x6420, ip=192.168.168.220)
+2022-07-03 02:45:41,225 [cuckoo.core.guest] DEBUG: win7x6420: not ready yet
+2022-07-03 02:45:46,242 [cuckoo.core.guest] INFO: Guest is running Cuckoo Agent 0.10 (id=win7x6420, ip=192.168.168.220)
+2022-07-03 02:45:46,309 [cuckoo.core.guest] DEBUG: Uploading analyzer to guest (id=win7x6420, ip=192.168.168.220, monitor=latest, size=6659294)
+2022-07-03 02:45:47,497 [cuckoo.core.resultserver] DEBUG: Task #3158685: live log analysis.log initialized.
+2022-07-03 02:45:48,542 [cuckoo.core.resultserver] DEBUG: Task #3158685 is sending a BSON stream
+2022-07-03 02:45:48,928 [cuckoo.core.resultserver] DEBUG: Task #3158685 is sending a BSON stream
+2022-07-03 02:45:49,349 [cuckoo.core.resultserver] DEBUG: Task #3158685 is sending a BSON stream
+2022-07-03 02:45:49,632 [cuckoo.core.resultserver] DEBUG: Task #3158685 is sending a BSON stream
+2022-07-03 02:45:49,832 [cuckoo.core.resultserver] DEBUG: Task #3158685: File upload for 'shots/0001.jpg'
+2022-07-03 02:45:49,876 [cuckoo.core.resultserver] DEBUG: Task #3158685 uploaded file length: 133433
+2022-07-03 02:45:50,832 [cuckoo.core.resultserver] DEBUG: Task #3158685 is sending a BSON stream
+2022-07-03 02:45:50,944 [cuckoo.core.resultserver] DEBUG: Task #3158685: File upload for 'files/20331e88a21f7f2f_c.vbs'
+2022-07-03 02:45:50,953 [cuckoo.core.resultserver] DEBUG: Task #3158685 uploaded file length: 235
+2022-07-03 02:45:50,957 [cuckoo.core.resultserver] DEBUG: Task #3158685: File upload for 'files/cdbf68a3d15bba68_172231656827663.bat'
+2022-07-03 02:45:50,972 [cuckoo.core.resultserver] DEBUG: Task #3158685 uploaded file length: 352
+2022-07-03 02:45:53,220 [cuckoo.core.resultserver] DEBUG: Task #3158685: File upload for 'files/e3b0c44298fc1c14_~SDCE07.tmp'
+2022-07-03 02:45:53,237 [cuckoo.core.resultserver] DEBUG: Task #3158685 uploaded file length: 0
+2022-07-03 02:45:53,362 [cuckoo.core.resultserver] DEBUG: Task #3158685 is sending a BSON stream
+2022-07-03 02:45:53,452 [cuckoo.core.resultserver] DEBUG: Task #3158685: File upload for 'files/3f33f37c00228c70_dXBJsDSoJAKb.pptx'
+2022-07-03 02:45:53,460 [cuckoo.core.resultserver] DEBUG: Task #3158685 uploaded file length: 125955
+2022-07-03 02:45:53,466 [cuckoo.core.resultserver] DEBUG: Task #3158685: File upload for 'files/833f46746accd78c_HntXnRjQDaGUSAaJiY.ppt'
+2022-07-03 02:45:53,475 [cuckoo.core.resultserver] DEBUG: Task #3158685 uploaded file length: 665090
+2022-07-03 02:45:53,480 [cuckoo.core.resultserver] DEBUG: Task #3158685: File upload for 'files/58fb7580b943ead4_jZYlXwknCZL.rtf'
+2022-07-03 02:45:53,489 [cuckoo.core.resultserver] DEBUG: Task #3158685 uploaded file length: 583847
+2022-07-03 02:45:53,494 [cuckoo.core.resultserver] DEBUG: Task #3158685: File upload for 'files/2766497bd6f74cac_lHAOAbRiwGxrGI.txt'
+2022-07-03 02:45:53,506 [cuckoo.core.resultserver] DEBUG: Task #3158685: File upload for 'files/7966bb03c46cec35_lksuOrDbyERE.rtf'
+2022-07-03 02:45:53,514 [cuckoo.core.resultserver] DEBUG: Task #3158685: File upload for 'files/724c9de3b42568e4_QLnCGlGzLxOM.doc'
+2022-07-03 02:45:53,519 [cuckoo.core.resultserver] DEBUG: Task #3158685 uploaded file length: 455790
+2022-07-03 02:45:53,524 [cuckoo.core.resultserver] DEBUG: Task #3158685 uploaded file length: 707684
+2022-07-03 02:45:53,529 [cuckoo.core.resultserver] DEBUG: Task #3158685 uploaded file length: 826053
+2022-07-03 02:45:53,660 [cuckoo.core.resultserver] DEBUG: Task #3158685: File upload for 'files/43ca1bf876c9f9d3_xmPfEEltZL.rtf'
+2022-07-03 02:45:53,676 [cuckoo.core.resultserver] DEBUG: Task #3158685: File upload for 'files/6442672dbb7cc8a0_FKdDDOVlgJvO.docm'
+2022-07-03 02:45:53,696 [cuckoo.core.resultserver] DEBUG: Task #3158685 uploaded file length: 561835
+2022-07-03 02:45:53,702 [cuckoo.core.resultserver] DEBUG: Task #3158685: File upload for 'files/a77156bd5c765531_OqAqHkyyRoROfHt.docm'
+2022-07-03 02:45:53,708 [cuckoo.core.resultserver] DEBUG: Task #3158685: File upload for 'files/ba07b40e4b4eead4_TKdCEVptWNLhH.docm'
+2022-07-03 02:45:53,726 [cuckoo.core.resultserver] DEBUG: Task #3158685 uploaded file length: 750240
+2022-07-03 02:45:53,731 [cuckoo.core.resultserver] DEBUG: Task #3158685 uploaded file length: 683147
+2022-07-03 02:45:53,738 [cuckoo.core.resultserver] DEBUG: Task #3158685 uploaded file length: 771781
+2022-07-03 02:45:53,986 [cuckoo.core.resultserver] DEBUG: Task #3158685 is sending a BSON stream
+2022-07-03 02:46:02,146 [cuckoo.core.guest] DEBUG: win7x6420: analysis #3158685 still processing
+2022-07-03 02:46:17,211 [cuckoo.core.guest] DEBUG: win7x6420: analysis #3158685 still processing
+2022-07-03 02:46:32,268 [cuckoo.core.guest] DEBUG: win7x6420: analysis #3158685 still processing
+2022-07-03 02:46:47,401 [cuckoo.core.guest] DEBUG: win7x6420: analysis #3158685 still processing
+2022-07-03 02:46:48,256 [cuckoo.core.resultserver] DEBUG: Task #3158685: File upload for 'curtain/1656805608.22.curtain.log'
+2022-07-03 02:46:48,261 [cuckoo.core.resultserver] DEBUG: Task #3158685 uploaded file length: 36
+2022-07-03 02:46:48,469 [cuckoo.core.resultserver] DEBUG: Task #3158685: File upload for 'sysmon/1656805608.46.sysmon.xml'
+2022-07-03 02:46:48,486 [cuckoo.core.resultserver] DEBUG: Task #3158685 uploaded file length: 2540072
+2022-07-03 02:46:48,497 [cuckoo.core.resultserver] DEBUG: Task #3158685: File upload for 'files/0bf513c2017bf945_!wannadecryptor!.exe.lnk'
+2022-07-03 02:46:48,499 [cuckoo.core.resultserver] DEBUG: Task #3158685 uploaded file length: 929
+2022-07-03 02:46:48,504 [cuckoo.core.resultserver] DEBUG: Task #3158685: File upload for 'files/a7dd727b4e070702_t.wry'
+2022-07-03 02:46:48,508 [cuckoo.core.resultserver] DEBUG: Task #3158685 uploaded file length: 69912
+2022-07-03 02:46:48,515 [cuckoo.core.resultserver] DEBUG: Task #3158685: File upload for 'files/a587d75b2cf53e20_00000000.pky'
+2022-07-03 02:46:48,526 [cuckoo.core.resultserver] DEBUG: Task #3158685 uploaded file length: 276
+2022-07-03 02:46:48,531 [cuckoo.core.resultserver] DEBUG: Task #3158685: File upload for 'files/ece6bd6549d37890_lhaoabriwgxrgi.txt.wcry'
+2022-07-03 02:46:48,538 [cuckoo.core.resultserver] DEBUG: Task #3158685 uploaded file length: 456072
+2022-07-03 02:46:48,541 [cuckoo.core.resultserver] DEBUG: Task #3158685: File upload for 'files/fc4a832c3223228f_00000000.eky'
+2022-07-03 02:46:48,543 [cuckoo.core.resultserver] DEBUG: Task #3158685 uploaded file length: 1284
+2022-07-03 02:46:48,548 [cuckoo.core.resultserver] DEBUG: Task #3158685: File upload for 'files/3e7681b86dfdd470_qlncglgzlxom.doc.wcry'
+2022-07-03 02:46:48,555 [cuckoo.core.resultserver] DEBUG: Task #3158685 uploaded file length: 826344
+2022-07-03 02:46:48,559 [cuckoo.core.resultserver] DEBUG: Task #3158685: File upload for 'files/3b0747f727dc2a93_lksuordbyere.rtf.wcry'
+2022-07-03 02:46:48,565 [cuckoo.core.resultserver] DEBUG: Task #3158685 uploaded file length: 707976
+2022-07-03 02:46:48,568 [cuckoo.core.resultserver] DEBUG: Task #3158685: File upload for 'files/f90bf2565526c918_xmpfeeltzl.rtf.wcry'
+2022-07-03 02:46:48,573 [cuckoo.core.resultserver] DEBUG: Task #3158685 uploaded file length: 562120
+2022-07-03 02:46:48,575 [cuckoo.core.resultserver] DEBUG: Task #3158685: File upload for 'files/3f5ea17d12ba6a55_hntxnrjqdagusaajiy.ppt.wcry'
+2022-07-03 02:46:48,580 [cuckoo.core.resultserver] DEBUG: Task #3158685 uploaded file length: 665384
+2022-07-03 02:46:48,585 [cuckoo.core.resultserver] DEBUG: Task #3158685: File upload for 'files/4f7d400a300c9d3f_dxbjsdsojakb.pptx.wcry'
+2022-07-03 02:46:48,587 [cuckoo.core.resultserver] DEBUG: Task #3158685 uploaded file length: 126248
+2022-07-03 02:46:48,590 [cuckoo.core.resultserver] DEBUG: Task #3158685: File upload for 'files/83ae5349cec56dc1_c.wry'
+2022-07-03 02:46:48,592 [cuckoo.core.resultserver] DEBUG: Task #3158685 uploaded file length: 628
+2022-07-03 02:46:48,595 [cuckoo.core.resultserver] DEBUG: Task #3158685: File upload for 'files/227082c719fd4394_!please read me!.txt'
+2022-07-03 02:46:48,596 [cuckoo.core.resultserver] DEBUG: Task #3158685 uploaded file length: 797
+2022-07-03 02:46:48,599 [cuckoo.core.resultserver] DEBUG: Task #3158685: File upload for 'files/c9e9dc06f500ae39_r.wry'
+2022-07-03 02:46:48,601 [cuckoo.core.resultserver] DEBUG: Task #3158685 uploaded file length: 729
+2022-07-03 02:46:48,606 [cuckoo.core.resultserver] DEBUG: Task #3158685: File upload for 'files/ae12c967c9f57216_jzylxwknczl.rtf.wcry'
+2022-07-03 02:46:48,611 [cuckoo.core.resultserver] DEBUG: Task #3158685 uploaded file length: 584136
+2022-07-03 02:46:48,616 [cuckoo.core.resultserver] DEBUG: Task #3158685: File upload for 'files/ba4d3b5b84999403_tkdcevptwnlhh.docm.wcry'
+2022-07-03 02:46:48,620 [cuckoo.core.resultserver] DEBUG: Task #3158685: File upload for 'files/402046ada270528c_m.wry'
+2022-07-03 02:46:48,622 [cuckoo.core.resultserver] DEBUG: Task #3158685 uploaded file length: 43832
+2022-07-03 02:46:48,624 [cuckoo.core.resultserver] DEBUG: Task #3158685 uploaded file length: 683432
+2022-07-03 02:46:48,628 [cuckoo.core.resultserver] DEBUG: Task #3158685: File upload for 'files/8b8684d9637e81bd_fkdddovlgjvo.docm.wcry'
+2022-07-03 02:46:48,632 [cuckoo.core.resultserver] DEBUG: Task #3158685 uploaded file length: 772072
+2022-07-03 02:46:48,636 [cuckoo.core.resultserver] DEBUG: Task #3158685: File upload for 'files/78e3f87f31688355_u.wry'
+2022-07-03 02:46:48,639 [cuckoo.core.resultserver] DEBUG: Task #3158685 uploaded file length: 241664
+2022-07-03 02:46:48,643 [cuckoo.core.resultserver] DEBUG: Task #3158685: File upload for 'files/888d086d159b7f00_oqaqhkyyrorofht.docm.wcry'
+2022-07-03 02:46:48,649 [cuckoo.core.resultserver] DEBUG: Task #3158685 uploaded file length: 750520
+2022-07-03 02:46:48,652 [cuckoo.core.resultserver] DEBUG: Task #3158685: File upload for 'files/5d4fc5435ec4ec57_00000000.res'
+2022-07-03 02:46:48,655 [cuckoo.core.resultserver] DEBUG: Task #3158685 uploaded file length: 136
+2022-07-03 02:46:49,042 [cuckoo.core.resultserver] DEBUG: Task #3158685: File upload for 'shots/0002.jpg'
+2022-07-03 02:46:49,057 [cuckoo.core.resultserver] DEBUG: Task #3158685 uploaded file length: 129623
+2022-07-03 02:46:49,068 [cuckoo.core.resultserver] DEBUG: Task #3158685 had connection reset for <Context for LOG>
+2022-07-03 02:46:50,409 [cuckoo.core.guest] INFO: win7x6420: analysis completed successfully
+2022-07-03 02:46:50,421 [cuckoo.core.plugins] DEBUG: Stopped auxiliary module: Redsocks
+2022-07-03 02:46:50,489 [cuckoo.core.plugins] DEBUG: Stopped auxiliary module: Sniffer
+2022-07-03 02:47:19,914 [cuckoo.machinery.virtualbox] INFO: Successfully generated memory dump for virtual machine with label win7x6420 to path /srv/cuckoo/cwd/storage/analyses/3158685/memory.dmp
+2022-07-03 02:47:19,916 [cuckoo.machinery.virtualbox] DEBUG: Stopping vm win7x6420
+2022-07-03 02:51:05,319 [cuckoo.core.resultserver] DEBUG: Stopped tracking machine 192.168.168.220 for task #3158685
+2022-07-03 02:51:05,455 [cuckoo.core.scheduler] DEBUG: Released database task #3158685
+2022-07-03 02:51:05,552 [cuckoo.core.scheduler] INFO: Task #3158685: analysis procedure completed
+
+String - 
+ inflate 1.1.3 Copyright 1995-1998 Mark Adler
+Qkkbal
+- unzip 0.15 Copyright 1998 Gilles Vollant
+CloseHandle
+GlobalFree
+GetProcAddress
+LoadLibraryA
+GlobalAlloc
+SetCurrentDirectoryA
+GetCurrentDirectoryA
+GetFileAttributesA
+SetFileTime
+WriteFile
+SetFilePointer
+ReadFile
+GetFileSizeEx
+WS2_32.dll
+iphlpapi.dll
+NETAPI32.dll
+MPR.dll
+strcpy
+memset
+strlen
+&Microsoft Enhanced RSA and AES Cryptographic Provider
+StartTask
+wcry@2016
+GetNativeSystemInfo
+kernel32.dll
+oversubscribed distance tree
+incorrect data check
+incorrect header check
+invalid window size
+unknown compression method
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+<trustInfo xmlns="urn:schemas-microsoft-com:asm.v2">
+<security>
+<requestedPrivileges>
+<requestedExecutionLevel level="asInvoker" />
+</requestedPrivileges>
+</security>
+ </compatibility>
+</assembly>
+PPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDIN
+.sqlite3
+.sqlitedb
+.accdb
+.class
+.backup
+.onetoc2
+VS_VERSION_INFO
+StringFileInfo
+040904B0
+CompanyName
+Microsoft Corporation
+FileDescription
+dvdplay placeholder Application
+FileVersion
+6.1.7600.16385 (win7_rtm.090713-1255)
+InternalName
+
+Network - nenhum
+
+VM Memory Dump
+gen_memory_commands_shell_dev
+svchost.exe
+sysmon.exe
+taskhost.exe
+mscorsvw.exe
+WmiPrvSE.exe

@@ -1,0 +1,47 @@
+TP3 - Reconhecimento do ponto de vista de um insider (Wireshark)
+Vence 3 de junho de 2022 às 23:59
+Instruções
+Parte 1 – Familiarização com o Wireshark
+
+
+
+1.     Pesquise e explique o conceito de analisador de pacote (packet analyzer). 
+
+2.     Abra/instale a versão mais recente do analisador/capturador de pacotes Wireshark em seu computador. É importante destacar que qualquer captura do tráfego de rede exige duas importantes configurações: usar a placa de rede no modo promíscuo e executar o Wireshark com privilégios de administrador.
+
+3.     Explique o objetivo de cada uma das janelas da interface gráfica do Wireshark (a interface gráfica do Wireshark pode ser dividida em três janelas).
+
+4.     Faça o seguinte teste:
+
+Abra o navegador de sua preferência.
+Para não “poluir” a captura, feche outros programas que estejam abertos ou em segundo plano.
+Inicie o Wireshark – não capture pacotes, ainda.
+Inicie a captura de pacotes à partir da interface de rede que está conectada a Internet (sem fio ou cabeada).
+No navegador, abra a seguinte URL: http://www.ufu.br (se não der certo, abra uma URL que não tenha HTTPS)
+Volte ao Wireshark e pare a captura.
+Digite “http” na janela de filtro do Wireshark para mostrar somente os pacotes referente ao protocolo HTTP.
+Encontre a mensagem HTTP GET que foi enviada do seu computador para o servidor ufu.br. Identifique o conteúdo do pacote assim como informações importantes do cabeçalho do pacote como endereço IP origem, endereço IP destino, porta de origem e porta de destino.
+Qual é o endereço de rede (IP) relativo ao nome ufu.br? Qual é o endereço de rede (IP) do seu computador?
+Encontre a resposta (HTTP response) que foi enviada para o seu computador do servidor ufu.br.
+5.     Apague o “http” na janela de filtro do Wireshark. Liste os diferentes protocolos de rede que aparecem na coluna de protocolos. Faça uma pesquisa e verifique a função de cada um deles.
+ 
+
+6.     Quanto tempo demorou desde a solicitação feita pelo navegador (HTTP GET) até a resposta do servidor (HTTP OK)? Para ver o valor da coluna "Time" no formato ano, mês, dia e hora, clique em "View" e "Time Display Format".
+
+ 
+
+7.     Inicie uma nova captura e agora analise a seguinte URL: www.facebook.com. Refaça as questões 4-h, 4-i, 4-j e 6. Os pacotes de rede trocados entre o seu computador e o servidor do Facebook são diferentes dos pacotes trocados entre o seu computador e o servidor da UFU? Discuta as semelhanças e as diferenças.
+
+ 
+
+Parte 2 – Reconhecimento da rede local usando dados coletados com o Wireshark
+
+Considere o arquivo .pcap (extensão de arquivo usada pelo Wireshark) disponível junto do laboratório 3 no Moodle. Tal arquivo representa uma captura de 60 segundos em uma rede. Use as informações contidas no arquivo e os conhecimentos sobre reconhecimento adquiridos até aqui para explicar o conteúdo de tal captura. Alguns pontos interessantes:
+É possível inferir o endereço IP e o endereço físico (MAC) do computador que coletou os dados?
+É possível descobrir com quais hosts o computador que coletou os dados conversou?
+É possível descobrir o modelo/fabricante dos computadores que estão conversando?
+A captura foi realizada em uma rede local de uma determinada empresa. Que empresa é essa?
+Quais hosts encontrados na captura são acessíveis pela Internet? O que se pode descobrir sobre eles?
+É possível apontar quais softwares foram usados pelos computadores ao longo da captura?
+Elabore uma lista de potenciais alvos dentro da rede e fora da rede.
+Tente rascunhar um pequeno diagrama de rede com as informações que foram coletadas. Aponte os hosts e os potenciais servidores presentes em tal rede.

@@ -1,0 +1,10 @@
+TP11 - IDS baseados em Aprendizado de Máquina
+Vence 19 de agosto de 2022 às 23:59
+Instruções
+Responda as três perguntas feitas no notebook "exemplo-modelo.ipynb". Coloque no relatório os trechos de código e as eventuais explicações.
+
+Não se esqueça que tudo começa com o git clone do repositório:
+
+https://github.com/gustavodgbernardo/ml-cybersecurity-example
+
+Quem responder a pergunta extra receberá pontos extras...  :)

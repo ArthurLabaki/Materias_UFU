@@ -1,0 +1,76 @@
+Analyzer Log
+
+2022-07-03 02:34:21,000 [analyzer] DEBUG: Starting analyzer from: C:\tmp2zg5xi
+2022-07-03 02:34:21,015 [analyzer] DEBUG: Pipe server name: \??\PIPE\pjOTzOwTZItASkCmjqULYnNbJ
+2022-07-03 02:34:21,015 [analyzer] DEBUG: Log pipe server name: \??\PIPE\LybTtwumWUSDNsNulNFWpTExpBhwW
+2022-07-03 02:34:21,312 [analyzer] DEBUG: Started auxiliary module Curtain
+2022-07-03 02:34:21,312 [analyzer] DEBUG: Started auxiliary module DbgView
+2022-07-03 02:34:21,750 [analyzer] DEBUG: Started auxiliary module Disguise
+2022-07-03 02:34:21,953 [analyzer] DEBUG: Loaded monitor into process with pid 512
+2022-07-03 02:34:21,953 [analyzer] DEBUG: Started auxiliary module DumpTLSMasterSecrets
+2022-07-03 02:34:21,953 [analyzer] DEBUG: Started auxiliary module Human
+2022-07-03 02:34:21,953 [analyzer] DEBUG: Started auxiliary module InstallCertificate
+2022-07-03 02:34:21,953 [analyzer] DEBUG: Started auxiliary module Reboot
+2022-07-03 02:34:22,046 [analyzer] DEBUG: Started auxiliary module RecentFiles
+2022-07-03 02:34:22,046 [analyzer] DEBUG: Started auxiliary module Screenshots
+2022-07-03 02:34:22,062 [analyzer] DEBUG: Started auxiliary module Sysmon
+2022-07-03 02:34:22,062 [analyzer] DEBUG: Started auxiliary module LoadZer0m0n
+2022-07-03 02:34:22,062 [modules.packages.rar] INFO: None
+
+Cuckoo Log
+
+2022-07-03 02:39:39,304 [cuckoo.core.scheduler] INFO: Task #3158679: acquired machine win7x6410 (label=win7x6410)
+2022-07-03 02:39:39,316 [cuckoo.core.resultserver] DEBUG: Now tracking machine 192.168.168.210 for task #3158679
+2022-07-03 02:39:39,465 [cuckoo.auxiliary.sniffer] INFO: Started sniffer with PID 3071354 (interface=vboxnet0, host=192.168.168.210)
+2022-07-03 02:39:40,078 [cuckoo.machinery.virtualbox] DEBUG: Starting vm win7x6410
+2022-07-03 02:39:40,483 [cuckoo.machinery.virtualbox] DEBUG: Restoring virtual machine win7x6410 to vmcloak
+2022-07-03 02:43:04,923 [cuckoo.core.guest] INFO: Starting analysis #3158679 on guest (id=win7x6410, ip=192.168.168.210)
+2022-07-03 02:43:05,929 [cuckoo.core.guest] DEBUG: win7x6410: not ready yet
+2022-07-03 02:43:10,948 [cuckoo.core.guest] INFO: Guest is running Cuckoo Agent 0.10 (id=win7x6410, ip=192.168.168.210)
+2022-07-03 02:43:11,011 [cuckoo.core.guest] DEBUG: Uploading analyzer to guest (id=win7x6410, ip=192.168.168.210, monitor=latest, size=6659294)
+2022-07-03 02:43:12,202 [cuckoo.core.resultserver] DEBUG: Task #3158679: live log analysis.log initialized.
+2022-07-03 02:43:13,105 [cuckoo.core.resultserver] DEBUG: Task #3158679 is sending a BSON stream
+2022-07-03 02:43:14,369 [cuckoo.core.resultserver] DEBUG: Task #3158679: File upload for 'shots/0001.jpg'
+2022-07-03 02:43:14,386 [cuckoo.core.resultserver] DEBUG: Task #3158679 uploaded file length: 133433
+2022-07-03 02:43:14,868 [cuckoo.core.guest] WARNING: win7x6410: analysis #3158679 caught an exception
+Traceback (most recent call last):
+  File "C:/tmp2zg5xi/analyzer.py", line 824, in <module>
+    success = analyzer.run()
+  File "C:/tmp2zg5xi/analyzer.py", line 673, in run
+    pids = self.package.start(self.target)
+  File "C:\tmp2zg5xi\modules\packages\rar.py", line 115, in start
+    self.extract_rar(path, self.curdir, password)
+  File "C:\tmp2zg5xi\modules\packages\rar.py", line 48, in extract_rar
+    archive.extractall(path=extract_path, pwd=password)
+  File "C:\tmp2zg5xi\lib\api\rarfile.py", line 841, in extractall
+    self._extract(fnlist, path, pwd)
+  File "C:\tmp2zg5xi\lib\api\rarfile.py", line 910, in _extract
+    check_returncode(p, output)
+  File "C:\tmp2zg5xi\lib\api\rarfile.py", line 2956, in check_returncode
+    raise exc(msg)
+RarNoFilesError: No files that match pattern were found [10]: 
+Cannot open C:\Users\ADMINI~1\AppData\Local\Temp\Melissa.rar
+The system cannot find the file specified.
+
+2022-07-03 02:43:14,876 [cuckoo.core.plugins] DEBUG: Stopped auxiliary module: Redsocks
+2022-07-03 02:43:14,941 [cuckoo.core.plugins] DEBUG: Stopped auxiliary module: Sniffer
+2022-07-03 02:43:49,306 [cuckoo.machinery.virtualbox] INFO: Successfully generated memory dump for virtual machine with label win7x6410 to path /srv/cuckoo/cwd/storage/analyses/3158679/memory.dmp
+2022-07-03 02:43:49,307 [cuckoo.machinery.virtualbox] DEBUG: Stopping vm win7x6410
+2022-07-03 02:47:18,525 [cuckoo.core.resultserver] DEBUG: Stopped tracking machine 192.168.168.210 for task #3158679
+2022-07-03 02:47:18,525 [cuckoo.core.resultserver] DEBUG: Cancel <Context for LOG> for task 3158679
+2022-07-03 02:47:18,688 [cuckoo.core.scheduler] DEBUG: Released database task #3158679
+2022-07-03 02:47:18,795 [cuckoo.core.scheduler] INFO: Task #3158679: analysis procedure completed
+
+String - Nenhuma string legivel
+
+Network - nenhum
+
+VM Memory Dump
+gen_memory_commands_shell_dev
+System
+csrss.exe
+lsm.exe
+svchost.exe
+dwm.exe
+WmiPrvSE.exe
+pythonw.exe

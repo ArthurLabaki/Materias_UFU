@@ -1,0 +1,24 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-06-02 12:21 EDT
+Initiating Ping Scan at 12:21
+Scanning www.lins.sp.gov.br (104.21.37.130) [4 ports]
+Completed Ping Scan at 12:21, 0.05s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 12:21
+Completed Parallel DNS resolution of 1 host. at 12:21, 0.08s elapsed
+Initiating SYN Stealth Scan at 12:21
+Scanning www.lins.sp.gov.br (104.21.37.130) [65536 ports]
+SYN Stealth Scan Timing: About 20.07% done; ETC: 12:23 (0:02:03 remaining)
+SYN Stealth Scan Timing: About 46.17% done; ETC: 12:23 (0:01:11 remaining)
+Completed SYN Stealth Scan at 12:22, 107.47s elapsed (65536 total ports)
+Initiating OS detection (try #1) against www.lins.sp.gov.br (104.21.37.130)
+Retrying OS detection (try #2) against www.lins.sp.gov.br (104.21.37.130)
+Nmap scan report for www.lins.sp.gov.br (104.21.37.130)
+Host is up (0.00041s latency).
+Other addresses for www.lins.sp.gov.br (not scanned): 172.67.208.60 2606:4700:3030::6815:2582 2606:4700:3032::ac43:d03c
+All 65536 scanned ports on www.lins.sp.gov.br (104.21.37.130) are in ignored states.
+Not shown: 65536 filtered tcp ports (no-response)
+Too many fingerprints match this host to give specific OS details
+
+Read data files from: /snap/nmap/2629/bin/../share/nmap
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 111.95 seconds
+           Raw packets sent: 131203 (5.777MB) | Rcvd: 97 (4.972KB)

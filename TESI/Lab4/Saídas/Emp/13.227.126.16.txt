@@ -1,0 +1,35 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-06-02 22:04 EDT
+Initiating Ping Scan at 22:04
+Scanning 13.227.126.16 [4 ports]
+Completed Ping Scan at 22:04, 0.03s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 22:04
+Completed Parallel DNS resolution of 1 host. at 22:04, 0.34s elapsed
+Initiating SYN Stealth Scan at 22:04
+Scanning server-13-227-126-16.gru1.r.cloudfront.net (13.227.126.16) [65536 ports]
+Discovered open port 443/tcp on 13.227.126.16
+Discovered open port 80/tcp on 13.227.126.16
+SYN Stealth Scan Timing: About 19.12% done; ETC: 22:06 (0:02:11 remaining)
+SYN Stealth Scan Timing: About 46.26% done; ETC: 22:06 (0:01:11 remaining)
+SYN Stealth Scan Timing: About 71.44% done; ETC: 22:06 (0:00:36 remaining)
+Completed SYN Stealth Scan at 22:06, 115.53s elapsed (65536 total ports)
+Initiating OS detection (try #1) against server-13-227-126-16.gru1.r.cloudfront.net (13.227.126.16)
+Retrying OS detection (try #2) against server-13-227-126-16.gru1.r.cloudfront.net (13.227.126.16)
+Nmap scan report for server-13-227-126-16.gru1.r.cloudfront.net (13.227.126.16)
+Host is up (0.031s latency).
+Not shown: 65534 filtered tcp ports (no-response)
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: VoIP phone|webcam|specialized|general purpose
+Running (JUST GUESSING): Grandstream embedded (98%), Garmin embedded (93%), 2N embedded (92%), Philips embedded (89%), lwIP 1.4.X (89%)
+OS CPE: cpe:/h:grandstream:gxp1105 cpe:/h:garmin:virb_elite cpe:/h:2n:helios cpe:/h:philips:hue_bridge cpe:/a:lwip_project:lwip:1.4
+Aggressive OS guesses: Grandstream GXP1105 VoIP phone (98%), Garmin Virb Elite action camera (93%), 2N Helios IP VoIP doorbell (92%), Philips Hue Bridge (lwIP stack v1.4.0) (89%)
+No exact OS matches for host (test conditions non-ideal).
+TCP Sequence Prediction: Difficulty=0 (Trivial joke)
+IP ID Sequence Generation: Incremental
+
+Read data files from: /snap/nmap/2629/bin/../share/nmap
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 120.79 seconds
+           Raw packets sent: 131226 (5.778MB) | Rcvd: 115 (4.948KB)

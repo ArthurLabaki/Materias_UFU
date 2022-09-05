@@ -1,0 +1,121 @@
+Analyzer Log
+
+2022-07-03 02:34:22,015 [analyzer] DEBUG: Starting analyzer from: C:\tmphzbxu3
+2022-07-03 02:34:22,030 [analyzer] DEBUG: Pipe server name: \??\PIPE\eDRyBnyNVHwdKObgTxwuVzLb
+2022-07-03 02:34:22,030 [analyzer] DEBUG: Log pipe server name: \??\PIPE\XfLvgxXhxeDvmKTKY
+2022-07-03 02:34:22,467 [analyzer] DEBUG: Started auxiliary module Curtain
+2022-07-03 02:34:22,467 [analyzer] DEBUG: Started auxiliary module DbgView
+2022-07-03 02:34:23,171 [analyzer] DEBUG: Started auxiliary module Disguise
+2022-07-03 02:34:23,375 [analyzer] DEBUG: Loaded monitor into process with pid 500
+2022-07-03 02:34:23,375 [analyzer] DEBUG: Started auxiliary module DumpTLSMasterSecrets
+2022-07-03 02:34:23,375 [analyzer] DEBUG: Started auxiliary module Human
+2022-07-03 02:34:23,375 [analyzer] DEBUG: Started auxiliary module InstallCertificate
+2022-07-03 02:34:23,375 [analyzer] DEBUG: Started auxiliary module Reboot
+2022-07-03 02:34:23,500 [analyzer] DEBUG: Started auxiliary module RecentFiles
+2022-07-03 02:34:23,500 [analyzer] DEBUG: Started auxiliary module Screenshots
+2022-07-03 02:34:23,500 [analyzer] DEBUG: Started auxiliary module Sysmon
+2022-07-03 02:34:23,500 [analyzer] DEBUG: Started auxiliary module LoadZer0m0n
+2022-07-03 02:34:23,687 [lib.api.process] INFO: Successfully executed process from path u'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\Zeus.exe' with arguments '' and pid 292
+2022-07-03 02:34:23,858 [analyzer] DEBUG: Loaded monitor into process with pid 292
+2022-07-03 02:34:25,203 [analyzer] INFO: Injected into process with pid 2028 and name u'Zeus.exe'
+2022-07-03 02:34:25,265 [lib.api.process] ERROR: Failed to dump memory of 32-bit process with pid 2028.
+2022-07-03 02:34:25,358 [lib.api.process] ERROR: Failed to dump memory of 32-bit process with pid 292.
+2022-07-03 02:34:25,483 [analyzer] DEBUG: Loaded monitor into process with pid 2028
+2022-07-03 02:34:25,687 [analyzer] INFO: Process with pid 292 has terminated
+2022-07-03 02:34:26,750 [analyzer] INFO: Added new file to list with pid 2028 and path C:\Users\Administrator\AppData\Roaming\Ubyquw\irru.exe
+2022-07-03 02:34:26,812 [analyzer] INFO: Injected into process with pid 312 and name u'irru.exe'
+2022-07-03 02:34:26,983 [analyzer] DEBUG: Loaded monitor into process with pid 312
+2022-07-03 01:49:05,427 [analyzer] INFO: Analysis timeout hit, terminating analysis.
+2022-07-03 01:49:05,552 [lib.api.process] ERROR: Failed to dump memory of 32-bit process with pid 2028.
+2022-07-03 01:49:05,615 [lib.api.process] ERROR: Failed to dump memory of 32-bit process with pid 312.
+2022-07-03 01:49:05,990 [analyzer] INFO: Terminating remaining processes before shutdown.
+2022-07-03 01:49:05,990 [lib.api.process] INFO: Successfully terminated process with pid 2028.
+2022-07-03 01:49:05,990 [lib.api.process] INFO: Successfully terminated process with pid 312.
+2022-07-03 01:49:06,006 [analyzer] INFO: Analysis completed.
+
+Cuckoo Log
+
+2022-07-03 02:40:32,564 [cuckoo.core.scheduler] DEBUG: Task #3158686: no machine available yet
+2022-07-03 02:40:42,597 [cuckoo.core.scheduler] DEBUG: Task #3158686: no machine available yet
+2022-07-03 02:40:52,632 [cuckoo.core.scheduler] DEBUG: Task #3158686: no machine available yet
+2022-07-03 02:41:02,666 [cuckoo.core.scheduler] DEBUG: Task #3158686: no machine available yet
+2022-07-03 02:41:12,697 [cuckoo.core.scheduler] DEBUG: Task #3158686: no machine available yet
+2022-07-03 02:41:22,724 [cuckoo.core.scheduler] DEBUG: Task #3158686: no machine available yet
+2022-07-03 02:41:32,749 [cuckoo.core.scheduler] DEBUG: Task #3158686: no machine available yet
+2022-07-03 02:41:42,774 [cuckoo.core.scheduler] DEBUG: Task #3158686: no machine available yet
+2022-07-03 02:41:52,799 [cuckoo.core.scheduler] DEBUG: Task #3158686: no machine available yet
+2022-07-03 02:42:02,826 [cuckoo.core.scheduler] DEBUG: Task #3158686: no machine available yet
+2022-07-03 02:42:12,850 [cuckoo.core.scheduler] DEBUG: Task #3158686: no machine available yet
+2022-07-03 02:42:22,874 [cuckoo.core.scheduler] DEBUG: Task #3158686: no machine available yet
+2022-07-03 02:42:32,900 [cuckoo.core.scheduler] DEBUG: Task #3158686: no machine available yet
+2022-07-03 02:42:43,000 [cuckoo.core.scheduler] DEBUG: Task #3158686: no machine available yet
+2022-07-03 02:42:53,037 [cuckoo.core.scheduler] DEBUG: Task #3158686: no machine available yet
+2022-07-03 02:43:03,064 [cuckoo.core.scheduler] DEBUG: Task #3158686: no machine available yet
+2022-07-03 02:43:13,106 [cuckoo.core.scheduler] DEBUG: Task #3158686: no machine available yet
+2022-07-03 02:43:23,136 [cuckoo.core.scheduler] DEBUG: Task #3158686: no machine available yet
+2022-07-03 02:43:33,170 [cuckoo.core.scheduler] DEBUG: Task #3158686: no machine available yet
+2022-07-03 02:43:43,236 [cuckoo.core.scheduler] DEBUG: Task #3158686: no machine available yet
+2022-07-03 02:43:53,272 [cuckoo.core.scheduler] INFO: Task #3158686: acquired machine win7x6425 (label=win7x6425)
+2022-07-03 02:43:53,273 [cuckoo.core.resultserver] DEBUG: Now tracking machine 192.168.168.225 for task #3158686
+2022-07-03 02:43:53,442 [cuckoo.auxiliary.sniffer] INFO: Started sniffer with PID 3076523 (interface=vboxnet0, host=192.168.168.225)
+2022-07-03 02:43:53,792 [cuckoo.machinery.virtualbox] DEBUG: Starting vm win7x6425
+2022-07-03 02:43:54,216 [cuckoo.machinery.virtualbox] DEBUG: Restoring virtual machine win7x6425 to vmcloak
+2022-07-03 02:47:57,095 [cuckoo.core.guest] INFO: Starting analysis #3158686 on guest (id=win7x6425, ip=192.168.168.225)
+2022-07-03 02:47:58,101 [cuckoo.core.guest] DEBUG: win7x6425: not ready yet
+2022-07-03 02:48:03,278 [cuckoo.core.guest] INFO: Guest is running Cuckoo Agent 0.10 (id=win7x6425, ip=192.168.168.225)
+2022-07-03 02:48:03,347 [cuckoo.core.guest] DEBUG: Uploading analyzer to guest (id=win7x6425, ip=192.168.168.225, monitor=latest, size=6659294)
+2022-07-03 02:48:06,620 [cuckoo.core.resultserver] DEBUG: Task #3158686: live log analysis.log initialized.
+2022-07-03 02:48:06,630 [cuckoo.core.resultserver] DEBUG: Task #3158686 is sending a BSON stream
+2022-07-03 02:48:06,635 [cuckoo.core.resultserver] DEBUG: Task #3158686 is sending a BSON stream
+2022-07-03 02:48:07,349 [cuckoo.core.resultserver] DEBUG: Task #3158686: File upload for 'shots/0001.jpg'
+2022-07-03 02:48:07,360 [cuckoo.core.resultserver] DEBUG: Task #3158686 uploaded file length: 133463
+2022-07-03 02:48:08,149 [cuckoo.core.resultserver] DEBUG: Task #3158686 is sending a BSON stream
+2022-07-03 02:48:09,647 [cuckoo.core.resultserver] DEBUG: Task #3158686 is sending a BSON stream
+2022-07-03 02:48:19,382 [cuckoo.core.guest] DEBUG: win7x6425: analysis #3158686 still processing
+2022-07-03 02:48:34,445 [cuckoo.core.guest] DEBUG: win7x6425: analysis #3158686 still processing
+2022-07-03 02:48:49,583 [cuckoo.core.guest] DEBUG: win7x6425: analysis #3158686 still processing
+2022-07-03 02:49:04,682 [cuckoo.core.guest] DEBUG: win7x6425: analysis #3158686 still processing
+2022-07-03 02:49:05,723 [cuckoo.core.resultserver] DEBUG: Task #3158686: File upload for 'curtain/1656805745.71.curtain.log'
+2022-07-03 02:49:05,725 [cuckoo.core.resultserver] DEBUG: Task #3158686 uploaded file length: 36
+2022-07-03 02:49:05,978 [cuckoo.core.resultserver] DEBUG: Task #3158686: File upload for 'sysmon/1656805745.93.sysmon.xml'
+2022-07-03 02:49:05,997 [cuckoo.core.resultserver] DEBUG: Task #3158686 uploaded file length: 2553720
+2022-07-03 02:49:06,006 [cuckoo.core.resultserver] DEBUG: Task #3158686: File upload for 'files/e245afa0380938ce_irru.exe'
+2022-07-03 02:49:06,029 [cuckoo.core.resultserver] DEBUG: Task #3158686 uploaded file length: 182784
+2022-07-03 02:49:06,394 [cuckoo.core.resultserver] DEBUG: Task #3158686 had connection reset for <Context for LOG>
+2022-07-03 02:49:07,689 [cuckoo.core.guest] INFO: win7x6425: analysis completed successfully
+2022-07-03 02:49:07,697 [cuckoo.core.plugins] DEBUG: Stopped auxiliary module: Redsocks
+2022-07-03 02:49:07,768 [cuckoo.core.plugins] DEBUG: Stopped auxiliary module: Sniffer
+2022-07-03 02:49:36,066 [cuckoo.machinery.virtualbox] INFO: Successfully generated memory dump for virtual machine with label win7x6425 to path /srv/cuckoo/cwd/storage/analyses/3158686/memory.dmp
+2022-07-03 02:49:36,067 [cuckoo.machinery.virtualbox] DEBUG: Stopping vm win7x6425
+2022-07-03 02:54:23,770 [cuckoo.core.resultserver] DEBUG: Stopped tracking machine 192.168.168.225 for task #3158686
+2022-07-03 02:54:23,927 [cuckoo.core.scheduler] DEBUG: Released database task #3158686
+2022-07-03 02:54:24,027 [cuckoo.core.scheduler] INFO: Task #3158686: analysis procedure completed
+
+Strings - 
+This program must be run under Win32
+Borland C++ - Copyright 2002 Borland Corporation
+xxtype.cpp
+<notype>
+topTypPtr != 0 && IS_STRUC(topTypPtr->tpMask)
+xxtype.cpp
+Invalid function number
+No such file or directory
+Path not found
+Too many open files
+allocating stream lock table
+creating stream lock
+strm_locks
+GetProcessHeap
+GetStartupInfoA
+GetStdHandle
+GetStringTypeW
+
+Network - nenhum
+
+VM Memory Dump 
+csrss.exe
+System
+svchost.exe
+OSPPSVC.EXE
+SearchProtocol
+gen_memory_commands_shell_dev

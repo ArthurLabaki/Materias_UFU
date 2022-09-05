@@ -1,0 +1,30 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-06-02 21:48 EDT
+Initiating Ping Scan at 21:48
+Scanning 170.66.2.59 [4 ports]
+Completed Ping Scan at 21:48, 0.04s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 21:48
+Completed Parallel DNS resolution of 1 host. at 21:48, 0.00s elapsed
+Initiating SYN Stealth Scan at 21:48
+Scanning www2.bancobrasil.com.br (170.66.2.59) [65536 ports]
+Discovered open port 443/tcp on 170.66.2.59
+SYN Stealth Scan Timing: About 18.86% done; ETC: 21:51 (0:02:13 remaining)
+SYN Stealth Scan Timing: About 45.18% done; ETC: 21:50 (0:01:14 remaining)
+Completed SYN Stealth Scan at 21:50, 112.14s elapsed (65536 total ports)
+Initiating OS detection (try #1) against www2.bancobrasil.com.br (170.66.2.59)
+Retrying OS detection (try #2) against www2.bancobrasil.com.br (170.66.2.59)
+Nmap scan report for www2.bancobrasil.com.br (170.66.2.59)
+Host is up (0.022s latency).
+Not shown: 65535 filtered tcp ports (no-response)
+PORT    STATE SERVICE
+443/tcp open  https
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: VoIP phone|webcam|firewall|specialized|general purpose
+Running (JUST GUESSING): Grandstream embedded (94%), Garmin embedded (89%), FireBrick embedded (87%), 2N embedded (87%), OSRAM embedded (87%), Philips embedded (85%), lwIP 1.4.X (85%), Denver Electronics embedded (85%)
+OS CPE: cpe:/h:grandstream:gxp1105 cpe:/h:garmin:virb_elite cpe:/h:firebrick:fb2700 cpe:/h:2n:helios cpe:/h:osram:lightify cpe:/h:philips:hue_bridge cpe:/a:lwip_project:lwip:1.4 cpe:/h:denver_electronics:ac-5000w
+Aggressive OS guesses: Grandstream GXP1105 VoIP phone (94%), Garmin Virb Elite action camera (89%), FireBrick FB2700 firewall (87%), 2N Helios IP VoIP doorbell (87%), OSRAM Lightify ZigBee gateway (87%), Philips Hue Bridge (lwIP stack v1.4.0) (85%), Denver Electronics AC-5000W MK2 camera (85%)
+No exact OS matches for host (test conditions non-ideal).
+
+Read data files from: /snap/nmap/2629/bin/../share/nmap
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 118.70 seconds
+           Raw packets sent: 131267 (5.781MB) | Rcvd: 100 (4.032KB)

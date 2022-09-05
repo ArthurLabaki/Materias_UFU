@@ -1,0 +1,60 @@
+Analyzer Log
+
+2022-07-03 02:34:21,003 [root] DEBUG: Starting analyzer from: /tmp/tmp_0dLou
+2022-07-03 02:34:21,003 [root] DEBUG: Storing results at: /tmp/EyrGUGmNG
+2022-07-03 02:34:21,004 [lib.core.packages] INFO: _guess_package_name failed
+2022-07-03 02:34:21,004 [lib.core.packages] INFO: C source, ASCII text, with CRLF line terminators
+2022-07-03 02:34:21,004 [lib.core.packages] INFO: ILOVEYOU
+2022-07-03 02:34:23,177 [modules.auxiliary.filecollector] INFO: FileCollector started v0.08
+2022-07-03 02:34:23,679 [modules.auxiliary.human] INFO: Human started v0.02
+2022-07-03 02:34:24,180 [modules.auxiliary.screenshots] INFO: Screenshots started v0.03
+2022-07-03 02:34:34,868 [lib.core.packages] INFO: Process startup took 10.68 seconds
+2022-07-03 02:34:34,875 [root] INFO: Added new process to list with pid: 2082
+2022-07-03 02:34:46,894 [root] INFO: Process with pid 2082 has terminated
+2022-07-03 02:34:46,895 [root] INFO: Process list is empty, terminating analysis.
+2022-07-03 02:34:49,899 [lib.core.packages] INFO: Package requested stop
+2022-07-03 02:34:49,901 [lib.core.packages] WARNING: Exception uploading log: [Errno 3] No such process
+2022-07-03 02:39:10,017 [root] INFO: Terminating remaining processes before shutdown.
+2022-07-03 02:39:10,018 [root] INFO: Analysis completed.
+
+Cuckoo Log
+
+2022-07-03 02:39:08,544 [cuckoo.core.scheduler] INFO: Task #3158677: acquired machine Ubuntu1904x643 (label=Ubuntu1904x643)
+2022-07-03 02:39:08,545 [cuckoo.core.resultserver] DEBUG: Now tracking machine 192.168.168.103 for task #3158677
+2022-07-03 02:39:08,755 [cuckoo.auxiliary.sniffer] INFO: Started sniffer with PID 3070725 (interface=vboxnet0, host=192.168.168.103)
+2022-07-03 02:39:08,991 [cuckoo.machinery.virtualbox] DEBUG: Starting vm Ubuntu1904x643
+2022-07-03 02:39:09,446 [cuckoo.machinery.virtualbox] DEBUG: Restoring virtual machine Ubuntu1904x643 to Snapshot
+2022-07-03 02:42:04,262 [cuckoo.core.guest] INFO: Starting analysis #3158677 on guest (id=Ubuntu1904x643, ip=192.168.168.103)
+2022-07-03 02:42:05,267 [cuckoo.core.guest] DEBUG: Ubuntu1904x643: not ready yet
+2022-07-03 02:42:10,288 [cuckoo.core.guest] INFO: Guest is running Cuckoo Agent 0.10 (id=Ubuntu1904x643, ip=192.168.168.103)
+2022-07-03 02:42:10,300 [cuckoo.core.guest] DEBUG: Uploading analyzer to guest (id=Ubuntu1904x643, ip=192.168.168.103, monitor=latest, size=72028)
+2022-07-03 02:42:10,519 [cuckoo.core.resultserver] DEBUG: Task #3158677: live log analysis.log initialized.
+2022-07-03 02:42:16,668 [cuckoo.core.resultserver] DEBUG: Task #3158677: File upload for 'shots/0001.jpg'
+2022-07-03 02:42:16,673 [cuckoo.core.resultserver] DEBUG: Task #3158677 uploaded file length: 171492
+2022-07-03 02:42:25,450 [cuckoo.core.guest] DEBUG: Ubuntu1904x643: analysis #3158677 still processing
+2022-07-03 02:42:39,426 [cuckoo.core.resultserver] DEBUG: Task #3158677: File upload for 'logs/all.stap'
+2022-07-03 02:42:39,429 [cuckoo.core.resultserver] DEBUG: Task #3158677 uploaded file length: 6680
+2022-07-03 02:42:40,524 [cuckoo.core.guest] DEBUG: Ubuntu1904x643: analysis #3158677 still processing
+2022-07-03 02:42:55,601 [cuckoo.core.guest] DEBUG: Ubuntu1904x643: analysis #3158677 still processing
+2022-07-03 02:43:10,657 [cuckoo.core.guest] DEBUG: Ubuntu1904x643: analysis #3158677 still processing
+2022-07-03 02:43:25,718 [cuckoo.core.guest] DEBUG: Ubuntu1904x643: analysis #3158677 still processing
+2022-07-03 02:43:40,818 [cuckoo.core.guest] DEBUG: Ubuntu1904x643: analysis #3158677 still processing
+2022-07-03 02:43:55,911 [cuckoo.core.guest] DEBUG: Ubuntu1904x643: analysis #3158677 still processing
+2022-07-03 02:44:10,999 [cuckoo.core.guest] DEBUG: Ubuntu1904x643: analysis #3158677 still processing
+2022-07-03 02:44:26,068 [cuckoo.core.guest] DEBUG: Ubuntu1904x643: analysis #3158677 still processing
+2022-07-03 02:44:41,134 [cuckoo.core.guest] DEBUG: Ubuntu1904x643: analysis #3158677 still processing
+2022-07-03 02:44:56,202 [cuckoo.core.guest] DEBUG: Ubuntu1904x643: analysis #3158677 still processing
+2022-07-03 02:45:11,323 [cuckoo.core.guest] INFO: Ubuntu1904x643: end of analysis reached!
+2022-07-03 02:45:11,332 [cuckoo.core.plugins] DEBUG: Stopped auxiliary module: Redsocks
+2022-07-03 02:45:11,412 [cuckoo.core.plugins] DEBUG: Stopped auxiliary module: Sniffer
+2022-07-03 02:45:26,060 [cuckoo.machinery.virtualbox] INFO: Successfully generated memory dump for virtual machine with label Ubuntu1904x643 to path /srv/cuckoo/cwd/storage/analyses/3158677/memory.dmp
+2022-07-03 02:45:26,061 [cuckoo.machinery.virtualbox] DEBUG: Stopping vm Ubuntu1904x643
+2022-07-03 02:48:52,693 [cuckoo.core.resultserver] DEBUG: Stopped tracking machine 192.168.168.103 for task #3158677
+2022-07-03 02:48:52,966 [cuckoo.core.scheduler] DEBUG: Released database task #3158677
+2022-07-03 02:48:53,076 [cuckoo.core.scheduler] INFO: Task #3158677: analysis procedure completed
+
+String - É possivel ver basicamente o script do malware.
+
+Network analysis - Nenhum
+
+VM Memory Dump - Não tem

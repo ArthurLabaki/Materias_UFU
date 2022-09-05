@@ -1,0 +1,31 @@
+TP4 - Varredura (scanning) - CASA
+Vence 10 de junho de 2022 às 23:59
+Instruções
+Instale o Nmap em sua máquina virtual.
+Inicialize uma segunda máquina virtual. Certifique-se de que ambas estão se comunicando.
+Execute o Nmap à partir da primeira máquina virtual usando como alvo a segunda máquina virtual (nmap endereco_ip_maquina_virtual_2). Mostre e explique o significado da saída.
+Repita o procedimento feito no passo 3) mas agora use o alvo www.ufu.br. Mostre e explique o significado da saída. Existe alguma diferença para os resultados obtidos no passo anterior? Explique.
+O objetivo deste passo é explorar os diferentes argumentos do Nmap. Use como alvo o host www.ufu.br nas seguintes varreduras. Para cada item abaixo mostre o resultado do scan e, quando necessário, explique os resultados.
+Realize um scan usando a opção “verbose”, ou seja, imprimir na tela tudo o que está sendo feito.
+Realize um scan em todas as 65535 portas possíveis no modo verbose. Lembre-se que ao usar as configurações padrão, o Nmap só trabalha com 1000 portas.
+Realize um scan nas portas UDP. Alguma diferença foi encontrada para o scan nas portas TCP?
+Realize um scan que permita identificar o Sistema Operacional do alvo.
+Realize um scan com, no mínimo, duas opções acima e grave a saída em um arquivo. Use a opção nativa do Nmap ao invés do redirecionamento do próprio Linux.
+Repita os passos 4) e 5) mas troque o alvo para www.portalestudante.ufu.br.
+Realize um scan básico em www.serradasaudade.mg.gov.br (portal da prefeitura da cidade com a menor população do estado de Minas Gerais).
+O que aconteceu? O resultado encontrado na prefeitura é algo normal para um servidor Web (ou dentro das boas práticas de segurança)? Faça uma pesquisa sobre o assunto.
+Explique o significado dos estados (STATE) das portas encontradas.
+Repita o scan mas agora use o modo “verbose”. Algo mudou?
+Crie uma lista com vinte cidades situadas em seu estado de nascimento. Use o critério que julgar mais adequado para selecionar tais cidades. Inclua em tal lista as URLs dos respectivos portais das prefeituras.
+Crie um bash script para executar um scan em tais URLs e salvar a saída de cada um deles em um arquivo. Use diversos parâmetros do Nmap para aumentar a quantidade de informação obtida sobre o alvo (verificação de SO, UDP, Firewall Detection, Version Detection entre outros).
+Execute o script.
+Analise os resultados do ponto de vista da função da máquina alvo (servidor Web) e as aplicações que estão sendo executadas em tal máquina. É possível tirar alguma conclusão sobre o porte da cidade e a forma com que os serviços são expostos em sua URL?
+Use o script criado no exercício anterior para varrer os alvos (IPs) coletados no TP-1. Crie uma tabela para relacionar os serviços disponíveis por empresa. Quais serviços aparecem com mais frequência? Faça uma análise sobre os resultados encontrados.
+
+Algumas referências sobre o Nmap:
+
+https://hackertarget.com/nmap-cheatsheet-a-quick-reference-guide/
+
+https://www.cyberciti.biz/security/nmap-command-examples-tutorials/
+
+https://resources.infosecinstitute.com/nmap-evade-firewall-scripting/#gref

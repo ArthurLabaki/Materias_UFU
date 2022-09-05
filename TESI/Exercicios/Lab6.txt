@@ -1,0 +1,39 @@
+TP6 - Ataques de Negação de Serviço - CASA
+Vence 1 de julho de 2022 às 23:59
+Instruções
+
+
+Instruções (IMPORTANTE): Os alunos devem submeter um relatório detalhado com figuras (screenshots, por exemplo) para descrever o que foi feito e o que foi observado. Os alunos também devem fornecer explicações para as observações que julgarem interessantes. Um relatório composto de simplesmente screenshots sem explicações e observações não será considerado para avaliação. 
+
+Etapas 
+
+Verifique se as duas máquinas virtuais VM1 e VM2 estão se comunicando entre si.  
+Explique o funcionamento do mecanismo SYN Cookie, comumente utilizado para minimizar o impacto de ataques de negação de serviço.  
+Na máquina VM2 (alvo) verifique o tamanho da fila (recursos alocados) usando o seguinte o comando: 
+
+            # sysctl -q net.ipv4.tcp_max_syn_backlog 
+
+            Verifique também se o mecanismo SYN cookie está ligado. Se estiver, desligue tal         mecanismo: 
+
+            # sysctl -a | grep cookie      (mostra o valor da flag SYN cookie) 
+
+            # sysctl -w net.ipv4.tcp_syncookies=0     (desliga o SYN cookie) 
+
+ 
+Ainda na máquina alvo VM2, verifique as conexões TCP semi-abertas (passo 2 do handshake de três vias) usando o comando "netstat -na | grep tcp". Tais conexões aparecerão como "SYN-RECV".  
+Na máquina VM1 (atacante) use o nmap para descobrir quais portas TCP estão abertas na máquina VM2 (alvo). Faça um ping para a máquina VM2 durante 1 minuto e encontre o tempo médio de resposta da requisição. 
+Ainda na máquina VM1 (atacante) use a ferramenta netwox para disparar ataques SYN flooding na máquina VM2 (alvo).  O próprio netwox possui uma aplicação específica para realizar o flooding - enviar múltiplos pedidos de conexão TCP e não enviar o último ACK. Usando a linha de comando a sintaxe é a seguinte: 
+
+            # netwox 76 --dst-ip (ip da máquina alvo) --dst-port (porta da máquina alvo) 
+
+Use uma porta TCP aberta descoberta com o nmap como a porta da máquina alvo (isso pode influenciar a forma com que o ataque é percebido na VM2!) 
+Encontre evidências de que o ataque realmente funcionou. Isso poderá ser feito de  várias formas, como exemplo: mostrar o número de conexões semi-abertas na máquina VM2, verificação do tempo médio de resposta de uma requisição usando ping, verificações de pacotes usando wireshark e do próprio comportamento da máquina alvo. Registre as suas descobertas.  
+Ligue o SYN cookie na VM2 e refaça o ataque. Algo mudou? Verifique todas a medidas utilizadas no exercício 7 (número de conexões semi-abertas, verificação do tempo médio de resposta de uma requisição usando ping, verificação do tempo médio de resposta de uma requisição usando ping...) 
+Altere o tamanho da fila (# sysctl -w net.ipv4.tcp_max_syn_backlog="tamanho desejado") na VM2, refaça o ataque e mostre o impacto disso no controle do SYN Flooding. 
+Compare o ataque SYN com uma inundação de pacotes ICMP (ping). Ou seja, envie pacotes ping com tamanho de 1500 bytes de forma interminente para máquina alvo (VM2). Se possível, inicialize uma outra máquina virtual e execute o mesmo comando em tal máquina, distribuindo o ataque. Qual dos ataques é mais eficiente? Justifique a sua resposta. 
+Refaça o experimento com as seguintes variáveis: 
+Tente usar duas VMs no papel de atacante; 
+Diminua drasticamente a quantidade de memória principal dos atacantes; 
+Aumente a quantidade de memória principal da VM alvo, ligue o SYN Cookie e ajuste o tamanho da fila.  
+Qual foi o comportamento da VM alvo quando comparado ao primeiro experimento? 
+Como as empresas que hospedam serviços podem tratar tais tipos de ataques?  

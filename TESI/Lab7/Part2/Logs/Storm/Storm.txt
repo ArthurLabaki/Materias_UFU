@@ -1,0 +1,81 @@
+Analyzer Log
+
+2022-07-03 02:34:22,000 [analyzer] DEBUG: Starting analyzer from: C:\tmpj6atou
+2022-07-03 02:34:22,015 [analyzer] DEBUG: Pipe server name: \??\PIPE\IybaIaREfYXfhcOVo
+2022-07-03 02:34:22,015 [analyzer] DEBUG: Log pipe server name: \??\PIPE\kKUQDYjPubrgdNjToQXFxSMrlhWfr
+2022-07-03 02:34:22,280 [analyzer] DEBUG: Started auxiliary module Curtain
+2022-07-03 02:34:22,280 [analyzer] DEBUG: Started auxiliary module DbgView
+2022-07-03 02:34:22,765 [analyzer] DEBUG: Started auxiliary module Disguise
+2022-07-03 02:34:22,967 [analyzer] DEBUG: Loaded monitor into process with pid 504
+2022-07-03 02:34:22,967 [analyzer] DEBUG: Started auxiliary module DumpTLSMasterSecrets
+2022-07-03 02:34:22,967 [analyzer] DEBUG: Started auxiliary module Human
+2022-07-03 02:34:22,967 [analyzer] DEBUG: Started auxiliary module InstallCertificate
+2022-07-03 02:34:22,967 [analyzer] DEBUG: Started auxiliary module Reboot
+2022-07-03 02:34:23,030 [analyzer] DEBUG: Started auxiliary module RecentFiles
+2022-07-03 02:34:23,030 [analyzer] DEBUG: Started auxiliary module Screenshots
+2022-07-03 02:34:23,030 [analyzer] DEBUG: Started auxiliary module Sysmon
+2022-07-03 02:34:23,030 [analyzer] DEBUG: Started auxiliary module LoadZer0m0n
+2022-07-03 02:34:23,155 [lib.api.process] INFO: Successfully executed process from path u'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\Storm.exe' with arguments '' and pid 2016
+2022-07-03 02:34:23,296 [analyzer] DEBUG: Loaded monitor into process with pid 2016
+2022-07-03 02:34:23,375 [analyzer] INFO: Injected into process with pid 1472 and name u'w32tm.exe'
+2022-07-03 02:34:23,421 [analyzer] INFO: Added new file to list with pid 2016 and path C:\Windows\glok+1ba7-5a65.sys
+2022-07-03 02:34:23,437 [analyzer] INFO: Added new file to list with pid 2016 and path C:\Windows\glok+serv.config
+2022-07-03 01:45:19,877 [analyzer] INFO: Analysis timeout hit, terminating analysis.
+2022-07-03 01:45:20,065 [lib.api.process] ERROR: Failed to dump memory of 32-bit process with pid 2016.
+2022-07-03 01:45:20,142 [lib.api.process] ERROR: Failed to dump memory of 32-bit process with pid 1472.
+2022-07-03 01:45:20,532 [analyzer] INFO: Terminating remaining processes before shutdown.
+2022-07-03 01:45:20,532 [lib.api.process] INFO: Successfully terminated process with pid 2016.
+2022-07-03 01:45:20,532 [lib.api.process] INFO: Successfully terminated process with pid 1472.
+2022-07-03 01:45:20,549 [analyzer] INFO: Analysis completed.
+
+Cuckoo Log
+
+2022-07-03 02:40:09,715 [cuckoo.core.scheduler] INFO: Task #3158683: acquired machine win7x6416 (label=win7x6416)
+2022-07-03 02:40:09,716 [cuckoo.core.resultserver] DEBUG: Now tracking machine 192.168.168.216 for task #3158683
+2022-07-03 02:40:09,889 [cuckoo.auxiliary.sniffer] INFO: Started sniffer with PID 3072051 (interface=vboxnet0, host=192.168.168.216)
+2022-07-03 02:40:10,088 [cuckoo.machinery.virtualbox] DEBUG: Starting vm win7x6416
+2022-07-03 02:40:10,477 [cuckoo.machinery.virtualbox] DEBUG: Restoring virtual machine win7x6416 to vmcloak
+2022-07-03 02:44:12,440 [cuckoo.core.guest] INFO: Starting analysis #3158683 on guest (id=win7x6416, ip=192.168.168.216)
+2022-07-03 02:44:13,444 [cuckoo.core.guest] DEBUG: win7x6416: not ready yet
+2022-07-03 02:44:18,460 [cuckoo.core.guest] INFO: Guest is running Cuckoo Agent 0.10 (id=win7x6416, ip=192.168.168.216)
+2022-07-03 02:44:18,529 [cuckoo.core.guest] DEBUG: Uploading analyzer to guest (id=win7x6416, ip=192.168.168.216, monitor=latest, size=6659294)
+2022-07-03 02:44:19,714 [cuckoo.core.resultserver] DEBUG: Task #3158683: live log analysis.log initialized.
+2022-07-03 02:44:20,633 [cuckoo.core.resultserver] DEBUG: Task #3158683 is sending a BSON stream
+2022-07-03 02:44:20,956 [cuckoo.core.resultserver] DEBUG: Task #3158683 is sending a BSON stream
+2022-07-03 02:44:21,254 [cuckoo.core.resultserver] DEBUG: Task #3158683 is sending a BSON stream
+2022-07-03 02:44:21,880 [cuckoo.core.resultserver] DEBUG: Task #3158683: File upload for 'shots/0001.jpg'
+2022-07-03 02:44:21,929 [cuckoo.core.resultserver] DEBUG: Task #3158683 uploaded file length: 133540
+2022-07-03 02:44:34,373 [cuckoo.core.guest] DEBUG: win7x6416: analysis #3158683 still processing
+2022-07-03 02:44:49,434 [cuckoo.core.guest] DEBUG: win7x6416: analysis #3158683 still processing
+2022-07-03 02:45:04,568 [cuckoo.core.guest] DEBUG: win7x6416: analysis #3158683 still processing
+2022-07-03 02:45:19,727 [cuckoo.core.guest] DEBUG: win7x6416: analysis #3158683 still processing
+2022-07-03 02:45:20,284 [cuckoo.core.resultserver] DEBUG: Task #3158683: File upload for 'curtain/1656805520.28.curtain.log'
+2022-07-03 02:45:20,287 [cuckoo.core.resultserver] DEBUG: Task #3158683 uploaded file length: 36
+2022-07-03 02:45:20,493 [cuckoo.core.resultserver] DEBUG: Task #3158683: File upload for 'sysmon/1656805520.49.sysmon.xml'
+2022-07-03 02:45:20,535 [cuckoo.core.resultserver] DEBUG: Task #3158683 uploaded file length: 2083732
+2022-07-03 02:45:20,578 [cuckoo.core.resultserver] DEBUG: Task #3158683: File upload for 'files/74da9da9dd9ebe57_glok+1ba7-5a65.sys'
+2022-07-03 02:45:20,610 [cuckoo.core.resultserver] DEBUG: Task #3158683: File upload for 'files/35de0196d6c5013c_glok+serv.config'
+2022-07-03 02:45:20,638 [cuckoo.core.resultserver] DEBUG: Task #3158683 uploaded file length: 48048
+2022-07-03 02:45:20,647 [cuckoo.core.resultserver] DEBUG: Task #3158683 uploaded file length: 128640
+2022-07-03 02:45:20,861 [cuckoo.core.resultserver] DEBUG: Task #3158683 had connection reset for <Context for LOG>
+2022-07-03 02:45:22,748 [cuckoo.core.guest] INFO: win7x6416: analysis completed successfully
+2022-07-03 02:45:22,765 [cuckoo.core.plugins] DEBUG: Stopped auxiliary module: Redsocks
+2022-07-03 02:45:22,901 [cuckoo.core.plugins] DEBUG: Stopped auxiliary module: Sniffer
+2022-07-03 02:45:59,605 [cuckoo.machinery.virtualbox] INFO: Successfully generated memory dump for virtual machine with label win7x6416 to path /srv/cuckoo/cwd/storage/analyses/3158683/memory.dmp
+2022-07-03 02:45:59,607 [cuckoo.machinery.virtualbox] DEBUG: Stopping vm win7x6416
+2022-07-03 02:48:53,274 [cuckoo.core.resultserver] DEBUG: Stopped tracking machine 192.168.168.216 for task #3158683
+2022-07-03 02:48:53,443 [cuckoo.core.scheduler] DEBUG: Released database task #3158683
+2022-07-03 02:48:53,557 [cuckoo.core.scheduler] INFO: Task #3158683: analysis procedure completed
+
+Strings É possivel ver algumas strings, como:
+!This program cannot be run in DOS mode.
+GetLastError
+GetProcAddress
+GetModuleHandleW
+VirtualAlloc
+KERNEL32.dll
+Launcher.ex_
+
+Network - Nenhuma
+
+VM Memory Dump - É possivel ver alguns processos

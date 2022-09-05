@@ -1,7 +1,7 @@
 # Materias_UFU
 ## Algoritmos e códigos feito para exercícios, laboratórios e trabalhos
 
-| Matérias | Períodos | 
+| Matérias | Períodos | |
 |----------|----------|
 | PP       | 1º       | Programação Procedimental
 | AED      | 2º       | Algoritmos e Estruturas de Dados 1
@@ -21,4 +21,4 @@
 | GEMP     | 6º       | Gestão Empresarial
 | ESOFT    | 6º       | Engenharia de Software
 | CC	   | 7º       | Construção de Compiladores
-| TESI     | Opt      | Tópicos Especiais em Segurança da Informação
+| TESI     | Opt      | Tópicos Especiais em Segurança da Informação|

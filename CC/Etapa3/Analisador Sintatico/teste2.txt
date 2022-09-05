@@ -1,0 +1,16 @@
+programa p2  
+begin
+	int :i1, i2;
+	if (i1 <= i2)
+	then
+	end
+	begin
+		while (i1 = i2)
+		do
+		begin
+			i1 := i2
+		end
+	end
+	[ o codigo está errado ]
+	then 
+end

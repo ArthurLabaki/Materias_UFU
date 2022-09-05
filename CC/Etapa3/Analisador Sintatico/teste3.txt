@@ -1,0 +1,12 @@
+:12E+1[nada demais aqui float]programa 1.32E-12 +programa2 ^Teste 
+begin
+int: varI1;
+char: varC;
+float: varC;
+int: varI2;
+if (varI1 < varI2) then
+varI2:= 4+5;
+else
+varI1:= 4+5;
+a
+end

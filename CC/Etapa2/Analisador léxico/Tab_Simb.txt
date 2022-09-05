@@ -1,0 +1,10 @@
+12E+1
+1.32E-12
+programa2
+Teste
+varI1
+varC
+varI2
+4
+5
+a

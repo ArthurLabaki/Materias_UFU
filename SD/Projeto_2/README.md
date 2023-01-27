@@ -63,7 +63,7 @@ Todos os códigos e comandos foram feitos em testados em um sistema Windows.
 
 Para saber o objetivo completo do trabalho, veja o [site do professor](https://paulo-coelho.github.io/ds_notes/projeto/)
 
-![Teste](/img/Trab1_doc.drawio.jpg)
+![Teste](SD/Projeto_2/img/Trab1_doc.drawio.jpg)
 
 Para as comunicações cliente/portal e portal/replicas foi usado o TCP Socket.  
 Entre cliente/portal, é passado uma string indicando a ação a ser tomada e um dicionário com informações para aquela ação (como modificar cliente, que será passado no formado *mc{CID: {'Nome': nome, 'Cpf': cpf, 'Telefone': tel}}* )  

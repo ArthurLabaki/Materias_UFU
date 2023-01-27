@@ -4,8 +4,8 @@
 
 ### Clonando Projeto
 ```
-git clone https://github.com/ArthurLabaki/SD-Projeto.git
-cd SD-Projeto
+git clone https://github.com/ArthurLabaki/Materias_UFU
+cd Materias_UFU/SD/Projeto_1
 ```
 
 ### Prerarando o ambiente

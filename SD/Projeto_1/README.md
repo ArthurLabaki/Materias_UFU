@@ -50,7 +50,7 @@ Todos os códigos e comandos foram feitos em testados em um sistema Windows.
 Para saber o objetivo completo do trabalho, veja o [site do professor](https://paulo-coelho.github.io/ds_notes/projeto/)
 
 <p align="center">
-	<img src="Materias_UFU/SD/Projeto 1/img/Trab1_doc.drawio.png" />
+	<img src="/img/Trab1_doc.drawio.png" />
 </p>
 
 Para a comunicação entre cliente e portais foi usado TCP Socket, e para comunicação entre portais foi usado o barramento pubsub Mosquitto (Paho).  

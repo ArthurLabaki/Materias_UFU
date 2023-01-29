@@ -1,0 +1,18 @@
+#name, percent, n, avrg, half length, lower ci endpoint, upper ci endpoint
+
+List_length_dc_MM1'Fila_1_avrg_iid 95 10 2.713669 0.407618 3.121287 2.306051
+List_length_dc_MM1'Fila_1_count_iid 95 10 506.600000 1.270663 507.870663 505.329337
+List_length_dc_MM1'Fila_1_max_iid 95 10 9.900000 0.226200 10.126200 9.673800
+List_length_dc_MM1'Fila_1_min_iid 95 10 0.000000 0.000000 0.000000 0.000000
+Marking_size_MM1'Atendimento_1_avrg_iid 95 10 1.200420 0.129214 1.329634 1.071206
+Marking_size_MM1'Atendimento_1_count_iid 95 10 499.200000 0.879308 500.079308 498.320692
+Marking_size_MM1'Atendimento_1_max_iid 95 10 2.000000 0.000000 2.000000 2.000000
+Marking_size_MM1'Atendimento_1_min_iid 95 10 0.000000 0.000000 0.000000 0.000000
+Marking_size_MM1'Funcionario_1_avrg_iid 95 10 0.799580 0.129214 0.928794 0.670366
+Marking_size_MM1'Funcionario_1_count_iid 95 10 499.200000 0.879308 500.079308 498.320692
+Marking_size_MM1'Funcionario_1_max_iid 95 10 2.000000 0.000000 2.000000 2.000000
+Marking_size_MM1'Funcionario_1_min_iid 95 10 0.000000 0.000000 0.000000 0.000000
+flowtime_avrg_iid 95 10 0.177637 0.065182 0.242819 0.112455
+flowtime_count_iid 95 10 247.300000 0.829400 248.129400 246.470600
+flowtime_max_iid 95 10 2.900000 0.406041 3.306041 2.493959
+flowtime_min_iid 95 10 0.000000 0.000000 0.000000 0.000000

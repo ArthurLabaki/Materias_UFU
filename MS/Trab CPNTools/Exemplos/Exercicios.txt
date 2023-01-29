@@ -1,0 +1,25 @@
+Trabalho INDIVIDUAL de Modelagem &Simulação (2022/2): 20 pts
+
+Simulador: CPN Tools
+
+1- Consideremos que um balcão de atendimento de uma empresa qualquer esteja representado por um sistema de tipo M/M/1/10. 
+Suponha que clientes chegam a uma taxa de 1 a cada 5 minutos e o tempo de serviço com taxa de 1 serviço a cada 4 minutos. 
+Calcular, considerando 10 experiências de simulação com horizonte de simulação igual a 1000, a duração média que um cliente 
+fica no sistema assim como o tamanho médio da fila de espera (fazer um enquadramento a 95% de confiança para produzir os valores médios).
+
+2- Considera-se que no sistema da questão 1 há 2 atendentes agora (M/M/2/10). 
+Modificar o modelo da questão 1 para considerar o número de atendentes e reproduzir os experimentos da questão 1. 
+Mostrar experimentalmente os resultados obtidos para o novo sistema.
+
+3- Considera-se que no sistema da questão 2 os dois atendentes podem fazer uma pausa de 15 minutos a cada 2 horas de trabalho (as durações específicas correspondem à valores médios). 
+Modificar o modelo da questão 2 para incluir os estados de descanso dos atendentes. 
+Mostrar experimentalmente os resultados obtidos para o novo sistema e fazer um estudo comparativo com os resultados experimentais da questão 2.
+
+
+Produzir um relatório único no formato PDF onde aparecerão os principais modelos de simulação, os resultados experimentais de simulação, e as respostas relativas as questões 1, 2 e 3 do enunciado. 
+O relatório deverá ser mandado através da plataforma Teams (tarefa na plataforma Teams) antes do dia da apresentação. 
+A apresentação individual do trabalho será realizada numa sala virtual na plataforma Teams. 
+
+
+1- y = 0.2
+   u = 0.25

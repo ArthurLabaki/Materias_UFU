@@ -1,0 +1,84 @@
+CPN Tools report for simulation replications
+Net: /cygdrive/C/Users/deded/Desktop/MS/Trab CPNTools/Ex3/novo_2atendente_mod.cpn
+Output directory: /cygdrive/C/Users/deded/Desktop/MS/Trab CPNTools/Ex3/output/reps_1
+
+Simulation no.: 1
+Steps.........: 1000
+Model time....: 0
+Stop reason...: The following stop criteria are fulfilled:
+ - Additional Steps 1000
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 2
+Steps.........: 1000
+Model time....: 3
+Stop reason...: The following stop criteria are fulfilled:
+ - Additional Steps 1000
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 3
+Steps.........: 1000
+Model time....: 7
+Stop reason...: The following stop criteria are fulfilled:
+ - Additional Steps 1000
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 4
+Steps.........: 1000
+Model time....: 0
+Stop reason...: The following stop criteria are fulfilled:
+ - Additional Steps 1000
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 5
+Steps.........: 1000
+Model time....: 0
+Stop reason...: The following stop criteria are fulfilled:
+ - Additional Steps 1000
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 6
+Steps.........: 1000
+Model time....: 2
+Stop reason...: The following stop criteria are fulfilled:
+ - Additional Steps 1000
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 7
+Steps.........: 1000
+Model time....: 0
+Stop reason...: The following stop criteria are fulfilled:
+ - Additional Steps 1000
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 8
+Steps.........: 1000
+Model time....: 0
+Stop reason...: The following stop criteria are fulfilled:
+ - Additional Steps 1000
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 9
+Steps.........: 1000
+Model time....: 2
+Stop reason...: The following stop criteria are fulfilled:
+ - Additional Steps 1000
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 10
+Steps.........: 1000
+Model time....: 0
+Stop reason...: The following stop criteria are fulfilled:
+ - Additional Steps 1000
+Time to run simulation: 0 seconds
+
+

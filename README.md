@@ -20,6 +20,7 @@
 | POO2     | 5º       | Programação Orientada a Objetos 2	     |
 | GEMP     | 6º       | Gestão Empresarial			     |
 | ESOFT    | 6º       | Engenharia de Software			     |
+| MS       | 6º       | Modelagem e Simulação			     |
 | CC	   | 7º       | Construção de Compiladores		     |
 | SD	   | 7º       | Sistemas Distribuídos			     |
 | TESI     | Opt      | Tópicos Especiais em Segurança da Informação |

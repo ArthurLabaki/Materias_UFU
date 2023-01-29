@@ -1,5 +1,4 @@
-# Programação Funcional
+# Modelagem e Simulação
 
-## Matéria ministrada pela professora Gina Maira Barbosa de Oliveira.
+## Matéria ministrada pelo professor Stéphane Julia.
 
-Linguagem utilizada: Haskell

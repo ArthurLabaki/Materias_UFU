@@ -1,0 +1,17 @@
+reset
+load "gnuplot/List_length_dc_MM1'Fila_1.gpl"
+pause -1 "List_length_dc_MM1'Fila_1"
+
+reset
+load "gnuplot/flowtime.gpl"
+pause -1 "flowtime"
+
+reset
+load "gnuplot/Marking_size_MM1'Atendimento_1.gpl"
+pause -1 "Marking_size_MM1'Atendimento_1"
+
+reset
+load "gnuplot/Marking_size_MM1'Funcionario_1.gpl"
+pause -1 "Marking_size_MM1'Funcionario_1"
+
+pause -1 "Done"

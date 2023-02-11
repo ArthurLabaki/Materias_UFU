@@ -1,0 +1,11 @@
+torch
+torchvision
+opencv-python
+matplotlib
+scikit-image
+mss
+numpy
+argparse
+tqdm
+pandas
+keyboard

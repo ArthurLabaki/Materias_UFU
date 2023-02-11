@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+        <title id="pageTitle">Trabalho 2 - Teoria da Computacao</title>
+        <script type="text/javascript" src="./eel.js"></script>
+
+        <link rel="stylesheet" href="./main.css">
+    </head>
+    <body>
+
+        <div class="header_holder">
+            <h1>Maquina de Turing - Trabalho 2</h1>
+            <br/>
+            <ul>
+                <li>Arthur Labaki</li>
+                <li>Vinicius Calixto</li>
+                <li>Vinnicius Pereira</li>
+            </ul>
+        </div>
+
+        <div class="container_tape relative">
+            <div class="relative_squares_container clear">
+                
+                <div style="position: relative;">
+                    <div id="squares_container1"></div>
+                    <img id="seta1" src="seta.png" alt="">
+                </div>
+
+                <div style="position: relative;">
+                    <div id="squares_container2"></div>
+                    <img id="seta2" src="seta.png" alt="">
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="clear bottom">
+            <input id="cadeia_input1" class="cadeiaI" type="text" placeholder="Cadeia 1">
+            <input id="cadeia_input2" class="cadeiaI" type="text" placeholder="Cadeia 2">
+            <input id="do_process_button" class="buttonP" type="button" value="Processar">
+            <input id="next_button" class="buttonP" type="button" value="Próximo">
+            <input id="preview_button" class="buttonP" type="button" value="Anterior">
+            <input id="automatic_button" class="buttonP" type="button" value="Automático">
+        </div>
+
+        <div class="table_holder_container">
+            <div id="table_holder">
+                <h1>Transições</h1>
+                <table id="table_transition">
+                </table>
+            </div>
+        </div>
+        
+
+        
+        <div id="table_process_holder">
+            <h1>Processamento</h1>
+            <table class="table_process">
+                <tr><td>Estado atual: <span id="mt_actual_state"></span></td></tr>
+                <tr><td>Estatus: <span id="mt_state"></span></td></tr>
+                <tr><td>Tempo gasto: <span id="mt_timestamp"></span> seg</td></tr>
+                <tr><td>Passos: <span id="mt_iterations"></span></td></tr>
+            </table>
+        </div>
+        
+    </body>
+    <script type="text/javascript" src="script.js"></script>
+</html>

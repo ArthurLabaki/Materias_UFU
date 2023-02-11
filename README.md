@@ -21,6 +21,9 @@
 | GEMP     | 6º       | Gestão Empresarial			     |
 | ESOFT    | 6º       | Engenharia de Software			     |
 | MS       | 6º       | Modelagem e Simulação			     |
+| IA       | 6º       | Inteligência Artificial			     |
+| TC       | 6º       | Teoria da Computação			     |
 | CC	   | 7º       | Construção de Compiladores		     |
 | SD	   | 7º       | Sistemas Distribuídos			     |
 | TESI     | Opt      | Tópicos Especiais em Segurança da Informação |
+| MULTI    | Opt      | Multimídia				     |

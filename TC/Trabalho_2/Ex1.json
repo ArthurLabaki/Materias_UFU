@@ -1,0 +1,15 @@
+{
+    "estados": ["q0","q1","q2"],
+    "alfabeto": ["A","B"],
+    "branco": [" "],
+    "alfabeto_fita1": ["A","B"," "],
+    "alfabeto_fita2": ["A","B"," "],
+    "transicoes": [
+        ["q0","A"," ","q0"," ","A","R","R"],
+        ["q0","B"," ","q1"," "," ","R","L"],
+        ["q1","A","A","q1"," "," ","R","L"],
+        ["q1"," "," ","q2"," "," ","I","I"]
+    ],
+    "estado_inicial": ["q0"],
+    "estados_finais": ["q2"]
+}

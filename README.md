@@ -25,5 +25,6 @@
 | TC       | 6º       | Teoria da Computação			     |
 | CC	   | 7º       | Construção de Compiladores		     |
 | SD	   | 7º       | Sistemas Distribuídos			     |
+| SEG	   | 8º       | Segurança da Informação	                     |
 | TESI     | Opt      | Tópicos Especiais em Segurança da Informação |
 | MULTI    | Opt      | Multimídia				     |

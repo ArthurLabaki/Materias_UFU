@@ -1,0 +1,40 @@
+
+
+
+
+
+
+
+
+
+
+('guerraepaz', 'file11.enc', b'teste\n')
+('novilingua', 'file12.enc', b'teste\n')
+
+('duplipensar', 'file14.enc', b'teste\n')
+('crimideia', 'file15.enc', b'teste\n')
+('Winston', 'file16.enc', b'teste\n')
+
+('grande1rmao', 'file18.enc', b'teste\n')
+('minip@z', 'file19.enc', b'teste\n')
+('miniamo', 'file20.enc', b'teste\n')
+('Bempensante', 'file21.enc', b'teste\n')
+
+
+
+('teste', 'file0.enc', b'teste\n')
+
+
+INfo-arquivos:
+script - codigo para testar as senhas
+function - codigo para gerar os dicionários 
+palavras_minusculas - dicionário com somente as palavras minusculas 
+tot_pal - dicionario com todas as palavras em minusculo, maiusculo e camelcase
+palavras_combinadas - dicionario tot_pal com junção de 2 palavras 
+palavras_m_combinadas - dicionario palavras_minusculas com junção de 2 palavras 
+palavras_m_masc - dicionario palavras_m_combinadas com as alterações de maiusculas (cAsa, caSa,...)
+palavras_min_masc - dicionario palavras_minusculas com todas as alterações de maiusculas ()
+palavras_masc - dicionario palavras_minusculas com as alterações de maiusculas de 1 letra
+palavras_v_grafica - dicionário palavras_minusculas com variações gráficas 
+palavras_v_fonetica  - dicionário palavras_minusculas com variações foneticas 
+palavras_v_all - dicionario palavras_v_grafica com as variaçoes foneticas

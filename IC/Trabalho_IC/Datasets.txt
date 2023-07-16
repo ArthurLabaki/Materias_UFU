@@ -1,0 +1,2 @@
+Dataset 1 - Intel Image Classification - https://www.kaggle.com/datasets/puneet6060/intel-image-classification
+Dataset 2 (usado) - Rice Image Dataset - https://www.kaggle.com/datasets/muratkokludataset/rice-image-dataset

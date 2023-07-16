@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Exercicio 6 - 3 </title>
+    <style>
+        body {
+            /* Design para o corpo do html geral da página*/
+            background-image: url('img-smp.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            font-size: larger;
+
+        }
+
+        main {
+            /* Design para o conteudo da página*/
+            background-color: lightgray;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 50%;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 8px;
+            border: 5px dashed black;
+            padding: 1%;
+        }
+
+        div input {
+            /* Design para o input de texto do Interesse*/
+            border: 3px solid black;
+        }
+
+
+        ol {
+            /* Design para a lista de elementos*/
+            text-align: right;
+            padding: 10px;
+        }
+
+        li {
+            /* Design individual para cada elemento da lista*/
+            margin-bottom: 10px;
+            border-radius: 8px;
+            border: 2px solid black;
+            background-color: darkgray;
+            padding-left: 8px;
+        }
+
+        li button {
+            /* Design ipara o botão do elemento da lista*/
+            background-color: transparent;
+            border: none;
+        }
+    </style>
+
+    <script>
+        // Função que vai ser acionada ao carregar todos os elementos do DOM da página
+        window.onload = function () {
+
+            // Cria a variavel 'cInteresse' que é atrelada a classe interesse, que é a caixa de texto
+            const cInteresse = document.querySelector("#interesse");
+
+            // Evento que será executado se uma tecla for pressionada e solta
+            cInteresse.addEventListener("keyup", e => {
+                // Verifica se a tecla Enter foi pressionada e solta
+                if (e.key == "Enter")
+                    // Executa a função addInteresse
+                    addInteresse();
+            })
+        }
+        // Função que adiciona o conteudo escrito na lista ordenada
+        function addInteresse() {
+
+            // Cria a variavel 'cInteresse' novamente
+            const cInteresse = document.querySelector("#interesse");
+            // Cria a variavel 'lstInteresse' que é atrelada a lista ordenada
+            const lstInteresse = document.querySelector("ol");
+
+            // Cria a variavel 'novoLi' que é um novo elemento li
+            const novoLi = document.createElement("li");
+            // Cria a variavel 'novoSpan' que é um novo elemento span, para o texto 
+            const novoSpan = document.createElement("span");
+            // Cria a variavel 'novoBtn' que é um novo elemento botão
+            const novoBtn = document.createElement("button");
+
+            // Atribui o conteudo escrito no input ao novo span criado
+            novoSpan.textContent = cInteresse.value;
+            // Atribui um ❌ como nome do botão criado
+            novoBtn.textContent = '❌';
+
+            // Atribui o novoSpan criado como um filho do novoLi
+            novoLi.appendChild(novoSpan);
+            // Atribui o novoBtn criado como um filho do novoLi
+            novoLi.appendChild(novoBtn);
+            // Atribui o novoLi como um filho do lstInteresse, adicionando o Li na lista ordenada
+            lstInteresse.appendChild(novoLi);
+
+            // Ao clicar no botão novoBtn, executa a função
+            novoBtn.onclick = function () {
+                // Remove o novoLI do botão apertado da lstInteresse, removendo o Li da lista ordenada
+                lstInteresse.removeChild(novoLi);
+            }
+
+            // Define o conteudo do cInteresse como '' (limpa o que foi salvo anteriormente no cInteresse)
+            cInteresse.value = '';
+        }
+    </script>
+</head>
+
+<body>
+    <main>
+        <!-- Div contendo label e input, separando eles da lista -->
+        <div>
+            <label for="interesse">Interesse:</label>
+            <input type="text" id="interesse" name="interesse">
+        </div>
+
+        <!-- Lista orndenada inicialmente vazia -->
+        <ol>
+        </ol>
+    </main>
+
+</body>
+
+</html>

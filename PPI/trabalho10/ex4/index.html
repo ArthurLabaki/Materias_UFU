@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ex 4</title>
+    <style>
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            line-height: 1.5rem;
+            background-color: #ddd;
+            color: #555;
+            margin: 0;
+        }
+
+        main {
+            width: 60%;
+            margin: 0;
+            padding: 2% 4%;
+            background-color: #eee;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        h1 {
+            font-size: 5rem;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <form id="stockForm">
+            <label for="stock1">Ação 1:</label>
+            <input type="text" id="stock1" name="stock1"><br>
+
+            <label for="stock2">Ação 2:</label>
+            <input type="text" id="stock2" name="stock2"><br>
+
+            <label for="stock3">Ação 3:</label>
+            <input type="text" id="stock3" name="stock3"><br>
+
+            <label for="stock4">Ação 4:</label>
+            <input type="text" id="stock4" name="stock4"><br>
+
+            <label for="stock5">Ação 5:</label>
+            <input type="text" id="stock5" name="stock5"><br>
+
+            <button type="button" onclick="sequencia()">Cotar Sequencialmente</button>
+            <button type="button" onclick="paralelo()">Cotar Paralelamente</button>
+        </form>
+        <hr>
+        <div id="resultContainer"></div>
+
+    </main>
+    <script>
+        function getQuote(stockCode) {
+            return fetch(`https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${stockCode}.SA&apikey=6TE9ZJNT6P773EHT`)
+                .then(response => response.json())
+                .then(data => {
+                    const quote = data['Global Quote']?.['05. price'] || 'N/A';
+                    console.log(quote);
+                    return { code: stockCode, quote: quote };
+                });
+
+        }
+        function RenderStock(stock) {
+            const stockElement = document.createElement('div');
+            stockElement.innerHTML = `Ação: ${stock.code} - Cotação: ${stock.quote}`;
+            const resultContainer = document.getElementById('resultContainer');
+            resultContainer.appendChild(stockElement);
+        }
+
+
+        function paralelo() {
+            const stockForm = document.getElementById('stockForm');
+            const stockInputs = stockForm.getElementsByTagName('input');
+            const stocks = Array.from(stockInputs).map(input => input.value);
+
+            Promise.all(stocks.map(stock => getQuote(stock)))
+                .then(quotes => {
+                    quotes.forEach(quote => {
+                        RenderStock(quote);
+                    });
+                })
+                .catch(error => console.log(error));
+        }
+
+        function sequencia() {
+            const stockForm = document.getElementById('stockForm');
+            const stockInputs = stockForm.getElementsByTagName('input');
+            const stocks = Array.from(stockInputs).map(input => input.value);
+
+            let promiseChain = Promise.resolve();
+
+            stocks.forEach(stock => {
+                promiseChain = promiseChain.then(() => getQuote(stock)).then(quote => {
+                    RenderStock(quote);
+                });
+            });
+        }
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

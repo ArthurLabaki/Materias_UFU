@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Exercicio 6 - 2 </title>
+    <style>
+        main button {
+            /* Design para o botão de abrir janela modal*/
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            font-size: 24px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            border: 5px solid black;
+        }
+
+        main button:hover {
+            /* Design para o botão de abrir janela modal, ao colocar o mouse em cima*/
+            background-color: #3d8a40;
+        }
+
+        body {
+            /* Design para o corpo do html geral da página*/
+            background-image: url('img-smp.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .modal {
+            /* Design para o fundo da janela modal (escurecer), inicialmente está invisivel*/
+            background-color: #0006;
+            display: none;
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            overflow: auto;
+            z-index: 1;
+        }
+
+        .modalContent {
+            /* Design da propria janela modal e seu conteudo*/
+            background-color: #eee;
+            margin: auto;
+            padding: 20px;
+            border: 0.5px solid #aaa;
+            box-shadow: 0 0 5px;
+
+            width: 50%;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+
+        .btnClose {
+            /* Design para o botão de fechar janela modal*/
+            position: absolute;
+            top: 50%;
+            left: 90%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            font-size: 24px;
+            background-color: #ff0000;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            border: 5px solid black;
+        }
+
+        .btnClose:hover {
+            /* Design para o botão de fechar janela modal, ao colocar o mouse em cima*/
+            background-color: #960000;
+        }
+    </style>
+
+    <script>
+        // Função da janela modal vai ser acionada ao carregar todos os elementos do DOM da página
+        window.onload = function () {
+
+            // Cria as variáveis 'modal' e 'btnClose' que são atreladas as classes da janela modal e o botão de fechar respectivamente
+            const modal = document.querySelector(".modal");
+            const btnClose = modal.querySelector(".btnClose");
+
+            // Ao clicar no botão de fechar janela modal, vai executar a função
+            btnClose.addEventListener("click", function () {
+                // modifica o display do modal para não aparecer (invisivel)
+                modal.style.display = 'none';
+            });
+
+            // Cria a variavel 'btnOpen' que é atrelada ao id do botão de abrir janela modal
+            const btnOpen = document.getElementById("btnOpen");
+
+            // Ao clicar no botão de abrir janela modal, vai executar a função
+            btnOpen.addEventListener("click", function () {
+                // modifica o display do modal para aparecer (visivel)
+                modal.style.display = 'block';
+            })
+        }
+    </script>
+</head>
+
+<body>
+    <main>
+        <button id="btnOpen">Janela Modal</button>
+        <!-- Cria o botão para abrir a janela modal-->
+    </main>
+
+    <div id="janelaModal" class="modal">
+        <!-- Div para o background da página (escurecer), mas faz parte da janela modal -->
+        <div class="modalContent">
+            <!-- Div para o conetudo que realmente vai estar dentro na janela modal-->
+            <h2>Está é uma Janela Modal!</h2>
+            <!-- Mensagem que aparece na janela modal-->
+            <button class="btnClose">Fechar</button>
+            <!-- Botão para fechar a janela modal-->
+        </div>
+    </div>
+
+</body>
+
+</html>

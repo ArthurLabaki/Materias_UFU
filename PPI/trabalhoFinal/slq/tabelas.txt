@@ -1,0 +1,95 @@
+-- Tabela Anunciante
+CREATE TABLE Anunciante (
+    Codigo INT PRIMARY KEY AUTO_INCREMENT,
+    Nome VARCHAR(255),
+    CPF VARCHAR(11),
+    Email VARCHAR(255),
+    SenhaHash VARCHAR(255),
+    Telefone VARCHAR(20)
+);
+
+-- Tabela Anuncio
+CREATE TABLE Anuncio (
+    Codigo INT PRIMARY KEY AUTO_INCREMENT,
+    Titulo VARCHAR(255),
+    Descricao TEXT,
+    Preco DECIMAL(10, 2),
+    DataHora DATETIME,
+    CEP VARCHAR(8),
+    Bairro VARCHAR(255),
+    Cidade VARCHAR(255),
+    Estado VARCHAR(255),
+    CodCategoria INT,
+    CodAnunciante INT,
+    FOREIGN KEY (CodCategoria) REFERENCES Categoria(Codigo),
+    FOREIGN KEY (CodAnunciante) REFERENCES Anunciante(Codigo)
+);
+
+-- Tabela Foto
+CREATE TABLE Foto (
+    CodAnuncio INT,
+    NomeArqFoto VARCHAR(255),
+    FOREIGN KEY (CodAnuncio) REFERENCES Anuncio(Codigo)
+);
+
+-- Tabela Categoria
+CREATE TABLE Categoria (
+    Codigo INT PRIMARY KEY AUTO_INCREMENT,
+    Nome VARCHAR(255),
+    Descricao TEXT
+);
+
+-- Tabela Interesse
+CREATE TABLE Interesse (
+    Codigo INT PRIMARY KEY AUTO_INCREMENT,
+    Mensagem TEXT,
+    DataHora DATETIME,
+    Contato VARCHAR(255),
+    CodAnuncio INT,
+    FOREIGN KEY (CodAnuncio) REFERENCES Anuncio(Codigo)
+);
+
+-- Tabela BaseEnderecosAjax 
+CREATE TABLE BaseEnderecosAjax (
+    CEP VARCHAR(8) PRIMARY KEY,
+    Bairro VARCHAR(255),
+    Cidade VARCHAR(255),
+    Estado VARCHAR(255)
+);
+
+INSERT INTO BaseEnderecosAjax (CEP, Bairro, Cidade, Estado) VALUES
+    ('01000-000', 'Centro', 'São Paulo', 'SP'),
+    ('20000-000', 'Centro', 'Rio de Janeiro', 'RJ'),
+    ('70000-000', 'Centro', 'Brasília', 'DF'),
+    ('40000-000', 'Centro', 'Salvador', 'BA'),
+    ('80000-000', 'Centro', 'Curitiba', 'PR'),
+    ('60000-000', 'Centro', 'Fortaleza', 'CE'),
+    ('90000-000', 'Centro', 'Porto Alegre', 'RS'),
+    ('50000-000', 'Centro', 'Recife', 'PE'),
+    ('30000-000', 'Centro', 'Belo Horizonte', 'MG'),
+    ('29000-000', 'Centro', 'Vitória', 'ES'),
+    ('12345-678', 'Centro', 'São Paulo', 'SP'),
+    ('98765-432', 'Jardins', 'Rio de Janeiro', 'RJ'),
+    ('54321-098', 'Itaim', 'Brasília', 'DF'),
+    ('76543-210', 'Barra', 'Salvador', 'BA'),
+    ('45678-901', 'Batel', 'Curitiba', 'PR'),
+    ('23456-789', 'Aldeota', 'Fortaleza', 'CE'),
+    ('87654-321', 'Moinhos de Vento', 'Porto Alegre', 'RS'),
+    ('34567-890', 'Boa Viagem', 'Recife', 'PE'),
+    ('67890-123', 'Savassi', 'Belo Horizonte', 'MG'),
+    ('38400-100', 'Centro', 'Uberlândia', 'MG'),
+    ('38400-200', 'Fundinho', 'Uberlândia', 'MG'),
+    ('38400-300', 'Osvaldo Rezende', 'Uberlândia', 'MG'),
+    ('90123-456', 'Jardim da Penha', 'Vitória', 'ES');
+
+INSERT INTO Categoria (Nome, Descricao)
+VALUES ('Veículo', 'Categoria relacionada a veículos automotivos.'),
+       ('Eletroeletrônico', 'Categoria relacionada a produtos eletroeletrônicos.'),
+       ('Imóvel', 'Categoria relacionada a imóveis residenciais e comerciais.'),
+       ('Móvel', 'Categoria relacionada a móveis e decoração.'),
+       ('Vestuário', 'Categoria relacionada a roupas e acessórios.'),
+       ('Beleza e Cuidados Pessoais', 'Categoria relacionada a produtos de beleza e cuidados pessoais.'),
+       ('Esportes', 'Categoria relacionada a produtos e equipamentos esportivos.'),
+       ('Livros', 'Categoria relacionada a livros e publicações.'),
+       ('Pet Shop', 'Categoria relacionada a produtos para animais de estimação.'),
+       ('Outro', 'Categoria para outros tipos de produtos.');

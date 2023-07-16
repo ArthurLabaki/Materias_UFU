@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="...">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Prova</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <style>
+        p {
+            font-size: 14pt;
+            color: blue;
+
+        }
+
+        /* 
+        Classe .nomeClasse
+        ID #nomeID
+        x > y  elementos y que são filhos de x
+        x y    elementos y que estão dentros de x
+        x + y  elemtno y que esta imediatamente depois de x
+        x ~ y  elemento y que é irmao de x e aparece depois de x
+        x[y]   atributo y que esta em x (como input[required])
+        */
+
+        /* 
+        font-family Define a fonte 
+        font-style normal, italic, oblique, etc
+        font-size Tamanho da fonte (em - fonte corrente, rem - fonte raiz)
+        font-weight Define a espessura da letra
+        font-variant Define variantes da fonte normal
+        font-stretch Estica ou comprime a fonte
+        line-height Espaçamento entre linhas
+        text-align Alinhamento horizontal
+        text-decoration Decoração adicional
+        text-indent Recuo de 1ª linha
+        text-transform Controle de maiúsculas e minúsculas
+        vertical-align Alinhamento vertical
+        color Define a cor do texto
+
+        background-color Define a cor de fundo
+        background-image Define uma imagem de fundo (backgound-image: url("path");)
+        background-repeat Modo de repetição da imagem de fundo
+        background-size Tamanho da imagem de fundo 
+        background-position Posição da imagem de fundo
+
+        padding Envolve o conteudo
+        border Envolve o padding 
+        (border: espessura estilo cor; border-radius: 3px; e box-shadow)
+        margin Externo a borda
+        outline Externo a borda, sem espaco proprio
+        */
+
+        /*
+        width, height,
+        min-width, min-height,
+        max-width, max-height
+        box-sizing (Altera o modo em que a largura/altura total do elemento é calculada)
+        :content-box valor padrão
+        :border-box Cálculo da largura/altura inclui tamanhos de bordas e paddings
+        display Altera o modo de apresentação do elemento
+        :none oculta completamente o elemento, removendo o mesmo do layout
+        :block exibição em nível de bloco
+        :inline exibição em nível de linha sem respeitar margin e padding
+        :inline-block exibição em nível de linha respeitando margin e padding
+        visibility Mostra ou oculta um elemento sem alterar o layout (visible, hidden ou collapse (esconde e não ocupa espaco))
+        float Posiciona o elemento no lado esquerdo ou direito de seu container
+        overflow Define como o conteúdo do elem. deve ser exibido ao extrapolar a borda (pode ser overflow-x ou -y, visible, hidden, scroll ou auto)
+        position Define como o elemento é posicionado na página (static, absolute, fixed, ..., usado com top e left normalmente)
+        transform Permite mover, rotacionar, torcer e escalonar um elemento (tranform:: translateX(50px), : translate(30px,10px); : translate(-50%,-50%);)
+
+        pseudoclasses (Ex button:hover)
+        ::visited links que já foram visitados 
+        ::valid Campo de form. com conteúdo válido
+        ::invalid quando o conteúdo é inválido
+        ::link Estilo inicial do link
+        ::hover Usuário interage com elem. sem ativar
+        ::active Estado ativo do elemento
+        ::checked checkbox, radio ou option selecionado
+        ::focus Elemento recebendo foco
+        ::first-child Primeiro filho do elemento pai 
+        ::last-child Último filho do elemento pai 
+        ::nth-child N-ésimo filho do elemento pai (e outros)
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        Viabiliza a responsividade conforme dispositivo/tela
+
+        media MediaType AND (MediaCondition) {}
+        MediaType : all - para todos os dispositivos, screen - para dispositivos com tela, print - para impressão
+        MediaCondition : max-width, height,...
+
+        */
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+
+            /*
+            if (expressão) {
+            }
+            else {
+            }
+    
+            switch (expressao) {
+                case condicao1:
+                    break;
+                case condicaoN:
+                    break;
+                ...
+                default:
+            }
+    
+            for (let i = 0; i < 10; i++){
+            }
+    
+            while (expressao){
+            }
+    
+            do {
+            } while (expressao)
+    
+    
+            var nomeDaVariável = valorInicial 
+            let nomeDaVariável = valorInicial
+            const nomeDaConstante = valor
+    
+            + Adição (e concatenação)
+            - Subtração
+            * Multiplicação
+            / Divisão
+            % Resto da divisão inteira
+            ++ Incremento
+            -- Decremento
+            = Atribuição
+            += Atribuição com soma
+            -= Atribuição com sub
+            == Comparação por igualdade 
+            (1 == true; // retorna true, pois true é convertido para 1 ou 10 == "10" // retorna true depois de converter 10 para string)
+            === Comparação por igualdade, incluindo valor e tipo
+            (1 === true; // retorna false ou 10 === "10" // retorna false)
+            != Diferente
+            > Maior que
+            >= Maior ou igual a
+            < Menor que
+            <= Menor ou igual a
+            && “E” lógico
+            || “Ou” lógico
+            ! Negação lógica
+    
+            window Representa a aba do navegador que contém a página
+            window.navigator Representa o navegador de Internet em uso
+            window.document Representa o documento HTML carregado na aba do navegador
+    
+            window.alert exibe uma caixa de diálogo para mensagens (botão Ok)
+            window.confirm exibe uma caixa de diálogo para confirmação (Ok/Cancelar)
+            window.prompt exibe uma caixa de diálogo para entrada de texto
+            document.write adiciona conteúdo no documento HTML
+            console.log registra conteúdo de log no console do navegador
+            console.warn registra mensagem de warning no console do navegador
+            console.error registra mensagem de erro no console do navegador
+    
+            function nomeDaFuncao(par1, par2, par3, ...) {
+            }
+    
+            window.onload = funcaoIniciaPagina; // o evento load ocorre quando a página inteira é carregada
+    
+            window.addEventListener("load", funcaoIniciaPagina); // o primeiro parâmetro é o nome do evento e não tem 'on',
+             o segundo parâmetro define a função para tratar o evento, 
+    
+            window.onload = function () {
+            }
+            Indicação de função anônima para tratar evento 'load' no objeto window
+    
+            window.onload = () => {
+            }
+            Indicação de função para tratar evento utilizando expressão tipo'arrow function'
+    
+    
+            let pares = [2, 4, 6, 8];
+            let primeiroPar = pares[0]; // 1º elemento
+            let nroElementos = pares.length; // tamanho do vetor
+    
+            let vogais = ['E', 'I', 'O'];
+            vogais.push('U') // adiciona um item no final do vetor
+            vogais.pop() // remove e retorna o último item do vetor
+            vogais.shift() // remove e retorna o primeiro item do vetor
+            vogais.unshift('A') // adiciona um item no início do vetor
+            vogais.indexOf('E') // retorna a posição da 1ª ocorr. de um item (ou -1)
+            vogais.length // propriedade contendo o número de elem. do vetor
+    
+    
+            const nodeFirstH1 = document.querySelector("h1");
+            const nodeImgLogo = document.querySelector("#imagemLogo");
+            const nodesH1 = document.querySelectorAll("h1"); Todos os h1 em uma lista
+            document.getElementById busca um único elemento utilizando o seu id
+            document.getElementsByName busca os elementos pelo valor do atributo name do elemento
+            document.getElementsByTagName busca os elementos pelo nome da tag HTML, como img, h1, etc.
+            document.getElementsByClassName busca os elementos pelo valor do atributo class
+    
+            textContent Se o conteúdo do elemento é textual, retorna esse texto
+            innerText Semelhante a textContent, porém não inclui conteúdos de elementos que “não podem ser lidos” pelo usuário
+            innerHTML Retorna o conteúdo do elemento e de seus descendentes
+    
+    
+            Ex:        
+            function mudarTitulo() {
+                document.getElementById("titulo").innerHTML = "Ciclano de Tal";
+            }
+            function mudarSubtitulo(id) {
+                document.getElementById(id).innerHTML = "Obrigado";
+            }
+            No html:
+            <h1 id="titulo" onclick="mudarTitulo()">Fulano de Tal</h1>
+            <h2 id="sub3" onclick="mudarSubtitulo('sub3')">Formação Acadêmica</h2>
+    
+            node.style.color É possivel mudar o css
+            node.getAttribute Permite acessar o valor do atributo conforme aparece na HTML (string)
+            node.setAttribute Define o valor de um atributo
+    
+            node.firstChild retorna o primeiro nó filho do elemento
+            node.firstElementChild retorna o primeiro nó filho do tipo elemento
+            node.lastChild retorna o último nó filho
+            node.lastElementChild retorna o último nó filho do tipo elemento
+            node.hasChildNodes retorna verdadeiro caso o nó tenha filhos
+            node.childNodes retorna uma lista com todos os nós filhos
+            node.children retorna lista contendo apenas nós filhos do tipo elemento
+    
+            node.appendChild(novoNo) acrescenta um nó filho no final da lista de filhos
+            node.removeChild(noFilhoASerRemovido) remove um nó filho (parâmetro) da lista de filhos
+            node.remove() remove o próprio nó da lista de filhos do nó pai
+            node.parentNode retorna o nó pai do nó em questão
+            node.nextSibling retorna o próximo nó irmão (nó de qualquer tipo)
+            node.previousSibling retorna o nó irmão anterior (nó de qualquer tipo)
+            node.nextElementSibling retorna o próximo nó irmão do tipo elemento
+            node.previousElementSibling retorna o nó irmão anterior do tipo elemento
+            document.createElement("elementoASerCriado") cria um novo nó do tipo Element
+            node.cloneNode(deep) duplica o objeto correspondente ao nó
+    
+            Ex:
+            window.onload = function () {
+                document.forms.formCadastro.onsubmit = validaForm;
+            }
+            function validaForm (e) {
+                let form = e.target
+                let formValido = true;
+    
+                const spanUsuario = form.usuario.nextElementSibling;
+                const spanSenha = form.senha.nextElementSibling;
+    
+                spanUsuario.textContent = "";
+                spanSenha.textContent = "";
+    
+                if (form.usuario.value === ""){
+                    spanUsuario.textContent = 'O usuário deve ser preenchido';
+                    formValido = false;
+                }
+                if (form.senha.value === ""){
+                    spanSenha.textContent = 'A senha deve ser preenchida';
+                    formValido = false;
+                }
+                if (! formValido){
+                    e.preventDefault();
+                }
+            }
+    
+            */
+
+
+        </script>
+</head>
+
+<body>
+    <p>Paragrafo</p>
+    <h1>Para titulo, h2,h3...</h1>
+    <abbr>Abreviação</abbr> <!--Pode usar o atributo title=""-->
+    <address>endereco</address>
+    <br><!--Pular linha-->
+    <q>citações curtas</q>
+    <blockquote>citações longas</blockquote>
+    <cite>citaçao de titulo</cite><!--Pode usar o atributo cite="" para url-->
+    <ul>
+        <li>Lista não ordenada</li>
+    </ul>
+    <ol>
+        <li>Lista ordenada</li>
+    </ol>
+    <img src="imagem.txt" alt="Nome para imagem"> <!--Pode usar o atributo title=""-->
+    <!--Pode usar o atributo figure para conter imagem e figcaption-->
+    <a href="google.com/rickroll">Hiperlink</a> <!--Pode usra o conteudo #id para algum id na pagina-->
+    <!--Pode usra o atributo href="mailto:" e "tel:"-->
+    <table>
+        <tr>
+            <td>Elemento 1</td>
+            <td>Elemento 2</td>
+        </tr>
+        <tr>
+            <td>Elemento 3</td>
+            <td>Elemento 4</td>
+        </tr>
+    </table>
+    <!--Pode usar <thead><tbody><tfoot> para cabecalho, corpo e rodape, alem do <th> para cabecalho de uma cedula-->
+    <div><!--Conteiner em bloco --></div>
+    <span><!--Conteiner em linha --></span>
+    <iframe src="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">
+        <!--Conteudo embutido --></iframe>
+    <source> <!--Semelhante a imagem, mas para video-->
+    <!-- Entidades: < &lt, > &gt, & &amp, " &quot, ' &apos, nada &nbsp-->
+    <header><!--Cabecalho --></header>
+    <nav><!--Barra de navegação --></nav>
+    <main><!--Corpo --></main>
+    <aside><!--Conteudo ao lado do corpo--></aside>
+    <footer><!--Rodapé --></footer>
+    <section><!--Secionamento do conteudo --></section>
+    <Form action="enviar.php" method="post">
+        <!--Formulário -->
+        <label for="nomeDoLabel">Legenda</label>
+        <input type="text"> <!--Caixa de texto -->
+        <button type="button">Botão</button>
+        <input type="submit" value="Enviar"> <!--Botão por input -->
+        <!--Tem tb em input type radio, checkbox, date, range, hidden, color, file ...-->
+        <select><!--Conten elementos de <option> --></select>
+        <textarea><!-- Campo de texto--></textarea>
+
+        <p style="font-size: 14pt; color: blue;">Para Css inline</p>
+
+        <!-- Bootrstrap
+        <div class="row">
+        <div class="col-x-type"> x pode ser de 1 a 12 type pode ser sm, md, lg, xl, xxl, sendo do meno ponto de quebra para o maior
+            
+        Para forms, classes e outros, importar o classe, lembrando que pode usar os sm,md...
+        .form-control Para campos textuais - input e textarea
+        .form-label Para rótulos (label) desses campos
+        .form-select Para o elemento <select>
+        .form-check-input Para campos tipo radio e checkbox
+        .form-check-label Para rótulos (label) desses campos
+        .form-check Para container adicional agrupando o rótulo e o campo
+        .form-switch Exibição estilo chave liga/desliga
+        
+        .btn
+        .btn-primary
+        .btn-secondary
+        .btn-success
+        .btn-danger
+        .btn-warning
+        .btn-info
+        .btn-light
+        .btn-dark
+        .btn-link
+        <button type="button" class="btn btn-primary">Primary</button>
+        .btn-outline-primary (sem background)
+
+        Para icones, importar svg e usar seu nome de classe
+
+        .table Classe principal. Tabela com divisões horizontais
+        .table-striped Adiciona cores alternadas às linhas
+        .table-bordered Adiciona bordas em todas as células
+        .table-hover Adiciona cor à linha quando apontada pelo mouse
+        <table class="table table-striped table-hover">
+
+        alertas:
+        <div class="alert alert-warning alert-dismissible" role="alert">
+        <strong>Atenção:</strong> a operação não poderá ser desfeita!
+        <button type="button" class="btn-close" data-dismiss="alert"></button>
+        </div>
+
+        -->
+    </Form>
+    <!--Ex de form-->
+    <div class="row">
+        <div class="col-sm">
+            <label for="cpf" class="form-label"> CPF </label>
+            <input type="text" class="form-control" id="cpf">
+        </div>
+        <div class="col-sm">
+            <label for="rg" class="form-label"> RG </label>
+            <input type="text" class="form-control" id="rg">
+        </div>
+    </div>
+    <!--Ex de form com rotulos flutuantes-->
+    <div class="form-floating">
+        <input type="text" class="form-control" id="bairro" placeholder="">
+        <label for="bairro"> Bairro </label>
+    </div>
+    <div class="form-floating">
+        <input type="text" class="form-control" id="cidade" placeholder="">
+        <label for="cidade"> Cidade </label>
+    </div>
+    <!--Modal-->
+    <div class="modal fade" id="meuModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Título</h5>
+                    <button data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    Conteúdo do Modal
+                </div>
+                <div class="modal-footer">
+                    <button data-bs-dismiss="modal">Fechar</button>
+                    <button>Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

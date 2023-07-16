@@ -1,0 +1,308 @@
+html {
+    min-height: 100%;
+    background-color: rgb(10, 10, 10);
+}
+
+body {
+    background-color: darkgray;
+    font-family: 'Rubik', sans-serif;
+    padding-top: 135px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: lightgray;
+    text-align: center;
+    border: 5px solid black;
+    border-bottom: 0;
+
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+header .button {
+    border-radius: 25px;
+    border: 3px solid #000000;
+    background-color: rgb(230, 230, 230);
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+
+    float: right;
+    margin-top: 5px;
+    margin-right: 5px;
+    padding: 15px 20px;
+}
+
+header .button:hover {
+    background-color: rgb(200, 200, 200);
+}
+
+header .button:active {
+    position: relative;
+    top: 3px;
+}
+
+nav {
+    background-color: black;
+    height: 45px;
+
+    padding: 10px;
+    position: fixed;
+    top: 90px;
+    width: 100%;
+}
+
+nav #divBusca {
+    background-color: white;
+    border-radius: 25px;
+    border: 3px solid #000000;
+
+    height: 40px;
+    width: 70%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+nav #inpBusca {
+    font-size: larger;
+    background: none;
+    border: none;
+    outline: none;
+
+    float: left;
+    padding: 0 2% 0 2%;
+    height: 40px;
+    width: 90%;
+}
+
+nav #btnBusca {
+    margin-top: 5px;
+    margin-right: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+nav #btnBusca:hover {
+    position: relative;
+    transform: scale(0.9);
+}
+
+nav #btnExp {
+    margin-top: 5px;
+    margin-right: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+nav #btnExp:hover {
+    position: relative;
+    transform: scale(0.9);
+}
+
+nav .imgBtn {
+    height: 40px;
+}
+
+nav .modal {
+    background-color: #0007;
+    display: none;
+
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    z-index: 1;
+}
+
+nav .modal .modalContent {
+    background-color: rgb(240, 240, 240);
+    border: 5px solid #000000;
+    box-shadow: 0 0 5px;
+
+    padding: 10px 20px 15px;
+    width: auto;
+    height: auto;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+nav .modal .modalContent h2 {
+    font-weight: bold;
+    font-size: xx-large;
+    text-align: center;
+    margin: 15px 0 20px;
+}
+
+nav .modal .modalContent fieldset {
+    background: none;
+    border: 3px solid black;
+    outline: none;
+    text-align: left;
+
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav .modal .modalContent fieldset legend {
+    text-align: center;
+    font-size: large;
+}
+
+nav .modal .modalContent fieldset .preco input {
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 25px;
+    text-align: center;
+    margin-right: 5px;
+    margin-left: 5px;
+    width: 120px;
+    height: 25px;
+}
+
+nav .modal .modalContent fieldset .checkbox {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+nav .modal .modalContent button {
+    color: white;
+    font-size: large;
+    background: black;
+    border-radius: 5px;
+    cursor: pointer;
+
+    width: 50%;
+    height: 35px;
+    margin-bottom: 20px;
+}
+
+main {
+    background-color: white;
+
+    width: 80%;
+    margin: auto;
+    padding: 50px 4% 25px;
+}
+
+footer {
+    background-color: lightgray;
+    line-height: 130%;
+    border: 5px solid black;
+    padding-bottom: 10px;
+}
+
+footer p,
+footer address {
+    width: 70%;
+    margin: auto;
+    padding-top: 20px;
+}
+
+footer a {
+    color: black;
+}
+
+footer #dir,
+footer address {
+    text-align: center;
+    padding-top: 10px;
+}
+
+footer~body {
+    background-color: #000;
+    color: #fff;
+}
+
+main .card-sec a {
+    text-decoration: none;
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+
+main .card-sec {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin: 5px 0;
+}
+
+main .card-sec .card {
+    border: 3px dashed black;
+    min-width: 300px;
+    min-height: 350px;
+    width: 30%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 15px 30px 15px;
+    overflow: hidden;
+}
+
+main .card-sec .interesse {
+    border: 3px dashed black;
+    min-width: 300px;
+    width: 30%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 15px 30px 15px;
+    font-size: large;
+}
+
+main .card-sec .card img {
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+
+}
+
+main .card-sec .card h2 {
+    text-align: center;
+    font-style: italic;
+    margin: 10px 15px;
+}
+
+main .card-sec .card h3 {
+    color: darkgreen;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px 15px 10px 15px;
+}
+
+main .card-sec .card p {
+    text-align: justify;
+    font-size: medium;
+    margin: 15px;
+}

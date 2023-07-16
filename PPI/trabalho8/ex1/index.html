@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Trabalho 8 - Exercício 1 </title>
+</head>
+
+<body>
+    <h1> Exemplo 1</h1>
+    <p> Primeiro, o código faz a conexão com o banco de dados usando a função "mysqlConnect()" que é definida no arquivo
+        "../conexaoMysql.php".
+        Em seguida, o código define uma consulta SQL para selecionar os nomes e telefones dos alunos da tabela "aluno".
+        Depois, o código executa a consulta usando a função "query()" do objeto PDO.
+        O código, então, itera sobre os resultados usando um loop "while" e exibe cada linha de resultado em uma tabela
+        HTML.
+        Ainda usa a função "htmlspecialchars()" para evitar possíveis ataques XSS.
+        Finalmente, o código exibe um link para voltar ao menu de opções.</p>
+    <hr><br>
+    <h1> Exemplo 2</h1>
+    <p> Do cadastro-vulneravel:
+        Primeiro, o código faz a conexão com o banco de dados usando a função "mysqlConnect()" que é definida no arquivo
+        "../conexaoMysql.php".
+        Em seguida, o código recupera os valores dos campos "nome" e "telefone" do formulário HTML enviado pelo método
+        POST e os armazena em variáveis.
+        Depois, o código define uma consulta SQL para inserir os valores nas colunas "nome" e "telefone" da tabela
+        "aluno".
+        O código, então, executa a consulta usando a função "exec()" do objeto PDO. Isso permite possiveis ataques XSS.
+        Se a consulta for bem-sucedida, o código redireciona o usuário para a página "mostra-alunos.php".
+        <br>
+        Do mostra-alunos:
+        Realiza uma consulta na tabela "aluno" do banco de dados MySQL utilizando a conexão estabelecida
+        através do arquivo "conexaoMysql.php". O resultado da consulta é armazenado na variável "$stmt" através da
+        execução do método "query()" da classe PDO.
+        Em seguida, o código HTML é gerado com a utilização de um loop while para iterar sobre cada registro retornado
+        pela consulta e exibir os valores das colunas "nome" e "telefone" na tabela.
+        Cada valor é armazenado em variáveis locais "$nome" e "$telefone" antes de ser exibido na tabela.
+        Por fim, um link é fornecido para acessar a página "index.html" para cadastrar um novo aluno na tabela.
+    </p>
+    <hr><br>
+    <h1> Exemplo 3</h1>
+    <p> Muito semelhante ao exemplo 2, porem o formulário contem mais campos (como nome, cpf, email, senha,
+        data_nascimento, estado_civil, altura).
+        Porem agora é utilizado prepared statements para previnir os possiveis ataques do tipo SQL Injection.
+        Outra diferenca também é a existencia do arquivo esclui-cliente.php que executa da mesma forma com que os dados
+        foram inseridos (seguro), porem agora os dados inseridos são excluidos da tabela, de acordo com o cpf incerido.
+    </p>
+    <hr><br>
+    <h1> Exemplo 4</h1>
+    <p>A função checkLogin é responsável por consultar o banco de dados em busca do email do usuário e sua respectiva
+        hash de senha (previamente armazenada com a função password_hash). Em seguida, a função verifica se a senha
+        fornecida pelo usuário corresponde à hash armazenada no banco de dados usando a função password_verify.
+        O trecho de código abaixo chama a função checkLogin passando os dados de login fornecidos pelo usuário através
+        do formulário HTML (email e senha). Se o retorno da função checkLogin for verdadeiro, o usuário é redirecionado
+        para a página "home.html". Caso contrário, o usuário é redirecionado para a página de login "index.html".
+        O código usa prepared statements para evitar ataques de injeção de SQL ao consultar o banco de dados.
+    </p>
+    <hr><br>
+    <h1> Exemplo 5</h1>
+    <p> Primeiramente, é feita a conexão com o banco de dados usando a função mysqlConnect() que é definida em um
+        arquivo separado chamado "conexaoMysql.php". Essa função utiliza os parâmetros de configuração para estabelecer
+        uma conexão com o banco de dados MySQL e retorna um objeto PDO para que possamos fazer consultas ao banco.
+        Em seguida, o código resgata os dados do novo cliente e do endereço de entrega a partir dos dados enviados pelo
+        usuário através de um formulário HTML.
+        Depois de resgatar os dados, o código utiliza a função password_hash() para calcular um hash de senha seguro,
+        que será armazenado no banco de dados em vez da senha em texto claro.
+        O código então define duas strings SQL, uma para inserir os dados do novo cliente na tabela "cliente" e outra
+        para inserir os dados do endereço de entrega na tabela "endereco_entrega". Cada uma dessas strings contém um
+        comando SQL preparado que utiliza placeholders (?) em vez de valores concretos para evitar ataques de injeção de
+        SQL.
+        O código então começa uma transação com o banco de dados usando o método beginTransaction() do objeto PDO.
+        Dentro dessa transação, ele executa o comando SQL preparado para inserir o novo cliente na tabela "cliente" e
+        verifica se ocorreu algum erro usando o método execute(). Se ocorrer um erro, ele lança uma exceção para
+        cancelar a transação.
+        Se a inserção do cliente for bem-sucedida, o código utiliza o método lastInsertId() para obter o ID do novo
+        cliente que foi gerado automaticamente pelo MySQL na inserção anterior. Ele então executa o comando SQL
+        preparado para inserir o endereço de entrega, fornecendo o ID do novo cliente como o valor do campo de chave
+        estrangeira "id_cliente". Se ocorrer um erro, ele lança uma exceção para cancelar a transação.
+        Se ambas as inserções forem bem-sucedidas, o código utiliza o método commit() para confirmar a transação e
+        efetivar as operações no banco de dados. Em seguida, ele redireciona o usuário para a página inicial.
+        Se ocorrer algum erro durante a transação, o código utiliza o método rollBack() para cancelar as operações e
+        exibe uma mensagem de erro para o usuário, informando o motivo da falha. Se o erro for devido a dados duplicados
+        (por exemplo, se o cliente já estiver cadastrado), o código exibe uma mensagem mais específica informando o
+        problema.
+    </p>
+    <hr><br>
+</body>
+
+</html>

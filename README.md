@@ -23,8 +23,11 @@
 | MS       | 6º       | Modelagem e Simulação			     |
 | IA       | 6º       | Inteligência Artificial			     |
 | TC       | 6º       | Teoria da Computação			     |
-| CC	   | 7º       | Construção de Compiladores		     |
+| CC	   | 7º       | Construção de Compiladores		     | 
 | SD	   | 7º       | Sistemas Distribuídos			     |
+| IC	   | 7º       | Inteligência Computacional		     |
+| PPI	   | 8º       | Programação para Internet	             | 
 | SEG	   | 8º       | Segurança da Informação	                     |
 | TESI     | Opt      | Tópicos Especiais em Segurança da Informação |
 | MULTI    | Opt      | Multimídia				     |
+| MD       | Opt      | Mineração de Dados			     |

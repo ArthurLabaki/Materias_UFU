@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Clinica ABC Health é uma clinica hospitalar especializada em ...">
+    <title> Trabalho 2 </title>
+    <style>
+        body {
+            background-color: #ddd;
+            font-family: "Helvetica Neue", Times, serif;
+            line-height: 1.5;
+            width: 60%;
+            margin: 0 auto;
+            padding: 2% 0;
+        }
+
+        header,
+        footer,
+        nav {
+            background-color: #555;
+            color: #eee;
+            border: 1px solid gray;
+            border-radius: 10px;
+            text-align: center;
+            margin: 5px 0 0 0;
+            padding: 1%;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+            padding: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: lightgray;
+        }
+
+        main {
+            background-color: white;
+            border: 1px solid lightgray;
+            border-radius: 10px;
+            padding: 2%;
+        }
+
+        h2 {
+            color: #555
+        }
+
+        fieldset {
+            width: 90%;
+            margin: 2% auto;
+            padding: 2%;
+        }
+
+        label {
+            flex-basis: 30%;
+            margin-right: 10px;
+            text-align: right;
+        }
+
+        input,
+        select,
+        textarea {
+            flex-basis: 60%;
+            padding: 5px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+        }
+
+        textarea,
+        #inpt {
+            margin-left: 3%;
+        }
+
+        button {
+            position: absolute;
+
+        }
+
+        input:invalid+span::after {
+            content: '❌';
+            color: red;
+        }
+
+        input:valid+span::after {
+            content: '✔️';
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Clinica ABC Health</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form action="cadastraCliente.php" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <h2>Dados Pessoais</h2>
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" autofocus minlength="2" maxlength="50" required>
+                    <span></span>
+                </div>
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span></span>
+                </div>
+                <div>
+                    <label for="pai">Numero de filhos:</label>
+                    <input type="number" id="pai" name="pai" readonly value="0">
+
+                </div>
+                <div>
+                    <label for="cpf">CPF:</label>
+                    <input type="text" id="cpf" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+                        placeholder="xxx.xxx.xxx-xx" required>
+                    <span></span>
+                </div>
+                <div>
+                    <label for="idade">Idade:</label>
+                    <input type="number" id="idade" name="idade" required>
+                    <span></span>
+                </div>
+                <div>
+                    <label for="tel">Telefone:</label>
+                    <input type="tel" id="tel" name="tel" placeholder="99999-9999" required>
+                    <span></span>
+                </div>
+                <div>
+                    <label for="nasc">Data de Nascimento:</label>
+                    <input type="date" id="nasc" name="nasc">
+                </div>
+                <fieldset>
+                    <legend>Escolha o Sexo</legend>
+                    <div>
+                        <input type="radio" id="masc" name="sexo" value="masculino">
+                        <label for="masc">Masculino</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="fem" name="sexo" value="feminino">
+                        <label for="fem">Feminino</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="out" name="sexo" value="outro">
+                        <label for="out">Outros</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Escolha o Estado Civil</legend>
+                    <div>
+                        <input type="radio" id="solteiro" name="estadocivil" value="solteiro">
+                        <label for="solteiro">Solteiro</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="casado" name="estadocivil" value="casado">
+                        <label for="casado">Casado</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="divorciado" name="estadocivil" value="divorciado">
+                        <label for="divorciado">Divorciado</label>
+                    </div>
+                </fieldset>
+            </fieldset>
+            <br>
+            <fieldset>
+                <h2>Endereço</h2>
+                <div>
+                    <label for="cep">CEP:</label>
+                    <input type="number" id="cep" name="cep" required>
+                </div>
+                <div>
+                    <label>Tipo de Logadouro:</label>
+                    <select name=logad required>
+                        <option value="" disabled selected>Selecione uma opção:</option>
+                        <option value="rua">Rua</option>
+                        <option value="av">Avenida</option>
+                        <option value="pra">Praça</option>
+                        <option value="rod">Rodovia</option>
+                    </select>
+                </div>
+                <input type="hidden" name="Rick Roll" value="0101">
+                <div>
+                    <label for="log">Logadouro:</label>
+                    <input type="text" id="log" name="log" required>
+                </div>
+                <div>
+                    <label for="bairro">Bairro:</label>
+                    <input type="text" id="bairro" name="bairro" required>
+                </div>
+                <div>
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="cidade" name="cidade" required>
+                </div>
+                <div>
+                    <label for="estado">Estado:</label>
+                    <input type="text" id="estado" name="estado" required>
+                </div>
+            </fieldset>
+            <br>
+            <fieldset>
+                <h2>Informações Adicionais</h2>
+                <fieldset>
+                    <legend>Interesse Gerais</legend>
+                    <div>
+                        <input type="checkbox" id="filmes" name="inter[]" value="filmes">
+                        <label for="filmes">Filmes</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="informatica" name="inter[]" value="informatica">
+                        <label for="informatica">Informatica</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="games" name="inter[]" value="games">
+                        <label for="games">Games</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="livros" name="inter[]" value="livros">
+                        <label for="livros">Livros</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="roupas" name="inter[]" value="roupas">
+                        <label for="roupas">Roupas</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="esportes" name="inter[]" value="esportes">
+                        <label for="esportes">Esportes</label>
+                    </div>
+                </fieldset>
+                <textarea name="infocomp" rows="6" cols="40"> Informações complementares:
+                </textarea>
+                <div>
+                    <input type="file" id="inpt" accept=".png, .jpg, .jpeg" name="Imagem">
+                </div>
+            </fieldset>
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+        <br>
+    </main>
+    <footer>
+        <address>
+            Av. João Naves de Ávila, 2121, Santa Mônica, Uberlândia<br>
+        </address>
+    </footer>
+</body>
+
+</html>

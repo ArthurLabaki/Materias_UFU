@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 5 - 3</title>
+    <style>
+        #caixa-mensagem {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            height: 200px;
+            background-color: #f2f2f2;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        #botoes-mensagem {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        #botoes-mensagem button {
+            margin: 0 10px;
+        }
+
+        #title {
+            margin: 0 auto;
+            color: red;
+        }
+    </style>
+    <script>
+        function showMessage() {
+            var mensagem = document.getElementById("mensagem").value;
+            var mensagemCaixa = document.getElementById("mensagem-caixa");
+            mensagemCaixa.textContent = mensagem;
+            var caixaMensagem = document.getElementById("caixa-mensagem");
+            caixaMensagem.style.visibility = "visible";
+        }
+        function fecharMensagem() {
+            var caixaMensagem = document.getElementById("caixa-mensagem");
+            caixaMensagem.style.visibility = "hidden";
+        }
+
+    </script>
+</head>
+
+<body>
+    <label for="mensagem">Mensagem:</label>
+    <input type="text" id="mensagem">
+    <button onclick="showMessage()">Exibir mensagem</button>
+    <div id="caixa-mensagem">
+        <div id="title">Mensagem:</div>
+        <div id="mensagem-caixa"></div>
+        <div id="botoes-mensagem">
+            <button onclick="fecharMensagem()">OK</button>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+Publico:
+index.html - Redireciona para o index.php
+index.php - Pagina principal do Site
+sobre.html - Pagina sobre termos e condições 
+produto.php - Pagina de um produto especifico
+login.html - Pagina para logar
+cConta.html - Pagina para criar conta
+eSenha.html - Pagina para recuperar senha (indisponivel)
+
+Privado:
+index.php - Pagina principal logado
+buscaProduto - Operacoes para buscar produtos
+produto.php - Pagina de um produto especifico logado
+sobre.php - Pagina sobre termos e condições logado
+home.php - Pagina para realizar operacoes logado
+cAnuncio.php - Pagina para criar novos anuncios
+sAnuncio.php - Operacoes para salvar novo anuncio
+lAnuncio.php - Pagina para listar seus anuncios e interesses recebidos (excluir interesses também)
+eAnuncio.php - Pagina para excluir anuncios
+aAnuncio.php - Operacoes para apagar anuncios
+alterar.php - Pagina para alterar dados do usuario
+salterar.php - Operacoes para alterar dados de cadastro
+interesse.php - Operacoes para receber interesses de anuncios
+aInteresse.php - Operacoes para apagar interesses de anuncios
+login.php - Operacoes para realizar o login
+cadastrar.php - Operacoes para cadastrar usuario
+sessionVerification.php - Operacoes para verificar usuario por sessão
+logout.php - Operacoes para deslogar usuario
+categorias.php - Operacoes para obter todas as categorias
+busca-end.php - Operacoes para preencher endereco automaticamente
+conexaoMysql.php - Operacoes para conectar ao banco de dados

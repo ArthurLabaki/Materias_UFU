@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Explicações dos exemplos</title>
+</head>
+
+<style>
+    body {
+        padding-top: 3rem;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    h1 {
+        text-align: center;
+    }
+</style>
+
+<body>
+    <h1>Exemplo 1 - Hello Ajax</h1>
+    <p>Esse exercicio é composto de 2 arquivos html e uma imagem. No arquivo index, contem toda a estrutura do código
+        html com css de um site simples com um botão.
+        Esse botão realiza a execução de uma requisição Ajax (open) utilizando o método Get, de forma assincrona e para
+        o segundo arquivo, o condeudoAdicional.html, que é uma continuação do conteudo, com somente conteudo html.
+        Esse exercicio demonstra a uma simples requisição de Ajax com um tratamento de erro (onerror). A execução do
+        botão é feita com simples comandos javascript (onload, addEventListener, ... )
+    </p>
+    <hr>
+    <br>
+    <h1>Exemplo 2 - Busca Cidade</h1>
+    <p>Já nesse exercicio, exitem dois arquivos e uma imagem de fundo. No arquivo index é feito um input de um cpf feito
+        com html e css e javascript para realizar a função buscaCidade ao pressionar alguma tecla.
+        Na função buscaCidade, ela verifica se o cpf é de tamanho 9 e, se sim, envia uma requisição AJAX para o arquivo
+        php busca-cidade. Se a solicitação for valida (retornar 200 no código de status) será inserido a resposta da
+        solicitação no span. Caso a solicitação não for 200, sera colocado uma string vazia no span (não alterando) e
+        informando no log do console o codigo de status, o texto de status e de resposta.
+        A função ainda trata de erros (onerror). Já no arquivo php busca-cidade é realizado uma simples verificação de
+        string. Se for 38400-100 ele responde Uberlandia, se for 38700-000 ele responde Patos de Minas e se não for
+        nenhum dos dois ele responde o $cep is not available.
+    </p>
+    <hr>
+    <br>
+    <h1>Exemplo 3 - Recebendo Json 1</h1>
+    <p>Nesse exemplo existe dois arquivos. O arquivo index.html é um simples formulario com Bootstrap com alguns campos.
+        Alem disso, semelhante ao exemplo anterior, ao pressionar uma tecla, o conteudo do campo cep é enviado para a
+        função buscaEndereco.
+        Ainda semelhante ao anterior, se receber uma string de tamanho 9, é feito uma requisição AJAX para o arquivo php
+        busca-endereco, porem é especificado a resposta como json usando o responseType.
+        Se a resposta da requisição fou NULL ou o status dela não for 200, será enviado tanto uma resposta quando o
+        status no log. Caso contrario, a resposta será salva em uma variavel endereco.
+        A partir dela, os outros campos serão preenchidos conforme o dicionário que foi retornado. A função tambem tem
+        tratamento de erros (onerror).
+        Já no arquivo busca-endereco é criado uma classe endereco (objeto) com 3 variaveis (relacioandas aos campos) e
+        um contrutor para elas. Ao receber um cep ele realiza uma busca simples, em que caso o cep for um especifico,
+        ele
+        cria um objeto Endereco com as variaveis já informadas (já definidas).
+        Por fim, ele codifica esse objeto em um json e transmite como resposta da requisição.
+    </p>
+    <hr>
+    <br>
+    <h1>Exemplo 4 - Recebendo Json 2</h1>
+    <p>Esse exemplo é praticamente uma cópia do exercicio anterior. A unica diferenca é que, nesse exemplo, não é
+        utilizado a variavel responseType para tratar a resposta como json. Então, para tratar do resposta que vem em um
+        formato json, é feito uma conversão da resposta utilizando o comando JSON.parse. Porem essa conversão pode
+        resultar em erros e falhas, então isso é feito dentro de um bloco try/catch. Caso ocorra algum erro, a string
+        convertida é mostrada no logso console. O resto é igual ao exercicio anterior.
+    </p>
+    <hr>
+    <br>
+    <h1>Exemplo 5 - Enviando Json</h1>
+    <p>Ainda na mesma ideia dos exercicios anteriores, essse exemplo se trata de um Post de um conteudo json. Então, a
+        diferenca do exercicio para os anteriores é que é criaod um json dentro do arquivo index, utilizando o objeto
+        objetoJS. Para conseguir enviar o conteudo, é necessário definer o cabeçalho HTTP 'Content-Type' com valor
+        apropriado para envio de JSON utilizando a função setRequestHeader. ainda, ao realizar o send é necessário usar
+        o comando JSON.stringify no objeto para enviar no formato Json. No arquivo php busca-endereco, é necessário
+        realizar a string json da requisição usando o comando file_get_contents('php://input'), alem de decodificar ela
+        usando json_decode, para fazer aquela busca já explicada nos 2 exercicios anteriores. O resto é igual aos
+        exercicios anteriores.
+    </p>
+    <hr>
+    <br>
+    <h1>Exemplo 6 - Login</h1>
+    <p>Neste ultimo exemplo, exite 3 arquivos. No arquivo index é projetado uma tela de login utilizando Bootstrap. Ao
+        tentar realizar o login, é enviado uma reuisição AJAX do tipo Post para o arquvo checkLogin.php. O conteudo a
+        ser enviado é no formato json utilizando o comando responseType. Existe o trataemnto caso a resposta não seja de
+        status 200, como nos outros exemplos. Caso a resposa seja de sucesso, a paginaserá redimencionada para a
+        informada. Caso contrario a mensagem de erro ira aparecer abaixo do botão de entrar. O conteudo enviado é no
+        formato FormData. No arquivo checkLogin é obtido o login e a senha enviado e é verificado se eles combinam com
+        um já definido. Se sim, é criado um objeto RequestResponse que tem como paramentros um bool true, indicando um
+        sucesso no login e uma página para o acesso (no caso é home.html). Caso não for aceito, é criado o objeto com o
+        bool false e sem string adicional. Por fim é enviado a resposta no formato de json. O ultimo arquivo é somente
+        uma pagina para demostrar que o acesso foi adquirido.</p>
+    <hr>
+    <br>
+</body>
+
+</html>

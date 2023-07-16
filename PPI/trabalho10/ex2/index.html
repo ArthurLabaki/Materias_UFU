@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Ex2 </title>
+</head>
+
+<body>
+    <h1>Ex2 Encadeament Fetch</h1>
+    <a href="Ex2-encadeamento-fetch/index.html">Exemplo</a>
+    <br>
+    <p> O javascript do exemplo é basicamente a função buscaClimaLocal, que exibe algumas informaçoes de clima. Nela é
+        utilizado o fetch para solicitar o uso da APi ipapi.co/json/ que, dentre muitas informações, retorna a latitude
+        e longitude atual do usuário. Em seguida é utilizado o then para manipular essa resposta. A resposta é
+        convertida em json pelo comando response.json. No segundo then, é realizado outra solicitação get de api chamada
+        open-meteo.com/v1/forecast, usando a latitude e longitude obtidos anteriormente. A resposta é novamente
+        convertida para json no terceiro then. Por fim, no ultimo then as informações de temperatura e velocidade do
+        vento obtidas na resposta são inseridas nos elementos HTML correspondentes usando javascript comum. Se ocorrer
+        algum erro em qualquer uma dessas etapas, ele será capturado e exibido no console usando o comando console.log.
+    </p>
+    <br>
+
+</body>
+
+</html>
